@@ -1,0 +1,236 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+#[[plugins]]
+#repo = 'rhysd/nyaovim-markdown-preview'
+#hook_add = '''
+#  let g:markdown_preview_eager = 1
+#'''
+
+[[plugins]] # カーソル位置のコンテキストに合わせてftを切り替える
+repo = 'osyo-manga/vim-precious'
+depends = ['context_filetype.vim', 'vim-textobj-user']
+hook_add = '''
+let g:context_filetype#filetypes = {
+      \ 'sh': [
+      \   {
+      \    'start': '[^<]<<\([''"]\?\)\([a-zA-Z0-9]\+\)\1$',
+      \    'end': '^\1$', 'filetype': '\2',
+      \   },
+      \ ],
+      \}"}}}
+'''
+
+[[plugins]] # カーソル位置のコンテキストのftを判定するライブラリ
+repo = 'Shougo/context_filetype.vim'
+
+[[plugins]] # vim-precious で <Plug>(textobj-precious-i) を使用したい時に必要。
+repo = 'kana/vim-textobj-user'
+
+
+[[plugins]] # toml syntax
+repo = 'cespare/vim-toml'
+on_ft = 'toml'
+
+# カラースキーマ 一番したが有効
+#[[plugins]] # not hilighted h1 in md
+#repo = 'nanotech/jellybeans.vim'
+#hook_add = '''
+#  set background=dark
+#  au MyAutoCmd VimEnter * nested colorscheme jellybeans
+#  let g:jellybeans_overrides = {
+#  \    'background': { 'ctermbg': 'none', '256ctermbg': 'none' },
+#  \}
+#'''
+#[[plugins]] # not hilighted h1 in md
+#repo = 'tomasr/molokai'
+#hook_add = '''
+#  set background=dark
+#  let g:molokai_original = 1
+#  "let g:rehash256 = 1
+#  au MyAutoCmd VimEnter * nested colorscheme molokai
+#'''
+#[[plugins]]  # not hilight h1 in md
+#repo = 'aereal/vim-colors-japanesque'
+#hook_add = '''
+#  set background=dark
+#  au MyAutoCmd VimEnter * nested colorscheme japanesque
+#'''
+#[[plugins]]  # not hilight h1 in md
+#repo = 'joshdick/onedark.vim'
+#hook_add = '''
+#  "set background=dark
+#  " let g:gruvbox_italic=1
+#  au MyAutoCmd VimEnter * nested colorscheme onedark
+#  au MyAutoCmd VimEnter * highlight Visual ctermbg=216
+#  " Makes the background transparent
+#  au MyAutoCmd VimEnter * nested highlight Normal ctermbg=NONE guibg=NONE
+#  au MyAutoCmd VimEnter * nested highlight NonText ctermbg=NONE guibg=NONE
+#'''
+#[[plugins]]  # not hilight h1 in md
+#repo = 'mhartington/oceanic-next'
+#hook_add = '''
+#  set background=dark
+#  " let g:gruvbox_italic=1
+#  au MyAutoCmd VimEnter * nested colorscheme OceanicNext
+#  au MyAutoCmd VimEnter * highlight Visual ctermbg=216
+#  " " Makes the background transparent
+#  " au MyAutoCmd VimEnter * nested highlight Normal ctermbg=NONE guibg=NONE
+#  " au MyAutoCmd VimEnter * nested highlight NonText ctermbg=NONE guibg=NONE
+#'''
+#[[plugins]] # not so good main text in md
+#repo = 'altercation/vim-colors-solarized'
+#hook_add = '''
+#  set background=dark
+#  au MyAutoCmd VimEnter * nested colorscheme solarized
+#  let g:solarized_termcolors=256
+#  let g:solarized_termtrans = 1 
+#  "let g:solarized_bold = 1 | 0 
+#  "let g:solarized_underline = 1 | 0 
+#  "let g:solarized_italic = 1 | 0 
+#  "let g:solarized_contrast = "normal"| "high" or "low" 
+#  "let g:solarized_visibility= "normal"| "high" or "low" 
+#'''
+#[[plugins]] # bad in cursol, bad in comment
+#repo = 'w0ng/vim-hybrid'
+#hook_add = '''
+#  let g:hybrid_custom_term_colors = 1
+#  "let g:hybrid_reduced_contrast = 0
+#  set background=dark
+#  " colorscheme 設定は source 後に行う必要があるので VimEnter で行う。
+#  " 但し Colorscheme イベントの発生が抑制されないよう nented を付ける。
+#  au MyAutoCmd VimEnter * nested colorscheme hybrid
+#'''
+[[plugins]]
+repo = 'morhetz/gruvbox'
+hook_add = '''
+  set background=dark
+  " let g:gruvbox_italic=1
+  au MyAutoCmd VimEnter * nested colorscheme gruvbox
+  au MyAutoCmd VimEnter * highlight Visual ctermbg=216
+  " " Makes the background transparent
+  " au MyAutoCmd VimEnter * nested highlight Normal ctermbg=NONE guibg=NONE
+  " au MyAutoCmd VimEnter * nested highlight NonText ctermbg=NONE guibg=NONE
+'''
+
+[[plugins]]
+repo = 'sheerun/vim-polyglot'
+
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
+build = 'make'
+
+[[plugins]] # コード補完
+repo = 'Shougo/deoplete.nvim'
+if = 'has("nvim")'
+on_i = 1
+hook_add = '''
+  let g:deoplete#enable_at_startup = 1
+  let g:deoplete#enable_smart_case = 1
+  let g:deoplete#sources#go#package_dot = 1
+  set completeopt-=preview " プレビューウィンドウを開かないようにする
+  "set completeopt+=noinsert " 最初の候補がデフォで選択されるようにする
+  " TAB や Shift-TAB で補完補完候補を上下する
+  if ! dein#tap('neosnippet.vim')
+    " neosnippet使う場合はそっちも考慮した設定をしてるのでスキップ
+    inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+  endif
+  inoremap <expr><S-TAB>  pumvisible() ? "\<C-p>" : "\<S-TAB>"
+  inoremap <expr><UP>   pumvisible() ? "\<C-p>" : "<UP>"
+  inoremap <expr><DOWN> pumvisible() ? "\<C-n>" : "<DOWN>"
+  " python3が無かったらメッセージを表示
+  if has('nvim') && !has('python3')
+    echo "require python3 https://gist.github.com/kawaz/393c7f62fe6e857cc3d9 or execute 'pip3 install neovim --upgrade' and :call dein#update()"
+  endif
+'''
+
+[[plugins]]
+repo = 'Shougo/neosnippet.vim'
+depends = ['neosnippet-snippets']
+on_i = 1
+hook_post_source = '''
+let g:neosnippet#enable_snipmate_compatibility = 1
+let g:neosnippet#enable_complete_done = 1
+let g:neosnippet#expand_word_boundary = 1
+" スニペットディレクトリを設定（同じスニペットが見つかった場合は最初の先に見つかったほうが優先される)
+let g:neosnippet#snippets_directory = get(g:, 'neosnippet#snippets_directory', [])
+let g:neosnippet#snippets_directory += [$XDG_CONFIG_HOME . '/vim/rc/neosnippets']
+if ! empty(dein#get('neosnippet-snippets'))
+  let g:neosnippet#snippets_directory += [dein#get('neosnippet-snippets').path . '/neosnippets']
+endif
+" Plugin key-mappings. スニペット補完候補がある場合は C-k でスニペットを展開する（Enterではない）
+imap <C-k> <Plug>(neosnippet_expand_or_jump)
+smap <C-k> <Plug>(neosnippet_expand_or_jump)
+xmap <C-k> <Plug>(neosnippet_expand_target)
+" " SuperTab like snippets behavior. スニペットのプレースホルダ上にいる時はTabで次のプレースホルダにジャンプする
+" imap <expr><TAB> neosnippet#jumpable() ? '\<Plug>(neosnippet_expand_or_jump)' : pumvisible() ? '\<C-n>' : '\<TAB>'
+" smap <expr><TAB> neosnippet#jumpable() ? '\<Plug>(neosnippet_expand_or_jump)' : '\<TAB>'
+" For snippet_complete marker.
+if has('conceal')
+  set conceallevel=2 concealcursor=i
+endif
+'''
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+
+[[plugins]]
+repo = 'shougo/neco-syntax'
+
+[[plugins]]
+repo = 'plasticboy/vim-markdown'
+
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+
+[[plugins]]
+repo = 'pangloss/vim-javascript'
+
+[[plugins]]
+repo = 'othree/yajs.vim'
+
+[[plugins]]
+repo = 'vim-scripts/diffchar.vim'
+
+[[plugins]] # check javascript
+repo = 'neomake/neomake'
+
+[[plugins]]
+repo = 'sjl/gundo.vim'
+on_cmd = ['GundoToggle']
+
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+
+[[plugins]]
+repo = 'Shougo/unite.vim'
+
+[[plugins]]
+repo = 'sgur/unite-everything'
+
+[[plugins]]
+repo = 'Shougo/neomru.vim'
+
+[[plugins]]
+repo = 'Shougo/neoyank.vim'
+
+[[plugins]]
+repo = 'Shougo/unite-outline'
+
+[[plugins]]
+repo = 'Shougo/vimshell'
+rev= '3787e5'
+
+# pluntumlのシンタクスハイライトと:makeコマンド
+# *.pu か *.uml か *.plantuml 
+[[plugins]]
+repo = 'aklt/plantuml-syntax'
+#NeoBundle 'vim-scripts/plantuml-syntax'
+
+[[plugins]]
+repo = 'scrooloose/vim-slumlord'
+
+[[plugins]]
+repo = 'fatih/vim-go'
+
+[[plugins]]
+repo = 'lambdalisue/vim-unified-diff'
