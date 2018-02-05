@@ -12,7 +12,7 @@ export XDG_CONFIG_HOME=~/.config
 export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 
 export PATH="/home/enxajt/anaconda3/bin:$PATH"
-export PATH="/home/enxajt/.tmux/bin:$PATH"
+export PATH="/home/enxajt/.config/tmux/bin:$PATH"
 
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
@@ -217,7 +217,7 @@ bindkey "^[[3~" delete-char
 alias h='fc -lt '%F %T' 1'
 
 alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
-#alias tmux='tmux -f "$XDG_CONFIG_HOME"/tmux/tmux.conf'
+alias tmux='tmux -f "$XDG_CONFIG_HOME"/tmux/tmux.conf'
 alias cp='cp -i'
 alias mv='mv -i'
 alias mvt='\mv --backup=numbered --target-directory=${HOME}/.local/share/Trash/files'

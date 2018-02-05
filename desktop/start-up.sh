@@ -29,7 +29,6 @@ dropbox start
 #sh ~/.dotfiles/always.sh &
 #sudo tee brightness <<< 1
 
-# mv to start-up.sh
 mvt $home/.local/share/recently-used.xbel
 
 # for mate not i3

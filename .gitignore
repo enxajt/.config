@@ -4,5 +4,6 @@ dconf
 enchant
 fcitx
 user-dirs.locale
+user-dirs.dirs
 xfce4
 zsh-git-prompt
