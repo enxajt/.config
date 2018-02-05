@@ -1,0 +1,66 @@
+status	key	command
+Conversion	Up	ConvertPrev
+Composition	Tab	PredictAndConvert
+Conversion	Tab	PredictAndConvert
+Composition	Space	Convert
+Precomposition	Space	InsertSpace
+Conversion	Space	ConvertNext
+Conversion	Shift Up	ConvertPrevPage
+Conversion	Shift Tab	ConvertPrev
+Conversion	Shift Right	SegmentWidthExpand
+Conversion	Shift Left	SegmentWidthShrink
+Suggestion	Shift Enter	CommitFirstSuggestion
+Conversion	Shift Down	ConvertNextPage
+Composition	Right	MoveCursorRight
+Conversion	Right	SegmentFocusRight
+Conversion	PageUp	ConvertPrevPage
+Conversion	PageDown	ConvertNextPage
+Composition	Left	MoveCursorLeft
+Conversion	Left	SegmentFocusLeft
+Composition	Home	MoveCursorToBeginning
+Conversion	Home	SegmentFocusFirst
+Composition	F9	DisplayAsFullAlphanumeric
+Conversion	F9	DisplayAsFullAlphanumeric
+Composition	F8	DisplayAsHalfWidth
+Conversion	F8	DisplayAsHalfWidth
+Composition	F7	DisplayAsFullKatakana
+Conversion	F7	DisplayAsFullKatakana
+Composition	F6	DisplayAsHiragana
+Conversion	F6	DisplayAsHiragana
+Composition	F2	ConvertWithoutHistory
+Composition	F10	DisplayAsHalfAlphanumeric
+Conversion	F10	DisplayAsHalfAlphanumeric
+Composition	Enter	Commit
+Conversion	Enter	Commit
+Composition	End	MoveCursorToEnd
+Conversion	End	SegmentFocusLast
+Composition	Eisu	ToggleAlphanumericMode
+Precomposition	Eisu	ToggleAlphanumericMode
+Suggestion	Down	PredictAndConvert
+Conversion	Down	ConvertNext
+Composition	Delete	Delete
+Composition	Ctrl Space	DisplayAsHalfAlphanumeric
+Conversion	Ctrl Space	DisplayAsHalfAlphanumeric
+DirectInput	Ctrl Space	IMEOff
+Precomposition	Ctrl Space	IMEOff
+Conversion	Ctrl Shift Space	DisplayAsHiragana
+Composition	Ctrl Shift Space	DisplayAsHiragana
+DirectInput	Ctrl Shift Space	IMEOn
+Precomposition	Ctrl Shift Space	IMEOn
+Prediction	Ctrl Delete	DeleteSelectedCandidate
+Composition	Backspace	Backspace
+Conversion	Backspace	Cancel
+Precomposition	Backspace	Revert
+Composition	Shift Space	InsertHalfSpace
+Conversion	Shift Space	InsertHalfSpace
+Composition	Kanji	IMEOff
+Composition	OFF	IMEOff
+Composition	ON	IMEOn
+Conversion	Kanji	IMEOff
+Conversion	OFF	IMEOff
+Conversion	ON	IMEOn
+DirectInput	Kanji	IMEOn
+DirectInput	ON	IMEOn
+Precomposition	Kanji	IMEOff
+Precomposition	OFF	IMEOff
+Precomposition	ON	IMEOn
