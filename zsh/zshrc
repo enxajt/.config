@@ -217,7 +217,7 @@ bindkey "^[[3~" delete-char
 alias h='fc -lt '%F %T' 1'
 
 alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
-alias tmux='tmux -f $HOME/.config/tmux/tmux.conf'
+#alias tmux='tmux -f "$XDG_CONFIG_HOME"/tmux/tmux.conf'
 alias cp='cp -i'
 alias mv='mv -i'
 alias mvt='\mv --backup=numbered --target-directory=${HOME}/.local/share/Trash/files'
