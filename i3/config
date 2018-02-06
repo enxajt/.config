@@ -1,5 +1,5 @@
 # enxajt
-exec $HOME/.dotfiles/desktop/start-up.sh
+exec $HOME/.config/desktop/start-up.sh
 exec --no-startup-id dunst
 bindsym $mod+t exec thunar
 bindsym $mod+i exec firefox
