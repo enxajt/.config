@@ -216,6 +216,7 @@ bindkey "^[[3~" delete-char
 # historyに日付を表示
 alias h='fc -lt '%F %T' 1'
 
+alias bfg='java -jar /usr/local/bin/BFG_git-repo-cleaner.jar'
 alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
 alias tmux='tmux -f "$XDG_CONFIG_HOME"/tmux/tmux.conf'
 alias cp='cp -i'
