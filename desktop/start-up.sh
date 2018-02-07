@@ -22,7 +22,7 @@ xrandr --output eDP1 --mode "1600x900" --output DP1 --auto --above eDP1 # VGA@KR
 xrandr --output eDP2 --mode 1600x900 --pos 0x0 --rotate normal --output HDMI1 --mode 1920x1080 --rotate normal --above eDP1
 
 redshift -O 3200
-termite -e 'tmux -2' &
+termite -e 'tmux' &
 firefox&
 dropbox lansync n
 dropbox start

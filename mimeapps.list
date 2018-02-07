@@ -1,0 +1,3 @@
+[Added Associations]
+video/mp4=vlc.desktop;
+audio/mpeg=chromium-browser.desktop;
