@@ -168,7 +168,7 @@ HISTFILE=$HOME/.config/zsh/zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
 # スペースから始まるコマンド行はヒストリに残さない
-setopt hist_ignore_space
+#setopt hist_ignore_space
 # ヒストリに保存するときに余分なスペースを削除する
 setopt hist_reduce_blanks
 
