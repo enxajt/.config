@@ -122,22 +122,32 @@ build = 'make'
 
 [[plugins]] # コード補完
 repo = 'Shougo/deoplete.nvim'
-if = 'has("nvim")'
-on_i = 1
-hook_add = '''
+#depends = 'context_filetype.vim'
+on_event = 'InsertEnter'
+hook_source = '''
   let g:deoplete#enable_at_startup = 1
+  let g:deoplete#enable_ignore_case = 1
   let g:deoplete#enable_smart_case = 1
-  let g:deoplete#sources#go#package_dot = 1
   set completeopt-=preview " プレビューウィンドウを開かないようにする
   "set completeopt+=noinsert " 最初の候補がデフォで選択されるようにする
-  " TAB や Shift-TAB で補完補完候補を上下する
-  if ! dein#tap('neosnippet.vim')
-    " neosnippet使う場合はそっちも考慮した設定をしてるのでスキップ
-    inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-  endif
-  inoremap <expr><S-TAB>  pumvisible() ? "\<C-p>" : "\<S-TAB>"
-  inoremap <expr><UP>   pumvisible() ? "\<C-p>" : "<UP>"
-  inoremap <expr><DOWN> pumvisible() ? "\<C-n>" : "<DOWN>"
+  setlocal dictionary+=~/.config/nvim/dicts/google-10000-english-usa-no-swears.dict
+  
+  " Remove this if you'd like to use fuzzy search
+  "call deoplete#custom#source(
+  "\ 'dictionary', 'matchers', ['matcher_head'])
+  
+  " If dictionary is already sorted, no need to sort it again.
+  "call deoplete#custom#source(
+  "\ 'dictionary', 'sorters', [])
+  
+  " Do not complete too short words
+  call deoplete#custom#source(
+  \ 'dictionary', 'min_pattern_length', 2)
+  
+  " Enable buffer source in C/C++ files only.
+  "call deoplete#custom#source(
+  "\ 'dictionary', 'filetypes', ['c', 'cpp'])
+
   " python3が無かったらメッセージを表示
   if has('nvim') && !has('python3')
     echo "require python3 https://gist.github.com/kawaz/393c7f62fe6e857cc3d9 or execute 'pip3 install neovim --upgrade' and :call dein#update()"
