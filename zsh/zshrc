@@ -213,16 +213,14 @@ bindkey "^[[3~" delete-char
 ########################################
 # エイリアス
 ########################################
-# historyに日付を表示
-alias h='fc -lt '%F %T' 1'
-
+alias h='fc -lt '%F %T' 1' # historyに日付を表示
 alias bfg='java -jar /usr/local/bin/BFG_git-repo-cleaner.jar'
 alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
 alias tmux='tmux -2f "$XDG_CONFIG_HOME"/tmux/tmux.conf'
 alias cp='cp -i'
 alias mv='mv -i'
 alias mvt='\mv --backup=numbered --target-directory=${HOME}/.local/share/Trash/files'
-alias rm="echo '! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! \nUse mvt.\n! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! \n'"
+alias rm="echo '! ! ! Use mvt. ! ! !\n'"
 alias mkdir='mkdir -p'
 alias ..='c ../'
 alias back='pushd'
