@@ -6,9 +6,9 @@ exec --no-startup-id dunst
 
 # Mod1:alt, Mod4:super
 set $mod Mod1
-set $sup Mod4
-bindsym $sup+t exec thunar
-bindsym $sup+i exec firefox
+#set $sup Mod4
+bindsym $mod+t exec thunar
+bindsym $mod+i exec firefox
 # standby = suspend : memory power on
 # hibernation : save to HDD
 bindsym $sup+Control+l exec i3lock -ef -c 000000 && systemctl suspend
