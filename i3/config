@@ -1,20 +1,21 @@
-# enxajt
 set $HOME /home/enxajt
 set $I3LOG $HOME/.config/i3/log
 exec ($HOME/.config/desktop/start-up.sh > $I3LOG) 2>&1 | tee -a $I3LOG
 exec --no-startup-id termite -e 'tmux -2f $HOME/.config/tmux/tmux.conf'
 exec --no-startup-id dunst
 
-bindsym $mod+t exec thunar
-bindsym $mod+i exec firefox
+# Mod1:alt, Mod4:super
+set $mod Mod1
+set $sup Mod4
+bindsym $sup+t exec thunar
+bindsym $sup+i exec firefox
 # standby = suspend : memory power on
 # hibernation : save to HDD
-bindsym $mod+Control+l exec i3lock -ef -c 000000 && systemctl suspend
+bindsym $sup+Control+l exec i3lock -ef -c 000000 && systemctl suspend
+
 
 # Should you change your keyboard layout some time, delete
 # this file and re-run i3-config-wizard(1).
-
-set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
