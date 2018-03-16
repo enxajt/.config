@@ -11,7 +11,7 @@ bindsym $mod+t exec thunar
 bindsym $mod+i exec firefox
 # standby = suspend : memory power on
 # hibernation : save to HDD
-bindsym $sup+Control+l exec i3lock -ef -c 000000 && systemctl suspend
+bindsym $mod+Control+l exec i3lock -ef -c 000000 && systemctl suspend
 
 
 # Should you change your keyboard layout some time, delete

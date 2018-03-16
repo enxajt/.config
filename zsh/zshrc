@@ -6,18 +6,30 @@ export LANG=C.UTF-8
 export LANGUAGE=C.UTF-8  
 export LC_ALL=C.UTF-8
 
-# neovim
 export XDG_CONFIG_HOME=~/.config
+export XDG_DESKTOP_DIR="$HOME/Downloads"
+export XDG_DOWNLOAD_DIR="$HOME/Downloads"
+export XDG_TEMPLATES_DIR="$HOME/Downloads"
+export XDG_PUBLICSHARE_DIR="$HOME/Public"
+export XDG_DOCUMENTS_DIR="$HOME/Downloads"
+export XDG_MUSIC_DIR="$HOME/Downloads"
+export XDG_PICTURES_DIR="$HOME/Downloads"
+export XDG_VIDEOS_DIR="$HOME/Downloads"
 
 export WGETRC="$XDG_CONFIG_HOME/wgetrc"
+alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
 
 export PATH="/home/enxajt/anaconda3/bin:$PATH"
 export PATH="/home/enxajt/.config/tmux/bin:$PATH"
 
-export GOPATH=$HOME/go
-export GOBIN=$GOPATH/bin
+#export GOROOT=/usr/local/go
+#export PATH=$PATH:$GOROOT/bin
+#
+#export GOPATH=$HOME/go
+#export GOBIN=$GOPATH/bin
+#export PATH=$GOBIN:$PATH
+
 export PATH=$PATH:/usr/local/go/bin
-export PATH=$GOBIN:$PATH
 
 ########################################
 # color
@@ -164,7 +176,7 @@ setopt share_history
 setopt hist_ignore_all_dups
 setopt histignorealldups
 # コマンド履歴
-HISTFILE=$HOME/.config/zsh/zsh_history
+HISTFILE=$HOME/.config/zsh/history
 HISTSIZE=1000000
 SAVEHIST=1000000
 # スペースから始まるコマンド行はヒストリに残さない
@@ -213,9 +225,9 @@ bindkey "^[[3~" delete-char
 ########################################
 # エイリアス
 ########################################
+alias gcal='gcalcli'
 alias h='fc -lt '%F %T' 1' # historyに日付を表示
 alias bfg='java -jar /usr/local/bin/BFG_git-repo-cleaner.jar'
-alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
 alias tmux='tmux -2f "$XDG_CONFIG_HOME"/tmux/tmux.conf'
 alias cp='cp -i'
 alias mv='mv -i'
