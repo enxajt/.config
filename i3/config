@@ -4,7 +4,12 @@ exec ($HOME/.config/desktop/start-up.sh > $I3LOG) 2>&1 | tee -a $I3LOG
 exec --no-startup-id termite -e 'tmux -2f $HOME/.config/tmux/tmux.conf'
 exec --no-startup-id dunst
 
-# Mod1:alt, Mod4:super
+exec sudo apt update
+exec sudo apt upgrade -y
+exec sudo apt autoremove -y
+exec sudo apt dist-upgrade
+
+# Mod1:alt, Mod2-5:?
 set $mod Mod1
 #set $sup Mod4
 bindsym $mod+t exec thunar

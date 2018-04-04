@@ -105,7 +105,7 @@ on_ft = 'toml'
 repo = 'morhetz/gruvbox'
 hook_add = '''
   set background=dark
-  " let g:gruvbox_italic=1
+  let g:gruvbox_italic=1
   au MyAutoCmd VimEnter * nested colorscheme gruvbox
   au MyAutoCmd VimEnter * highlight Visual ctermbg=216
   " " Makes the background transparent
