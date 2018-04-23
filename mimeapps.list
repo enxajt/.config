@@ -14,8 +14,11 @@ application/epub+zip=wine-extension-epub.desktop;
 application/x-mobipocket-ebook=wine-extension-azw.desktop;
 video/mp2t=org.gnome.Totem.desktop;vlc.desktop;
 application/x-ms-shortcut=wine.desktop;
-video/x-ms-wmv=org.gnome.Totem.desktop;vlc.desktop;
+video/x-ms-wmv=vlc.desktop;org.gnome.Totem.desktop;
 video/x-matroska=vlc.desktop;org.gnome.Totem.desktop;
+video/3gpp=vlc.desktop;org.gnome.Totem.desktop;
+video/quicktime=vlc.desktop;org.gnome.Totem.desktop;
+application/vnd.ms-excel=libreoffice-calc.desktop;
 
 [Default Applications]
 application/x-7z-compressed=userapp-7z-TIC1DZ.desktop
@@ -26,3 +29,4 @@ video/x-msvideo=vlc.desktop
 video/mp2t=vlc.desktop
 video/x-ms-wmv=vlc.desktop
 video/x-matroska=vlc.desktop
+video/quicktime=vlc.desktop

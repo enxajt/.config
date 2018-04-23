@@ -156,10 +156,27 @@ endif
 
 "---------------------------------------------------------------
 " japanese IME
-function! ImInActivate()
-  call system('fcitx-remote -o')
+"
+"function! ImInActivate()
+"  call system('fcitx-remote -o')
+"endfunction
+"inoremap <silent> <C-[> <ESC>:call ImInActivate()<CR>
+
+"set iminsert=2
+"set imsearch=2
+set imcmdline
+"set imactivatefunc=ImActivate
+function! ImActivate(active)
+  if a:active
+    call system('fcitx-remote -o')
+  else
+    call system('fcitx-remote -c')
+  endif
 endfunction
-inoremap <silent> <C-[> <ESC>:call ImInActivate()<CR>
+"set imstatusfunc=ImStatus
+function! ImStatus()
+  return system('fcitx-remote')[0] is# '2'
+endfunction
 
 "---------------------------------------------------------------
 " view 
