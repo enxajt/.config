@@ -5,10 +5,8 @@ Precomposition	Backspace	Revert
 Prediction	Ctrl Delete	DeleteSelectedCandidate
 Composition	Ctrl Shift Space	DisplayAsHiragana
 Conversion	Ctrl Shift Space	DisplayAsHiragana
-DirectInput	Ctrl Shift Space	IMEOn
 Composition	Ctrl Space	DisplayAsHalfAlphanumeric
 Conversion	Ctrl Space	DisplayAsHalfAlphanumeric
-Precomposition	Ctrl Space	IMEOff
 Composition	Delete	Delete
 Conversion	Down	ConvertNext
 Suggestion	Down	PredictAndConvert
