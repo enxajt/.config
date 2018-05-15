@@ -45,9 +45,4 @@ xrandr --output eDP1 --mode 1600x900 --output HDMI1 --auto --above eDP1 #DELL@Ku
 #xrandr --output eDP1 --mode 1600x900 --output HDMI1 --mode 1920x1080 --rotate normal --above eDP1
 #xrandr --output eDP1 --mode 1600x900 --pos 0x0 --rotate normal --output HDMI1 --mode 1920x1080 --rotate normal --above eDP1
 
-# for mate not i3
-#wmctrl -r "termite" -b toggle,maximized_vert,maximized_horz
-#wmctrl -r "Terminal" -b toggle,maximized_vert,maximized_horz
-#wmctrl -r "Terminal" -e 0,0,0,900,1000
-#wmctrl -r "Terminal" -e 0,0,0,1930,1100
-#sh ~/.dotfiles/desktop/set-terminal.sh
+sudo ~/script/anti-virus.sh

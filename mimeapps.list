@@ -5,10 +5,10 @@ application/x-7z-compressed=userapp-7z-TIC1DZ.desktop;
 image/jpeg=eog.desktop;gimp.desktop;firefox.desktop;
 image/png=eog.desktop;
 application/pdf=firefox.desktop;YACReader.desktop;calibre-gui.desktop;evince.desktop;
-text/plain=gedit.desktop;firefox.desktop;
+text/plain=gedit.desktop;vlc.desktop;firefox.desktop;
 application/x-freeplane=freeplane.desktop;
 application/x-rar=YACReader.desktop;org.gnome.FileRoller.desktop;userapp-7z-TIC1DZ.desktop;
-application/zip=YACReader.desktop;org.gnome.FileRoller.desktop;
+application/zip=mount-archive.desktop;org.gnome.FileRoller.desktop;userapp-7z-TIC1DZ.desktop;YACReader.desktop;
 video/x-msvideo=vlc.desktop;org.gnome.Totem.desktop;
 application/epub+zip=wine-extension-epub.desktop;
 application/x-mobipocket-ebook=wine-extension-azw.desktop;
@@ -19,6 +19,8 @@ video/x-matroska=vlc.desktop;org.gnome.Totem.desktop;
 video/3gpp=vlc.desktop;org.gnome.Totem.desktop;
 video/quicktime=vlc.desktop;org.gnome.Totem.desktop;
 application/vnd.ms-excel=libreoffice-calc.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
+application/msword=libreoffice-writer.desktop;
 
 [Default Applications]
 application/x-7z-compressed=userapp-7z-TIC1DZ.desktop
