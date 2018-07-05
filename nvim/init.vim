@@ -140,6 +140,9 @@ let g:vim_markdown_folding_disabled = 1
 au BufRead,BufNewFile *.md,*.conf set filetype=markdown
 au BufRead,BufNewFile *.ejs set filetype=html
 au BufRead,BufNewFile *.coffee set filetype=javascript
+au BufRead,BufNewFile *.scss set filetype=scss.css
+
+"au BufWritePost *.scss,*.sass sass @% @%.css
 
 "---------------------------------------------------------------
 " file(ファイル名の大文字小文字)
@@ -758,6 +761,9 @@ endif
 " plantuml
 "
 let g:plantuml_executable_script = "$HOME/docker-plantuml/plantuml"
+"au FileType plantuml command! OpenUml :!chromium-browser %
+"au BufWritePost *.pu,*.uml :silent exec "!chromium-browser %"
+"au BufWritePost *.pu,*.uml :silent exec "!chromium-browser %"
 
 "---------------------------------------------------------------
 " go

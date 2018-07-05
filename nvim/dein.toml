@@ -253,3 +253,5 @@ hook_source = '''
   let g:calendar_event_start_time = 1
   let g:calendar_task_delete = 1
 '''
+[[plugins]]
+repo = 'cakebaker/scss-syntax.vim'
