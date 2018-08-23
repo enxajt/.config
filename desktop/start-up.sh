@@ -42,6 +42,8 @@ setxkbmap -option "swapcaps:ctrl"
 
 xrandr --output eDP1 --mode 1600x900 --output DP1 --auto --above eDP1 #VGA@KRC
 xrandr --output eDP1 --mode 1600x900 --output HDMI1 --auto --above eDP1 #DELL@Kuya
+xrandr --output eDP1 --mode 1600x900 --output HDMI2 --auto --above eDP1 #projector extend
+xrandr --output eDP1 --mode 1600x900 --output HDMI2 --auto --same-as eDP1 #projector duplicate
 #xrandr --output eDP1 --mode 1600x900 --output HDMI1 --mode 1920x1080 --rotate normal --above eDP1
 #xrandr --output eDP1 --mode 1600x900 --pos 0x0 --rotate normal --output HDMI1 --mode 1920x1080 --rotate normal --above eDP1
 
