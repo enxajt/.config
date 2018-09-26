@@ -536,8 +536,8 @@ elseif has('unix')
   nmap <Space>. :<C-u>tabedit $VIMDIR/dein.toml<CR>
 endif
 
-nmap <C-i>d <ESC>a<C-r>=strftime("%Y.%m.%d")<CR>
-nmap <C-i>t <ESC>a<C-r>=strftime("%H:%M:%S")<CR>
+nmap <C-i>d <ESC>a<C-r>=strftime("%Y.%m.%d".)<CR>
+nmap <C-i>t <ESC>a<C-r>=strftime("%H:%M:%S" )<CR>
 
 nnoremap <C-o>u :GundoToggle<CR>
 
@@ -555,8 +555,6 @@ let g:CtrlSpaceDefaultMappingKey = "<C-space>"
 "autocmd vimenter * nmap <nul> <nop>
 autocmd vimenter * inoremap <C-Space> <nop>
 "autocmd vimenter * inoremap <C-@> <C-Space>
-
-nnoremap <C-o>u :GundoToggle<CR>
 
 ""---------------------------------------------------------------
 "" key-mappings (junegunn/vim-easy-align)
@@ -763,7 +761,7 @@ endif
 let g:plantuml_executable_script = "$HOME/docker-plantuml/plantuml"
 "au FileType plantuml command! OpenUml :!chromium-browser %
 "au BufWritePost *.pu,*.uml :silent exec "!chromium-browser %"
-"au BufWritePost *.pu,*.uml :silent exec "!chromium-browser %"
+au BufWritePost *.pu,*.uml :silent exec "!chromium-browser %"
 
 "---------------------------------------------------------------
 " go
