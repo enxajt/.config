@@ -58,6 +58,21 @@ man() {
         man "$@"
 }
 
+alias less='less -R'
+zmodload zsh/zpty
+pty() {
+	zpty pty-${UID} ${1+$@}
+	if [[ ! -t 1 ]];then
+		setopt local_traps
+		trap '' INT
+	fi
+	zpty -r pty-${UID}
+	zpty -d pty-${UID}
+}
+ptyless() {
+	pty $@ | less
+}
+
 ########################################
 # view
 ########################################
@@ -226,26 +241,27 @@ bindkey "^[[3~" delete-char
 ########################################
 # エイリアス
 ########################################
+alias back='pushd'
+alias bfg='java -jar /usr/local/bin/BFG_git-repo-cleaner.jar'
+alias c='cdr'
+alias cp='cp -i'
 alias gcal='gcalcli'
 alias h='fc -lt '%F %T' 1' # historyに日付を表示
-alias bfg='java -jar /usr/local/bin/BFG_git-repo-cleaner.jar'
-alias tmux='tmux -2f "$XDG_CONFIG_HOME"/tmux/tmux.conf'
-alias cp='cp -i'
 alias mv='mv -i'
 alias mvt='\mv --backup=numbered --target-directory=${HOME}/.local/share/Trash/files'
+alias tmux='tmux -2f "$XDG_CONFIG_HOME"/tmux/tmux.conf'
 alias rm="echo '! ! ! Use mvt. ! ! !\n'"
 alias mkdir='mkdir -p'
 alias ..='c ../'
-alias back='pushd'
 alias lst='ls -ltr --color=auto'
 alias l='ls -ltr --color=auto'
 alias la='ls -la --color=auto'
 alias ll='ls -l --color=auto'
+alias pwdb='pwd | xsel -ib'
 alias so='source'
 alias v='vim'
 alias vi='vim'
 alias vz='vim ~/.zshrc'
-alias c='cdr'
 # グローバルエイリアス
 alias -g L='| less'
 alias -g H='| head'

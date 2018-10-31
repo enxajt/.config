@@ -4,6 +4,7 @@
 xbindkeys
 
 syndaemon -i 1 -d -t -K # Disable touchpad while typing
+synclient AreaRightEdge=5000 # Disable touchpad right edge
 # speed (default=12.5)
 xinput set-prop 'SynPS/2 Synaptics TouchPad' 'Device Accel Velocity Scaling' 14
 # Acceleration: small is fast
@@ -34,8 +35,14 @@ setxkbmap -option "ctrl:swapcaps"
 #xrandr --output eDP1 --mode 1920x1080 --output HDMI1 --mode 1920x1080 --rotate normal --above eDP1
 #xrandr --output eDP1 --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI1 --mode 1920x1080 --rotate normal --above eDP1
 xrandr --output eDP1 --mode 1920x1080 
+
+xrandr --output eDP1 --mode 1920x1080 --output DP1 --mode 1920x1080 --above eDP1 #DELL@KRC-VGA
 xrandr --output eDP1 --mode 1920x1080 --output HDMI1 --mode 1920x1080 --above eDP1 #DELL@KRC
-xrandr --output eDP1 --mode 1920x1080 --output HDMI2 --mode 2560x1440 --above eDP1 #Acer@Kuya
+
+#Acer@Kuya
+xrandr --newmode "2560x1440R" 241.50 2560 2608 2640 2720 1440 1443 1448 1481 +hsync -vsync
+xrandr --addmode HDMI1 2560x1440R
+xrandr --output eDP1 --mode 1920x1080 --output HDMI1 --mode 2560x1440R --above eDP1
 
 dropbox lansync n
 dropbox start

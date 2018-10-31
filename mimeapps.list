@@ -5,10 +5,10 @@ application/x-7z-compressed=userapp-7z-TIC1DZ.desktop;
 image/jpeg=eog.desktop;gimp.desktop;firefox.desktop;
 image/png=firefox.desktop;eog.desktop;
 application/pdf=zathura-pdf-poppler.desktop;gimp.desktop;evince.desktop;firefox.desktop;YACReader.desktop;calibre-gui.desktop;
-text/plain=remmina.desktop;gedit.desktop;vlc.desktop;firefox.desktop;
+text/plain=vlc.desktop;gedit.desktop;firefox.desktop;wine-extension-txt.desktop;remmina.desktop;
 application/x-freeplane=freeplane.desktop;
-application/x-rar=YACReader.desktop;userapp-7z-TIC1DZ.desktop;org.gnome.FileRoller.desktop;
-application/zip=org.gnome.FileRoller.desktop;YACReader.desktop;mount-archive.desktop;userapp-7z-TIC1DZ.desktop;
+application/x-rar=YACReader.desktop;org.gnome.FileRoller.desktop;userapp-7z-TIC1DZ.desktop;
+application/zip=YACReader.desktop;org.gnome.FileRoller.desktop;mount-archive.desktop;userapp-7z-TIC1DZ.desktop;
 video/x-msvideo=vlc.desktop;org.gnome.Totem.desktop;
 application/epub+zip=calibre-gui.desktop;wine-extension-epub.desktop;
 application/x-mobipocket-ebook=wine-extension-azw.desktop;
@@ -44,6 +44,9 @@ application/x-mswinurl=wine-extension-url.desktop;
 application/x-rdp=remmina_remmina.desktop;
 application/json=gedit.desktop;
 application/xhtml+xml=firefox.desktop;
+application/x-font-ttf=org.gnome.font-viewer.desktop;
+image/gif=eog.desktop;
+application/xml=nvim.desktop;
 
 [Default Applications]
 application/x-7z-compressed=userapp-7z-TIC1DZ.desktop
