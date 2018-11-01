@@ -111,17 +111,15 @@ hook_add = '''
   let g:gruvbox_italic=1
   au MyAutoCmd VimEnter * nested colorscheme gruvbox
   au MyAutoCmd VimEnter * highlight Visual ctermbg=216
-
-  "au MyAutoCmd VimEnter * highlight htmlBold ctermfg=red ctermbg=black cterm=italic
-  au MyAutoCmd VimEnter * highlight htmlBold ctermfg=LightYellow ctermbg=DarkBlue cterm=italic
-  au MyAutoCmd VimEnter * highlight htmlH2 ctermfg=cyan cterm=bold
-  au MyAutoCmd VimEnter * highlight htmlH3 ctermfg=blue cterm=bold
+  au MyAutoCmd VimEnter * highlight htmlBold ctermfg=black ctermbg=lightgray cterm=italic
+  au MyAutoCmd VimEnter * highlight htmlH2 ctermfg=darkblue cterm=bold
+  au MyAutoCmd VimEnter * highlight htmlH3 ctermfg=cyan cterm=bold
   au MyAutoCmd VimEnter * highlight htmlH4 ctermfg=magenta cterm=bold
   au MyAutoCmd VimEnter * highlight htmlH5 ctermfg=yellow cterm=bold
 
-  " " Makes the background transparent
-  " au MyAutoCmd VimEnter * nested highlight Normal ctermbg=NONE guibg=NONE
-  " au MyAutoCmd VimEnter * nested highlight NonText ctermbg=NONE guibg=NONE
+  " Makes the background transparent
+  au MyAutoCmd VimEnter * nested highlight Normal ctermbg=NONE guibg=NONE
+  au MyAutoCmd VimEnter * nested highlight NonText ctermbg=NONE guibg=NONE
 '''
 
 [[plugins]]

@@ -36,13 +36,14 @@ setxkbmap -option "ctrl:swapcaps"
 #xrandr --output eDP1 --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI1 --mode 1920x1080 --rotate normal --above eDP1
 xrandr --output eDP1 --mode 1920x1080 
 
-xrandr --output eDP1 --mode 1920x1080 --output DP1 --mode 1920x1080 --above eDP1 #DELL@KRC-VGA
-xrandr --output eDP1 --mode 1920x1080 --output HDMI1 --mode 1920x1080 --above eDP1 #DELL@KRC
-
 #Acer@Kuya
 xrandr --newmode "2560x1440R" 241.50 2560 2608 2640 2720 1440 1443 1448 1481 +hsync -vsync
 xrandr --addmode HDMI1 2560x1440R
 xrandr --output eDP1 --mode 1920x1080 --output HDMI1 --mode 2560x1440R --above eDP1
+
+#KRC
+xrandr --output eDP1 --mode 1920x1080 --output DP1 --mode 1920x1080 --above eDP1 #Princeton
+xrandr --output eDP1 --mode 1920x1080 --output HDMI1 --mode 1920x1080 --above eDP1 #DELL
 
 dropbox lansync n
 dropbox start

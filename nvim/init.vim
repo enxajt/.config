@@ -57,31 +57,15 @@ endif
 
 "---------------------------------------------------------------
 " file, directly 
+"
 let $VIMDIR = $HOME."/.config/nvim"
 "=の前後にスペースは入れない
-set backup
-set undofile
-let &backupdir=$VIMDIR."/backup" 
 let &directory=$VIMDIR."/swp" 
+set undofile
 let &undodir=$VIMDIR."/undo"
 
-"let &viewdir=$VIMDIR."/backup" 
-"if has( "autocmd" )
-"	autocmd BufWritePre * call UpdateBackupFile()
-"	function! UpdateBackupFile()
-"		let dir = strftime("~/.backup/vim/%Y/%m/%d", localtime())
-"		if !isdirectory(dir)
-"			let retval = system("mkdir -p ".dir)
-"			let retval = system("chown goth:staff ".dir)
-"		endif
-"		exe "set backupdir=".dir
-"		unlet dir
-"		let ext = strftime("%H_%M_%S", localtime())
-"		exe "set backupext=.".ext
-"		unlet ext
-"	endfunction
-"endif
-
+set backup
+let &backupdir=$VIMDIR."/backup" 
 augroup backup
   autocmd!
   autocmd BufWritePre,FileWritePre,FileAppendPre * call UpdateBackupFile(expand('%'))
@@ -89,13 +73,12 @@ augroup backup
     let dir = fnamemodify(a:file, ':p:h')
     " Windowsのドライブ名を置換 (e.g. C: -> /C/)
     let dir = substitute(dir, '\v\c^([a-z]):', '/\1/' , '')
-    let todir = expand('~/backup2') . dir
+    let todir = expand($VIMDIR."/backup") . dir
     if !isdirectory(todir)
       call mkdir(todir, 'p')
     endif
-
     let &backupdir = todir
-    let &backupext = '-' . strftime("%Y%m%d_%H%M%S")
+    let &backupext = '-' . strftime("%Y.%m.%d_%H:%M:%S")
   endfunction
 augroup END
 
