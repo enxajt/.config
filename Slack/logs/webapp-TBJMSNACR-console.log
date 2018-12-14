@@ -1,0 +1,187 @@
+info: ╔═════════════════════════════════════════════════════════════════════════════════╗
+info: ║      Slack 3.3.3, linux 4.15.0-36-generic on x64 at 10/18/18, 17:00:18:716      ║
+info: ╚═════════════════════════════════════════════════════════════════════════════════╝
+info: JQMIGRATE: Migrate is installed with logging active, version 3.0.0
+info: Oct-18 17:00:22.460 [BOOT] booted! pri:0 version:1539815674 start_ms:1539849620934 (1526ms ago)
+info: Oct-18 17:00:22.460 [BOOT] Starting incremental boot (early)
+warn: Oct-18 17:00:22.564 error getActiveModelOb found no ob
+warn: Oct-18 17:00:22.564 TS.boot_data.channel_id: undefined
+warn: Oct-18 17:00:22.564 TS.boot_data.im_id: undefined
+warn: Oct-18 17:00:22.564 TS.boot_data.group_id: undefined
+warn: Oct-18 17:00:22.564 error getActiveModelOb found no ob
+warn: Oct-18 17:00:22.564 TS.boot_data.channel_id: undefined
+warn: Oct-18 17:00:22.564 TS.boot_data.im_id: undefined
+warn: Oct-18 17:00:22.564 TS.boot_data.group_id: undefined
+info: SoundManager 2: No Flash detected. Trying HTML5-only mode.
+info: SoundManager V2.97a.20170601 (HTML5-only mode)
+info: SoundManager 2 HTML5 support: mp3 = true, mp4 = true, ogg = true, opus = true, wav = true, flac = true
+info: SoundManager 2: Ready. ✓
+info: Oct-18 17:00:23.671 [SOCKET-MANAGER] (TBJMSNACR) Changing from never_connected to prov_connect
+info: Oct-18 17:00:23.672 [SOCKET-MANAGER] (TBJMSNACR) will stay in prov_connect state for up to 10000 ms
+info: Oct-18 17:00:23.673 [SOCKET-MANAGER] (TBJMSNACR) Changing from prov_connect to prov_connecting
+info: Oct-18 17:00:23.673 [SOCKET-MANAGER] (TBJMSNACR) will stay in prov_connecting state for up to 35000 ms
+warn: Oct-18 17:00:23.679 Desktop: 'desktop.accessibility.isAccessibilitySupportEnabled' is missing or not a function
+info: Oct-18 17:00:23.709 [FOCUS-EVENT] Window blurred
+info: Oct-18 17:00:23.788 [API-Q] (TBJMSNACR) 84da1bae-1539849623.786 apps.actions.list called with reason: no_reason_provided
+info: Oct-18 17:00:23.788 [API-Q] (TBJMSNACR) 84da1bae-1539849623.786 apps.actions.list is ENQUEUED
+info: Oct-18 17:00:23.788 [API-Q] (TBJMSNACR) 84da1bae-1539849623.786 apps.actions.list is ACTIVE
+error: Oct-18 17:00:23.921 hmmm, file FCWBAKYTD does not have a known user undefined
+info: Oct-18 17:00:23.970 [API-Q] (TBJMSNACR) 84da1bae-1539849623.964 apps.list called with reason: no_reason_provided
+info: Oct-18 17:00:23.971 [API-Q] (TBJMSNACR) 84da1bae-1539849623.964 apps.list is ENQUEUED
+info: Oct-18 17:00:23.971 [API-Q] (TBJMSNACR) 84da1bae-1539849623.964 apps.list is ACTIVE
+info: Oct-18 17:00:23.972 [API-Q] (TBJMSNACR) 84da1bae-1539849623.972 commands.list called with reason: no_reason_provided
+info: Oct-18 17:00:23.972 [API-Q] (TBJMSNACR) 84da1bae-1539849623.972 commands.list is ENQUEUED
+info: Oct-18 17:00:23.973 [API-Q] (TBJMSNACR) 84da1bae-1539849623.972 commands.list is ACTIVE
+info: Oct-18 17:00:23.974 [API-Q] (TBJMSNACR) 84da1bae-1539849623.973 i18n.translations.get called with reason: no_reason_provided
+info: Oct-18 17:00:23.974 [API-Q] (TBJMSNACR) 84da1bae-1539849623.973 i18n.translations.get is ENQUEUED
+info: Oct-18 17:00:23.974 [API-Q] (TBJMSNACR) 84da1bae-1539849623.973 i18n.translations.get is ACTIVE
+warn: Oct-18 17:00:23.975 updateTeamIcon was called, but missing an image to set
+info: Oct-18 17:00:23.981 [API-Q] (TBJMSNACR) 84da1bae-1539849623.981 emoji.list called with reason: no_reason_provided
+info: Oct-18 17:00:23.982 [API-Q] (TBJMSNACR) 84da1bae-1539849623.981 emoji.list is ENQUEUED
+info: Oct-18 17:00:23.982 [API-Q] (TBJMSNACR) 84da1bae-1539849623.981 emoji.list is ACTIVE
+info: Oct-18 17:00:24.038 [API-Q] (TBJMSNACR) 84da1bae-1539849623.786 apps.actions.list is RESOLVED
+info: Oct-18 17:00:24.218 [API-Q] (TBJMSNACR) 84da1bae-1539849623.973 i18n.translations.get is RESOLVED
+info: Oct-18 17:00:24.221 [API-Q] (TBJMSNACR) 84da1bae-1539849623.981 emoji.list is RESOLVED
+info: Oct-18 17:00:24.406 [BOOT] Finalizing incremental boot
+info: Oct-18 17:00:24.408 [METRICS] Starting timers for metrics collection
+info: Oct-18 17:00:24.410 [FLANNEL] (TBJMSNACR) received a user_counts_request call while we are not connected; deferring
+info: Oct-18 17:00:24.514 [SWITCH-TO-CHANNEL] (TBJMSNACR) Switching to CBK54MHPV at end
+info: Oct-18 17:00:24.524 [API-Q] (TBJMSNACR) 84da1bae-1539849623.964 apps.list is RESOLVED
+info: Oct-18 17:00:24.566 [SOCKET-MANAGER] (TBJMSNACR) Changing from prov_connecting to prov_connected
+info: Oct-18 17:00:24.566 [SOCKET-MANAGER] (TBJMSNACR) will stay in prov_connected state for up to 60000 ms
+info: Oct-18 17:00:24.567 [FLANNEL] (TBJMSNACR) connected! Continuing deferred user_counts_request call
+info: Oct-18 17:00:24.568 [INFO] Got start data from Socket Manager; hydrating it
+warn: Oct-18 17:00:24.577 activity is not scalar! it needs to be handled by upsertTeam specifically to test if it has changed! object
+warn: Oct-18 17:00:24.577 prefs is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+info: Oct-18 17:00:24.591 [BOOT] Completed incremental boot
+info: Oct-18 17:00:24.594 [API-Q] (TBJMSNACR) 84da1bae-1539849624.594 commands.list called with reason: no_reason_provided
+info: Oct-18 17:00:24.594 [API-Q] (TBJMSNACR) 84da1bae-1539849624.594 commands.list is ENQUEUED
+info: Oct-18 17:00:24.594 [API-Q] (TBJMSNACR) 84da1bae-1539849624.594 commands.list is ACTIVE
+warn: Oct-18 17:00:24.595 updateTeamIcon was called, but missing an image to set
+info: Oct-18 17:00:24.742 [BOOT] _maybeFinalizeOrOpenConnectionToMS will finalize SocketManager
+info: Oct-18 17:00:24.743 [SOCKET-MANAGER] (TBJMSNACR) Changing from prov_connected to prov_finalize
+info: Oct-18 17:00:24.743 [SOCKET-MANAGER] (TBJMSNACR) will stay in prov_finalize state for up to 10000 ms
+info: Oct-18 17:00:24.743 [SOCKET-MANAGER] (TBJMSNACR) Changing from prov_finalize to prov_finalizing
+info: Oct-18 17:00:24.743 [SOCKET-MANAGER] (TBJMSNACR) will stay in prov_finalizing state for up to 10000 ms
+info: Oct-18 17:00:24.743 [SOCKET-MANAGER] (TBJMSNACR) Changing from prov_finalizing to connected
+info: Oct-18 17:00:24.743 [SOCKET-MANAGER] (TBJMSNACR) will stay in connected state for up to Infinity ms
+info: Oct-18 17:00:24.744 [BOOT] _maybeFinalizeOrOpenConnectionToMS did finalize SocketManager
+info: Oct-18 17:00:24.746 [BOOT] Finished first boot 1086 ms after DOM ready
+info: Oct-18 17:00:24.752 [API-Q] (TBJMSNACR) 84da1bae-1539849624.751 help.issues.list called with reason: no_reason_provided
+info: Oct-18 17:00:24.752 [API-Q] (TBJMSNACR) 84da1bae-1539849624.751 help.issues.list is ENQUEUED
+info: Oct-18 17:00:24.752 [API-Q] (TBJMSNACR) 84da1bae-1539849624.751 help.issues.list is ACTIVE
+info: Oct-18 17:00:24.754 [API-Q] (TBJMSNACR) 84da1bae-1539849624.754 dnd.teamInfo called with reason: no_reason_provided
+info: Oct-18 17:00:24.754 [API-Q] (TBJMSNACR) 84da1bae-1539849624.754 dnd.teamInfo is ENQUEUED
+info: Oct-18 17:00:24.755 [API-Q] (TBJMSNACR) 84da1bae-1539849624.754 dnd.teamInfo is ACTIVE
+info: Oct-18 17:00:24.757 [INFO] MSConnected: 
+info: Oct-18 17:00:24.788 [INFO] legacyCheckForOldImsToClose might close some. this_too_many:1
+info: Oct-18 17:00:24.791 [INFO] legacyCheckForOldImsToClose found no candidates for closing
+info: Oct-18 17:00:24.808 [API-Q] (TBJMSNACR) 84da1bae-1539849624.807 users.counts called with reason: users-counts-api/fetchUsersCounts
+info: Oct-18 17:00:24.808 [API-Q] (TBJMSNACR) 84da1bae-1539849624.807 users.counts is ENQUEUED
+info: Oct-18 17:00:24.808 [API-Q] (TBJMSNACR) 84da1bae-1539849624.807 users.counts is ACTIVE
+info: Oct-18 17:00:24.809 [UNKNOWN-FETCH-MANAGER] (TBJMSNACR) requesting UBX426VPD,USLACKBOT,UBK2BNA68,UBRQESP09,UBS9JVA75,UBTE7J6J3,UBTMPMJ5R,UBU2EQ0KF,UC41XEJKF,UC6PE3FRU,UBLC4JLMV (1)
+info: Oct-18 17:00:24.812 [UNKNOWN-FETCH-MANAGER] (TBJMSNACR) requesting CBK54MHPV (1)
+info: Oct-18 17:00:24.813 [UNKNOWN-FETCH-MANAGER] (TBJMSNACR) received CBK54MHPV (1)
+info: Oct-18 17:00:24.820 [FOCUS-EVENT] Window focused
+info: Oct-18 17:00:24.822 [FOCUS-EVENT] Window blurred
+info: Oct-18 17:00:24.822 [FOCUS-EVENT] Window focused
+info: Oct-18 17:00:24.824 [API-Q] (TBJMSNACR) 84da1bae-1539849623.972 commands.list is RESOLVED
+info: Oct-18 17:00:24.828 [CHECK-UNREADS] (TBJMSNACR) Checking unreads after fully booted
+info: Oct-18 17:00:24.829 [CHECK-UNREADS] (TBJMSNACR) Not marking CBK54MHPV, clearing ghost last_read
+info: Oct-18 17:00:24.851 [API-Q] (TBJMSNACR) 84da1bae-1539849624.850 promo.banner called with reason: no_reason_provided
+info: Oct-18 17:00:24.851 [API-Q] (TBJMSNACR) 84da1bae-1539849624.850 promo.banner is ENQUEUED
+info: Oct-18 17:00:24.851 [API-Q] (TBJMSNACR) 84da1bae-1539849624.850 promo.banner is ACTIVE
+info: Oct-18 17:00:24.861 [PERF] (TBJMSNACR) First meaningful paint: 5343ms
+info: Oct-18 17:00:24.975 [HISTORY-FETCH] (TBJMSNACR) Fetching history for message pane: CBK54MHPV oldest: 1539334665.000200 latest: null
+info: Oct-18 17:00:24.976 [API-Q] (TBJMSNACR) 84da1bae-1539849624.976 conversations.history called with reason: message-pane/requestHistory
+info: Oct-18 17:00:24.976 [API-Q] (TBJMSNACR) 84da1bae-1539849624.976 conversations.history is ENQUEUED
+info: Oct-18 17:00:24.977 [API-Q] (TBJMSNACR) 84da1bae-1539849624.976 conversations.history is ACTIVE
+info: Oct-18 17:00:24.997 [MESSAGE-LIST] (TBJMSNACR) componentWillReceiveProps isLoading: false isLoadingOlder: false timestamps: 49
+info: Oct-18 17:00:25.074 [CHECK-UNREADS] (TBJMSNACR) Checking unreads after window became focused
+info: Oct-18 17:00:25.074 [CHECK-UNREADS] (TBJMSNACR) Not marking CBK54MHPV, clearing ghost last_read
+info: Oct-18 17:00:25.075 [CHECK-UNREADS] (TBJMSNACR) Checking unreads after window became focused
+info: Oct-18 17:00:25.075 [CHECK-UNREADS] (TBJMSNACR) Not marking CBK54MHPV, clearing ghost last_read
+info: Oct-18 17:00:25.088 [API-Q] (TBJMSNACR) 84da1bae-1539849624.594 commands.list is RESOLVED
+info: Oct-18 17:00:25.103 [API-Q] (TBJMSNACR) 84da1bae-1539849624.754 dnd.teamInfo is RESOLVED
+info: Oct-18 17:00:25.138 [MESSAGE-LIST] (TBJMSNACR) componentWillReceiveProps isLoading: true isLoadingOlder: null timestamps: 49
+info: Oct-18 17:00:25.166 [API-Q] (TBJMSNACR) 84da1bae-1539849624.807 users.counts is RESOLVED
+info: Oct-18 17:00:25.175 [COUNTS] (TBJMSNACR) Completed counts processing
+info: Oct-18 17:00:25.178 [UNKNOWN-FETCH-MANAGER] (TBJMSNACR) received UBX426VPD,USLACKBOT,UBK2BNA68,UBRQESP09,UBS9JVA75,UBTE7J6J3,UBTMPMJ5R,UBU2EQ0KF,UC41XEJKF,UC6PE3FRU,UBLC4JLMV (1)
+info: Oct-18 17:00:25.185 [API-Q] (TBJMSNACR) 84da1bae-1539849624.850 promo.banner is RESOLVED
+info: Oct-18 17:00:25.240 [API-Q] (TBJMSNACR) 84da1bae-1539849624.976 conversations.history is RESOLVED
+info: Oct-18 17:00:25.249 [MESSAGE-LIST] (TBJMSNACR) componentWillReceiveProps isLoading: false isLoadingOlder: false timestamps: 49
+info: Oct-18 17:00:25.259 [CHECK-UNREADS] (TBJMSNACR) unreadLineVisible updated: false -> true
+info: Oct-18 17:00:25.479 [API-Q] (TBJMSNACR) 84da1bae-1539849625.478 dnd.teamInfo called with reason: no_reason_provided
+info: Oct-18 17:00:25.479 [API-Q] (TBJMSNACR) 84da1bae-1539849625.478 dnd.teamInfo is ENQUEUED
+info: Oct-18 17:00:25.479 [API-Q] (TBJMSNACR) 84da1bae-1539849625.478 dnd.teamInfo is ACTIVE
+info: Oct-18 17:00:25.533 [API-Q] (TBJMSNACR) 84da1bae-1539849624.751 help.issues.list is RESOLVED
+info: Oct-18 17:00:25.617 [CHECK-UNREADS] (TBJMSNACR) Checking unreads after unread line became visible
+info: Oct-18 17:00:25.618 [CHECK-UNREADS] (TBJMSNACR) Not marking CBK54MHPV because last_read >= latest && channel is read
+info: Oct-18 17:00:25.767 [API-Q] (TBJMSNACR) 84da1bae-1539849625.478 dnd.teamInfo is RESOLVED
+info: Oct-18 17:00:35.420 [FOCUS-EVENT] Window blurred
+info: Oct-18 17:00:35.462 [FOCUS-EVENT] Window focused
+info: Oct-18 17:00:35.479 [CHECK-UNREADS] (TBJMSNACR) Checking unreads after window became focused
+info: Oct-18 17:00:35.479 [CHECK-UNREADS] (TBJMSNACR) Not marking CBK54MHPV because last_read >= latest && channel is read
+info: Oct-18 17:00:35.528 [FOCUS-EVENT] Window blurred
+info: Oct-18 17:15:24.662 [INFO] legacyCheckForOldImsToClose might close some. this_too_many:1
+info: Oct-18 17:15:24.675 [INFO] legacyCheckForOldImsToClose found no candidates for closing
+info: Oct-18 17:30:24.661 [INFO] legacyCheckForOldImsToClose might close some. this_too_many:1
+info: Oct-18 17:30:24.669 [INFO] legacyCheckForOldImsToClose found no candidates for closing
+info: Oct-18 17:45:24.661 [INFO] legacyCheckForOldImsToClose might close some. this_too_many:1
+info: Oct-18 17:45:24.667 [INFO] legacyCheckForOldImsToClose found no candidates for closing
+info: Oct-18 18:00:24.661 [INFO] legacyCheckForOldImsToClose might close some. this_too_many:1
+info: Oct-18 18:00:24.668 [INFO] legacyCheckForOldImsToClose found no candidates for closing
+info: Oct-18 18:15:24.661 [INFO] legacyCheckForOldImsToClose might close some. this_too_many:1
+info: Oct-18 18:15:24.664 [INFO] legacyCheckForOldImsToClose found no candidates for closing
+info: Oct-18 18:30:24.661 [INFO] legacyCheckForOldImsToClose might close some. this_too_many:1
+info: Oct-18 18:30:24.667 [INFO] legacyCheckForOldImsToClose found no candidates for closing
+info: Oct-18 18:33:58.661 [MIN-VERSION] (TBJMSNACR) checking to see if we should reload
+info: Oct-18 18:33:58.664 [API-Q] (TBJMSNACR) 84da1bae-1539855238.664 rtm.shouldReload called with reason: no_reason_provided
+info: Oct-18 18:33:58.664 [API-Q] (TBJMSNACR) 84da1bae-1539855238.664 rtm.shouldReload is ENQUEUED
+info: Oct-18 18:33:58.664 [API-Q] (TBJMSNACR) 84da1bae-1539855238.664 rtm.shouldReload is ACTIVE
+info: Oct-18 18:33:59.668 [API-Q] (TBJMSNACR) 84da1bae-1539855238.664 rtm.shouldReload is RESOLVED
+info: Oct-18 18:33:59.669 [MIN-VERSION] (TBJMSNACR) no need to reload
+info: Oct-18 18:45:24.661 [INFO] legacyCheckForOldImsToClose might close some. this_too_many:1
+info: Oct-18 18:45:24.664 [INFO] legacyCheckForOldImsToClose found no candidates for closing
+info: Oct-18 19:00:24.661 [INFO] legacyCheckForOldImsToClose might close some. this_too_many:1
+info: Oct-18 19:00:24.664 [INFO] legacyCheckForOldImsToClose found no candidates for closing
+info: Oct-18 19:15:24.661 [INFO] legacyCheckForOldImsToClose might close some. this_too_many:1
+info: Oct-18 19:15:24.664 [INFO] legacyCheckForOldImsToClose found no candidates for closing
+info: Oct-18 19:30:24.661 [INFO] legacyCheckForOldImsToClose might close some. this_too_many:1
+info: Oct-18 19:30:24.667 [INFO] legacyCheckForOldImsToClose found no candidates for closing
+info: Oct-18 19:45:24.662 [INFO] legacyCheckForOldImsToClose might close some. this_too_many:1
+info: Oct-18 19:45:24.664 [INFO] legacyCheckForOldImsToClose found no candidates for closing
+info: Oct-18 20:00:24.662 [INFO] legacyCheckForOldImsToClose might close some. this_too_many:1
+info: Oct-18 20:00:24.668 [INFO] legacyCheckForOldImsToClose found no candidates for closing
+info: Oct-18 20:07:33.659 [MIN-VERSION] (TBJMSNACR) checking to see if we should reload
+info: Oct-18 20:07:33.663 [API-Q] (TBJMSNACR) 84da1bae-1539860853.662 rtm.shouldReload called with reason: no_reason_provided
+info: Oct-18 20:07:33.663 [API-Q] (TBJMSNACR) 84da1bae-1539860853.662 rtm.shouldReload is ENQUEUED
+info: Oct-18 20:07:33.665 [API-Q] (TBJMSNACR) 84da1bae-1539860853.662 rtm.shouldReload is ACTIVE
+info: Oct-18 20:07:34.589 [API-Q] (TBJMSNACR) 84da1bae-1539860853.662 rtm.shouldReload is RESOLVED
+info: Oct-18 20:07:34.589 [MIN-VERSION] (TBJMSNACR) no need to reload
+info: Oct-18 20:15:24.661 [INFO] legacyCheckForOldImsToClose might close some. this_too_many:1
+info: Oct-18 20:15:24.668 [INFO] legacyCheckForOldImsToClose found no candidates for closing
+info: Oct-18 20:30:24.661 [INFO] legacyCheckForOldImsToClose might close some. this_too_many:1
+info: Oct-18 20:30:24.668 [INFO] legacyCheckForOldImsToClose found no candidates for closing
+info: Oct-18 20:45:24.661 [INFO] legacyCheckForOldImsToClose might close some. this_too_many:1
+info: Oct-18 20:45:24.667 [INFO] legacyCheckForOldImsToClose found no candidates for closing
+info: Oct-18 21:00:24.659 [INFO] legacyCheckForOldImsToClose might close some. this_too_many:1
+info: Oct-18 21:00:24.661 [INFO] legacyCheckForOldImsToClose found no candidates for closing
+info: Oct-18 21:15:24.661 [INFO] legacyCheckForOldImsToClose might close some. this_too_many:1
+info: Oct-18 21:15:24.666 [INFO] legacyCheckForOldImsToClose found no candidates for closing
+info: Oct-18 21:30:24.660 [INFO] legacyCheckForOldImsToClose might close some. this_too_many:1
+info: Oct-18 21:30:24.663 [INFO] legacyCheckForOldImsToClose found no candidates for closing
+info: Oct-18 21:41:08.660 [MIN-VERSION] (TBJMSNACR) checking to see if we should reload
+info: Oct-18 21:41:08.663 [API-Q] (TBJMSNACR) 84da1bae-1539866468.662 rtm.shouldReload called with reason: no_reason_provided
+info: Oct-18 21:41:08.663 [API-Q] (TBJMSNACR) 84da1bae-1539866468.662 rtm.shouldReload is ENQUEUED
+info: Oct-18 21:41:08.664 [API-Q] (TBJMSNACR) 84da1bae-1539866468.662 rtm.shouldReload is ACTIVE
+info: Oct-18 21:41:09.628 [API-Q] (TBJMSNACR) 84da1bae-1539866468.662 rtm.shouldReload is RESOLVED
+info: Oct-18 21:41:09.628 [MIN-VERSION] (TBJMSNACR) no need to reload
+info: Oct-18 21:45:24.663 [INFO] legacyCheckForOldImsToClose might close some. this_too_many:1
+info: Oct-18 21:45:24.669 [INFO] legacyCheckForOldImsToClose found no candidates for closing
+info: Oct-18 22:00:24.661 [INFO] legacyCheckForOldImsToClose might close some. this_too_many:1
+info: Oct-18 22:00:24.667 [INFO] legacyCheckForOldImsToClose found no candidates for closing
+info: Oct-18 22:15:24.661 [INFO] legacyCheckForOldImsToClose might close some. this_too_many:1
+info: Oct-18 22:15:24.670 [INFO] legacyCheckForOldImsToClose found no candidates for closing
+info: Oct-18 22:30:24.660 [INFO] legacyCheckForOldImsToClose might close some. this_too_many:1
+info: Oct-18 22:30:24.661 [INFO] legacyCheckForOldImsToClose found no candidates for closing

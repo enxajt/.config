@@ -1,0 +1,42 @@
+[Print Settings]
+evince-print-setting-page-size=false
+output-file-format=pdf
+evince-print-setting-page-autorotate=true
+printer=MG7100LAN_Kuya
+evince-print-setting-page-scale=1
+
+cups-CNGamma=1.8
+cups-CNBalanceC=0
+cups-CNDetectPaperWidth=False
+cups-CNTone=0
+print-at-time=
+cups-job-sheets=none,none
+cups-CNBalanceM=0
+print-at=now
+cups-Duplex=None
+cover-before=none
+cups-CNContrast=0
+cups-CNExtension=2
+cups-CNBalanceY=0
+cups-number-up=1
+duplex=simplex
+cover-after=none
+cups-InputSlot=cassetteauto
+default-source=cassetteauto
+media-type=plain
+cups-CNGrayscale=False
+cups-CNQuality=3
+cups-job-priority=50
+cups-MediaType=plain
+cups-CNDensity=0
+
+[Page Setup]
+PPDName=Letter
+DisplayName=US Letter
+Width=215.89999389648438
+Height=279.39999389648438
+MarginTop=6.3499999999999996
+MarginBottom=14.224
+MarginLeft=6.3499999999999996
+MarginRight=6.3499999999999996
+Orientation=portrait

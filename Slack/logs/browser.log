@@ -1,0 +1,912 @@
+[10/18/18, 16:55:40:748] info: ╔═════════════════════════════════════════════════════════════════════════════════╗
+[10/18/18, 16:55:40:748] info: ║      Slack 3.3.3, linux 4.15.0-36-generic on x64 at 10/18/18, 16:55:40:746      ║
+[10/18/18, 16:55:40:748] info: ╚═════════════════════════════════════════════════════════════════════════════════╝
+[10/18/18, 16:55:41:061] info: Initializing local storage instance at path: /home/enxajt/.config/Slack/local-settings.json
+[10/18/18, 16:55:41:128] error: Locale: Tried to access systemLocale before application was ready
+[10/18/18, 16:55:41:355] info: TraceRecorder: setting up trace recorder, trace will be stored under /home/enxajt/.config/Slack/logs/recorded-trace
+[10/18/18, 16:55:41:359] info: Configuring uncaughtExceptionHandler
+[10/18/18, 16:55:41:360] info: Configuring unhandledRejectionHandler
+[10/18/18, 16:55:41:360] info: Registered with apiKey acaff8df67924f677747922423057034
+[10/18/18, 16:55:46:315] info: Store: persist/REHYDRATE
+[10/18/18, 16:55:46:330] info: Store: UPDATE_SETTINGS
+{
+  "isSignedIntoSlackOrg": false
+}
+[10/18/18, 16:55:46:331] info: UpdaterEpics: Updates disabled because
+{
+  "reasons": [
+    "using Linux"
+  ]
+}
+[10/18/18, 16:55:46:333] info: Created uuid '2597994a-f0f8-5e80-83f2-c9ce11dd8de7'
+[10/18/18, 16:55:46:550] info: Tray Handler: Showing a tray balloon with title: Welcome to Slack!
+[10/18/18, 16:55:46:554] info: Store: INITIALIZE_SETTINGS
+{
+  "releaseChannel": "prod",
+  "platformVersion": {
+    "major": 4,
+    "minor": 15,
+    "build": 0
+  },
+  "isTitleBarHidden": false,
+  "isDevMode": false,
+  "appVersion": "3.3.3",
+  "versionName": "Dirty Computer",
+  "devEnv": null,
+  "resourcePath": "/usr/lib/slack/resources/app.asar",
+  "webappSrcPath": null,
+  "webappParams": null,
+  "launchOnStartup": false,
+  "openDevToolsOnStart": false,
+  "logFile": null,
+  "pretendNotReallyWindows10": false,
+  "isAeroGlassEnabled": false,
+  "isGpuCompositionAvailable": true,
+  "linux": {
+    "os": "Ubuntu 16.04.5 LTS",
+    "release": "xenial",
+    "desktopEnvironment": "i3"
+  }
+}
+[10/18/18, 16:55:46:555] info: AutoLoginEpic: Checking for autologin.
+[10/18/18, 16:55:46:557] info: Store: UPDATE_SETTINGS
+{
+  "hasRunApp": true
+}
+[10/18/18, 16:55:46:559] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 16:55:46:561] info: Store: ADD_WINDOW
+{
+  "id": 2,
+  "type": "main"
+}
+[10/18/18, 16:55:46:562] info: BrowserViewManager: Starting initialization
+[10/18/18, 16:55:46:563] info: PersistSettingsWindowBehavior: Loading windowMetrics
+{
+  "settings": null
+}
+[10/18/18, 16:55:46:563] info: PersistSettingsWindowBehavior: Resetting to default window position
+{
+  "settings": {
+    "position": [
+      384,
+      1188
+    ],
+    "size": [
+      1152,
+      864
+    ]
+  }
+}
+[10/18/18, 16:55:46:563] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "position": [
+    384,
+    1188
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/18/18, 16:55:46:577] info: Store: UPDATE_SETTINGS
+{
+  "PrefSSBFileDownloadPath": "/home/enxajt/Downloads"
+}
+[10/18/18, 16:55:46:578] info: DownloadListener: Downloads directory set to
+{
+  "downloadsDirectory": "/home/enxajt/Downloads"
+}
+[10/18/18, 16:55:46:578] info: Application: Setting main window ID
+{
+  "id": 2
+}
+[10/18/18, 16:55:46:579] info: App: Welcome to Slack 3.3.3 x64
+[10/18/18, 16:55:46:579] info: App load time: 6,8243265
+[10/18/18, 16:55:47:386] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/18/18, 16:55:47:391] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/18/18, 16:55:48:279] info: Store: SET_NETWORK_STATUS online
+[10/18/18, 16:55:48:282] info: Store: MAIN_WINDOW_SHOWN
+[10/18/18, 16:55:48:299] info: createSignInWindowEpic: No teams signed in, showing sign-in window
+[10/18/18, 16:55:48:305] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 16:55:48:309] info: Store: ADD_WINDOW
+{
+  "id": 3,
+  "type": "sign-in"
+}
+[10/18/18, 16:55:48:321] info: SignInEpic: Loading URL in new window https://slack.com/signin
+[10/18/18, 16:56:06:677] info: SignInEpic: Page redirect
+{
+  "newURL": "https://dev-krc.slack.com/"
+}
+[10/18/18, 16:56:06:677] info: SignInEpic: Page redirect
+{
+  "newURL": "https://dev-krc.slack.com/"
+}
+[10/18/18, 16:56:06:678] info: SignInEpic: Page redirect
+{
+  "newURL": "https://dev-krc.slack.com/"
+}
+[10/18/18, 16:56:22:974] info: SignInEpic: Page redirect
+{
+  "newURL": "https://slack.com/checkcookie?redir=https%3A%2F%2Fdev-krc.slack.com%2Fsignin%3Fssb_success%3D1%26ssb_relogin%3D"
+}
+[10/18/18, 16:56:22:975] info: SignInEpic: Page redirect
+{
+  "newURL": "https://slack.com/checkcookie?redir=https%3A%2F%2Fdev-krc.slack.com%2Fsignin%3Fssb_success%3D1%26ssb_relogin%3D"
+}
+[10/18/18, 16:56:22:977] info: SignInEpic: Page redirect
+{
+  "newURL": "https://slack.com/checkcookie?redir=https%3A%2F%2Fdev-krc.slack.com%2Fsignin%3Fssb_success%3D1%26ssb_relogin%3D"
+}
+[10/18/18, 16:56:23:322] info: SignInEpic: Page redirect
+{
+  "newURL": "https://dev-krc.slack.com/signin?ssb_success=1&ssb_relogin="
+}
+[10/18/18, 16:56:23:323] info: Store: SIGN_IN_COMPLETE
+[10/18/18, 16:56:23:326] info: SignInEpic: Page redirect
+{
+  "newURL": "https://dev-krc.slack.com/signin?ssb_success=1&ssb_relogin="
+}
+[10/18/18, 16:56:23:327] info: SignInEpic: Page redirect
+{
+  "newURL": "https://dev-krc.slack.com/signin?ssb_success=1&ssb_relogin="
+}
+[10/18/18, 16:56:24:234] info: SignInEpic: Received team(s) from the webapp
+[10/18/18, 16:56:24:234] info: SignInEpic: Got signal!
+[10/18/18, 16:56:24:235] info: Store: SIGN_IN_CANCELED
+[10/18/18, 16:56:24:235] info: SignInEpic: Sign-in window closed
+[10/18/18, 16:56:24:235] info: Store: REMOVE_WINDOW 3
+[10/18/18, 16:56:24:238] info: maybeQuitAppAction
+{
+  "canceledSignIn": false,
+  "hasNoTeams": true
+}
+[10/18/18, 16:56:24:239] info: SignInEpic: End of the road
+{
+  "action": "ADD_NEW_TEAM"
+}
+[10/18/18, 16:56:24:239] info: Store: ADD_NEW_TEAM
+{
+  "id": "U8ZBX68G0",
+  "name": "[REDACTED]",
+  "team_id": "T913C3A8P",
+  "team_name": "[REDACTED]",
+  "team_url": "[REDACTED]"
+}
+[10/18/18, 16:56:24:255] info: BrowserViewManager: Creating views for new teams
+{
+  "newTeamIds": [
+    "T913C3A8P"
+  ]
+}
+[10/18/18, 16:56:24:256] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T913C3A8P"
+}
+[10/18/18, 16:56:24:256] info: BrowserViewManager: Creating BrowserView
+{
+  "teamId": "T913C3A8P"
+}
+[10/18/18, 16:56:24:281] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 16:56:24:281] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 4,
+  "teamId": "T913C3A8P",
+  "state": "unloaded"
+}
+[10/18/18, 16:56:24:286] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T913C3A8P | start |            |
++-----------+-------+------------+
+[10/18/18, 16:56:24:312] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T913C3A8P"
+}
+[10/18/18, 16:56:24:315] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T913C3A8P | start |            |
++-----------+-------+------------+
+[10/18/18, 16:56:25:233] info: Team boot count
+{
+  "count": 1
+}
+[10/18/18, 16:56:25:328] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    636,
+    1029
+  ],
+  "position": [
+    1282,
+    24
+  ],
+  "isMaximized": false
+}
+[10/18/18, 16:56:28:230] info: WebContents LifeCycle: webContents:4 from 'unloaded' to 'loaded' took 3934 ms
+[10/18/18, 16:56:28:231] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 4,
+  "state": "loaded",
+  "teamId": "T913C3A8P"
+}
+[10/18/18, 16:56:28:232] info: Background Clients Update: 
++-----------+---------+------------+
+|           | Full    | Background |
+|-----------+---------+------------+
+| T913C3A8P | loading |            |
++-----------+---------+------------+
+[10/18/18, 16:56:28:593] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T913C3A8P"
+}
+[10/18/18, 16:56:29:079] info: Store: SELECT_CHANNEL C8ZU42SM9
+[10/18/18, 16:56:29:083] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "ja-JP",
+  "teamId": "T913C3A8P"
+}
+[10/18/18, 16:56:29:084] info: TranslationLookup: locale set to ja-JP for browser
+[10/18/18, 16:56:29:088] info: Store: UPDATE_SETTINGS
+{
+  "locale": "ja-JP"
+}
+[10/18/18, 16:56:29:213] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T913C3A8P",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/18/18, 16:56:29:365] info: Store: UPDATE_TEAM_ICONS
+{
+  "icons": {
+    "image_102": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2018-07-26/405441404085_4cf77c43180df6b56861_102.png",
+    "image_132": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2018-07-26/405441404085_4cf77c43180df6b56861_132.png",
+    "image_230": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2018-07-26/405441404085_4cf77c43180df6b56861_230.png",
+    "image_34": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2018-07-26/405441404085_4cf77c43180df6b56861_34.png",
+    "image_44": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2018-07-26/405441404085_4cf77c43180df6b56861_44.png",
+    "image_68": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2018-07-26/405441404085_4cf77c43180df6b56861_68.png",
+    "image_88": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2018-07-26/405441404085_4cf77c43180df6b56861_88.png",
+    "image_original": "https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2018-07-26/405441404085_4cf77c43180df6b56861_original.png"
+  },
+  "teamId": "T913C3A8P"
+}
+[10/18/18, 16:56:29:507] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "ja-JP",
+  "teamId": "T913C3A8P"
+}
+[10/18/18, 16:56:29:515] info: WebContents LifeCycle: webContents:4 from 'loaded' to 'webapp-loaded' took 1285 ms
+[10/18/18, 16:56:29:515] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 4,
+  "state": "webapp-loaded",
+  "teamId": "T913C3A8P"
+}
+[10/18/18, 16:56:29:517] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T913C3A8P | ready |            |
++-----------+-------+------------+
+[10/18/18, 16:56:29:519] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/18/18, 16:56:29:675] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "teamId": "T913C3A8P",
+  "enterpriseId": null
+}
+[10/18/18, 16:56:29:676] info: Store: STORE_API_TOKEN
+{
+  "token": "xoxs-⋯",
+  "teamId": "T913C3A8P"
+}
+[10/18/18, 16:56:29:812] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 16:56:30:110] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 16:56:31:115] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 16:56:42:386] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    1916,
+    1029
+  ],
+  "position": [
+    2,
+    24
+  ],
+  "isMaximized": false
+}
+[10/18/18, 16:56:43:341] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T913C3A8P"
+}
+[10/18/18, 16:56:43:421] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 16:56:44:346] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    1916,
+    1029
+  ],
+  "position": [
+    2,
+    24
+  ],
+  "isMaximized": false
+}
+[10/18/18, 16:56:47:745] info: Store: SHOW_LOGIN_DIALOG
+[10/18/18, 16:56:47:749] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 16:56:47:752] info: Store: ADD_WINDOW
+{
+  "id": 8,
+  "type": "sign-in"
+}
+[10/18/18, 16:56:47:756] info: SignInEpic: Loading URL in new window https://slack.com/signin
+[10/18/18, 16:56:56:972] info: SignInEpic: Page redirect
+{
+  "newURL": "https://iseto-bpd.slack.com/"
+}
+[10/18/18, 16:56:56:973] info: SignInEpic: Page redirect
+{
+  "newURL": "https://iseto-bpd.slack.com/"
+}
+[10/18/18, 16:56:56:974] info: SignInEpic: Page redirect
+{
+  "newURL": "https://iseto-bpd.slack.com/"
+}
+[10/18/18, 16:57:11:749] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 16:57:12:018] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 16:57:27:463] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 16:57:51:202] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 16:57:51:758] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 16:58:04:519] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 16:58:06:677] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 16:59:10:636] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T913C3A8P"
+}
+[10/18/18, 16:59:10:716] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 16:59:10:738] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 16:59:11:645] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    1916,
+    1029
+  ],
+  "position": [
+    2,
+    24
+  ],
+  "isMaximized": false
+}
+[10/18/18, 16:59:25:323] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 16:59:25:393] info: SignInEpic: Page redirect
+{
+  "newURL": "https://slack.com/checkcookie?redir=https%3A%2F%2Fiseto-bpd.slack.com%2Fsignin%3Fssb_success%3D1%26ssb_relogin%3D"
+}
+[10/18/18, 16:59:25:393] info: SignInEpic: Page redirect
+{
+  "newURL": "https://slack.com/checkcookie?redir=https%3A%2F%2Fiseto-bpd.slack.com%2Fsignin%3Fssb_success%3D1%26ssb_relogin%3D"
+}
+[10/18/18, 16:59:25:393] info: SignInEpic: Page redirect
+{
+  "newURL": "https://slack.com/checkcookie?redir=https%3A%2F%2Fiseto-bpd.slack.com%2Fsignin%3Fssb_success%3D1%26ssb_relogin%3D"
+}
+[10/18/18, 16:59:25:686] info: SignInEpic: Page redirect
+{
+  "newURL": "https://iseto-bpd.slack.com/signin?ssb_success=1&ssb_relogin="
+}
+[10/18/18, 16:59:25:686] info: Store: SIGN_IN_COMPLETE
+[10/18/18, 16:59:25:687] info: SignInEpic: Page redirect
+{
+  "newURL": "https://iseto-bpd.slack.com/signin?ssb_success=1&ssb_relogin="
+}
+[10/18/18, 16:59:25:687] info: SignInEpic: Page redirect
+{
+  "newURL": "https://iseto-bpd.slack.com/signin?ssb_success=1&ssb_relogin="
+}
+[10/18/18, 16:59:26:255] info: SignInEpic: Received team(s) from the webapp
+[10/18/18, 16:59:26:255] info: SignInEpic: Got signal!
+[10/18/18, 16:59:26:256] info: Store: SIGN_IN_CANCELED
+[10/18/18, 16:59:26:257] info: SignInEpic: Sign-in window closed
+[10/18/18, 16:59:26:257] info: Store: REMOVE_WINDOW 8
+[10/18/18, 16:59:26:262] info: maybeQuitAppAction
+{
+  "canceledSignIn": false,
+  "hasNoTeams": false
+}
+[10/18/18, 16:59:26:263] info: SignInEpic: End of the road
+{
+  "action": "ADD_NEW_TEAM"
+}
+[10/18/18, 16:59:26:263] info: Store: ADD_NEW_TEAM
+{
+  "id": "U5LAP6FKJ",
+  "name": "[REDACTED]",
+  "team_id": "T5LA2J7CZ",
+  "team_name": "[REDACTED]",
+  "team_url": "[REDACTED]"
+}
+[10/18/18, 16:59:26:266] info: BrowserViewManager: Creating views for new teams
+{
+  "newTeamIds": [
+    "T5LA2J7CZ"
+  ]
+}
+[10/18/18, 16:59:26:266] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T5LA2J7CZ"
+}
+[10/18/18, 16:59:26:266] info: BrowserViewManager: Creating BrowserView
+{
+  "teamId": "T5LA2J7CZ"
+}
+[10/18/18, 16:59:26:267] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 16:59:26:267] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 20,
+  "teamId": "T5LA2J7CZ",
+  "state": "unloaded"
+}
+[10/18/18, 16:59:26:269] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T913C3A8P | ready |            |
+|-----------+-------+------------+
+| T5LA2J7CZ | start |            |
++-----------+-------+------------+
+[10/18/18, 16:59:26:283] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T5LA2J7CZ"
+}
+[10/18/18, 16:59:26:287] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T913C3A8P | ready |            |
+|-----------+-------+------------+
+| T5LA2J7CZ | start |            |
++-----------+-------+------------+
+[10/18/18, 16:59:28:416] info: Team boot count
+{
+  "count": 2
+}
+[10/18/18, 16:59:31:295] info: WebContents LifeCycle: webContents:20 from 'unloaded' to 'loaded' took 5019 ms
+[10/18/18, 16:59:31:295] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 20,
+  "state": "loaded",
+  "teamId": "T5LA2J7CZ"
+}
+[10/18/18, 16:59:31:296] info: Background Clients Update: 
++-----------+---------+------------+
+|           | Full    | Background |
+|-----------+---------+------------+
+| T913C3A8P | ready   |            |
+|-----------+---------+------------+
+| T5LA2J7CZ | loading |            |
++-----------+---------+------------+
+[10/18/18, 16:59:31:903] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T5LA2J7CZ"
+}
+[10/18/18, 16:59:32:693] info: Store: SELECT_CHANNEL C5M0516R3
+[10/18/18, 16:59:32:698] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "ja-JP",
+  "teamId": "T5LA2J7CZ"
+}
+[10/18/18, 16:59:32:711] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T5LA2J7CZ",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/18/18, 16:59:33:344] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "ja-JP",
+  "teamId": "T5LA2J7CZ"
+}
+[10/18/18, 16:59:33:356] info: WebContents LifeCycle: webContents:20 from 'loaded' to 'webapp-loaded' took 2061 ms
+[10/18/18, 16:59:33:356] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 20,
+  "state": "webapp-loaded",
+  "teamId": "T5LA2J7CZ"
+}
+[10/18/18, 16:59:33:357] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T913C3A8P | ready |            |
+|-----------+-------+------------+
+| T5LA2J7CZ | ready |            |
++-----------+-------+------------+
+[10/18/18, 16:59:33:361] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/18/18, 16:59:33:397] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "teamId": "T5LA2J7CZ",
+  "enterpriseId": null
+}
+[10/18/18, 16:59:33:398] info: Store: STORE_API_TOKEN
+{
+  "token": "xoxs-⋯",
+  "teamId": "T5LA2J7CZ"
+}
+[10/18/18, 16:59:42:859] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T5LA2J7CZ"
+}
+[10/18/18, 16:59:43:251] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 16:59:43:616] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 16:59:43:862] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    1916,
+    1029
+  ],
+  "position": [
+    2,
+    24
+  ],
+  "isMaximized": false
+}
+[10/18/18, 16:59:51:601] info: Store: SHOW_LOGIN_DIALOG
+[10/18/18, 16:59:51:603] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 16:59:51:605] info: Store: ADD_WINDOW
+{
+  "id": 21,
+  "type": "sign-in"
+}
+[10/18/18, 16:59:51:605] info: SignInEpic: Loading URL in new window https://slack.com/signin
+[10/18/18, 17:00:00:706] info: SignInEpic: Page redirect
+{
+  "newURL": "https://mockist.slack.com/"
+}
+[10/18/18, 17:00:00:707] info: SignInEpic: Page redirect
+{
+  "newURL": "https://mockist.slack.com/"
+}
+[10/18/18, 17:00:00:707] info: SignInEpic: Page redirect
+{
+  "newURL": "https://mockist.slack.com/"
+}
+[10/18/18, 17:00:17:446] info: SignInEpic: Page redirect
+{
+  "newURL": "https://slack.com/checkcookie?redir=https%3A%2F%2Fmockist.slack.com%2Fsignin%3Fssb_success%3D1%26ssb_relogin%3D"
+}
+[10/18/18, 17:00:17:447] info: SignInEpic: Page redirect
+{
+  "newURL": "https://slack.com/checkcookie?redir=https%3A%2F%2Fmockist.slack.com%2Fsignin%3Fssb_success%3D1%26ssb_relogin%3D"
+}
+[10/18/18, 17:00:17:447] info: SignInEpic: Page redirect
+{
+  "newURL": "https://slack.com/checkcookie?redir=https%3A%2F%2Fmockist.slack.com%2Fsignin%3Fssb_success%3D1%26ssb_relogin%3D"
+}
+[10/18/18, 17:00:17:753] info: SignInEpic: Page redirect
+{
+  "newURL": "https://mockist.slack.com/signin?ssb_success=1&ssb_relogin="
+}
+[10/18/18, 17:00:17:754] info: Store: SIGN_IN_COMPLETE
+[10/18/18, 17:00:17:759] info: SignInEpic: Page redirect
+{
+  "newURL": "https://mockist.slack.com/signin?ssb_success=1&ssb_relogin="
+}
+[10/18/18, 17:00:17:760] info: SignInEpic: Page redirect
+{
+  "newURL": "https://mockist.slack.com/signin?ssb_success=1&ssb_relogin="
+}
+[10/18/18, 17:00:18:699] info: SignInEpic: Received team(s) from the webapp
+[10/18/18, 17:00:18:699] info: SignInEpic: Got signal!
+[10/18/18, 17:00:18:699] info: Store: SIGN_IN_CANCELED
+[10/18/18, 17:00:18:700] info: SignInEpic: Sign-in window closed
+[10/18/18, 17:00:18:700] info: Store: REMOVE_WINDOW 21
+[10/18/18, 17:00:18:703] info: maybeQuitAppAction
+{
+  "canceledSignIn": false,
+  "hasNoTeams": false
+}
+[10/18/18, 17:00:18:703] info: SignInEpic: End of the road
+{
+  "action": "ADD_NEW_TEAM"
+}
+[10/18/18, 17:00:18:704] info: Store: ADD_NEW_TEAM
+{
+  "id": "UBX426VPD",
+  "name": "[REDACTED]",
+  "team_id": "TBJMSNACR",
+  "team_name": "[REDACTED]",
+  "team_url": "[REDACTED]"
+}
+[10/18/18, 17:00:18:706] info: BrowserViewManager: Creating views for new teams
+{
+  "newTeamIds": [
+    "TBJMSNACR"
+  ]
+}
+[10/18/18, 17:00:18:706] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "TBJMSNACR"
+}
+[10/18/18, 17:00:18:706] info: BrowserViewManager: Creating BrowserView
+{
+  "teamId": "TBJMSNACR"
+}
+[10/18/18, 17:00:18:707] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 17:00:18:708] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 24,
+  "teamId": "TBJMSNACR",
+  "state": "unloaded"
+}
+[10/18/18, 17:00:18:709] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T913C3A8P | ready |            |
+|-----------+-------+------------+
+| T5LA2J7CZ | ready |            |
+|-----------+-------+------------+
+| TBJMSNACR | start |            |
++-----------+-------+------------+
+[10/18/18, 17:00:18:718] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "TBJMSNACR"
+}
+[10/18/18, 17:00:18:721] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T913C3A8P | ready |            |
+|-----------+-------+------------+
+| T5LA2J7CZ | ready |            |
+|-----------+-------+------------+
+| TBJMSNACR | start |            |
++-----------+-------+------------+
+[10/18/18, 17:00:18:723] info: dispatchWebappEventsEpic: Dispatch 'blur' on T5LA2J7CZ, 'focus' on TBJMSNACR
+[10/18/18, 17:00:20:082] info: Team boot count
+{
+  "count": 3
+}
+[10/18/18, 17:00:22:854] info: WebContents LifeCycle: webContents:24 from 'unloaded' to 'loaded' took 4139 ms
+[10/18/18, 17:00:22:854] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 24,
+  "state": "loaded",
+  "teamId": "TBJMSNACR"
+}
+[10/18/18, 17:00:22:856] info: Background Clients Update: 
++-----------+---------+------------+
+|           | Full    | Background |
+|-----------+---------+------------+
+| T913C3A8P | ready   |            |
+|-----------+---------+------------+
+| T5LA2J7CZ | ready   |            |
+|-----------+---------+------------+
+| TBJMSNACR | loading |            |
++-----------+---------+------------+
+[10/18/18, 17:00:23:925] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "TBJMSNACR"
+}
+[10/18/18, 17:00:24:405] info: Store: SELECT_CHANNEL CBK54MHPV
+[10/18/18, 17:00:24:407] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "ja-JP",
+  "teamId": "TBJMSNACR"
+}
+[10/18/18, 17:00:24:416] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "TBJMSNACR",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/18/18, 17:00:24:672] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "TBJMSNACR"
+}
+[10/18/18, 17:00:24:742] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "ja-JP",
+  "teamId": "TBJMSNACR"
+}
+[10/18/18, 17:00:24:755] info: WebContents LifeCycle: webContents:24 from 'loaded' to 'webapp-loaded' took 1900 ms
+[10/18/18, 17:00:24:755] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 24,
+  "state": "webapp-loaded",
+  "teamId": "TBJMSNACR"
+}
+[10/18/18, 17:00:24:757] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T913C3A8P | ready |            |
+|-----------+-------+------------+
+| T5LA2J7CZ | ready |            |
+|-----------+-------+------------+
+| TBJMSNACR | ready |            |
++-----------+-------+------------+
+[10/18/18, 17:00:24:758] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/18/18, 17:00:24:826] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "teamId": "TBJMSNACR",
+  "enterpriseId": null
+}
+[10/18/18, 17:00:24:827] info: Store: STORE_API_TOKEN
+{
+  "token": "xoxs-⋯",
+  "teamId": "TBJMSNACR"
+}
+[10/18/18, 17:00:25:315] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 17:00:25:590] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 17:00:25:674] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    1916,
+    1029
+  ],
+  "position": [
+    2,
+    24
+  ],
+  "isMaximized": false
+}
+[10/18/18, 17:00:26:458] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 17:00:35:432] info: Store: MAIN_WINDOW_FOCUSED
+[10/18/18, 17:00:35:481] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 17:00:35:519] info: Store: SELECT_TEAM T5LA2J7CZ
+[10/18/18, 17:00:35:520] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T5LA2J7CZ"
+}
+[10/18/18, 17:00:35:522] info: dispatchWebappEventsEpic: Dispatch 'blur' on TBJMSNACR, 'focus' on T5LA2J7CZ
+[10/18/18, 17:00:35:539] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 17:00:35:578] info: WebContentsMediator: Attaching to new webContents
+[10/18/18, 17:00:47:662] info: WindowCloseBehavior: Attempted to close the window, hiding due to run from tray
+[10/18/18, 17:00:47:666] info: Store: UPDATE_SETTINGS
+{
+  "hasRunFromTray": true
+}
+[10/18/18, 17:00:47:676] info: Store: SHOW_TRAY_BALLOON
+{
+  "title": "なぜSlackが閉じてしまったのですか？",
+  "content": "通知領域でSlackは常に稼働しています。これを変更したい場合には、環境設定から Linux 版アプリを選択してください。"
+}
+[10/18/18, 17:00:47:683] info: Tray Handler: Showing a tray balloon with title: なぜSlackが閉じてしまったのですか？
+[10/18/18, 17:34:59:151] info: Store: NEW_NOTIFICATION
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "G880VLDQF",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "nJ2QhGhZDvpyjqm",
+  "launchUri": "slack://channel?id=G880VLDQF&message=1539851698.000100&team=T5LA2J7CZ",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T5LA2J7CZ",
+  "title": "[REDACTED]"
+}
+[10/18/18, 17:34:59:158] info: Creating new Electron notification.
+[10/18/18, 17:37:38:441] info: Store: NEW_NOTIFICATION
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "G880VLDQF",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "AORqsZiYDB27n8n",
+  "launchUri": "slack://channel?id=G880VLDQF&message=1539851858.000100&team=T5LA2J7CZ",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T5LA2J7CZ",
+  "title": "[REDACTED]"
+}
+[10/18/18, 17:37:38:448] info: Creating new Electron notification.
+[10/18/18, 17:38:20:016] info: Store: NEW_NOTIFICATION
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "G880VLDQF",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "KEgXC8sAR2o6Dlk",
+  "launchUri": "slack://channel?id=G880VLDQF&message=1539851899.000100&team=T5LA2J7CZ",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T5LA2J7CZ",
+  "title": "[REDACTED]"
+}
+[10/18/18, 17:38:20:019] info: Creating new Electron notification.
+[10/18/18, 18:08:33:421] info: Store: NEW_NOTIFICATION
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "G880VLDQF",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "PJnmh5tjKmZQjZE",
+  "launchUri": "slack://channel?id=G880VLDQF&message=1539853713.000100&team=T5LA2J7CZ",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T5LA2J7CZ",
+  "title": "[REDACTED]"
+}
+[10/18/18, 18:08:33:426] info: Creating new Electron notification.
+[10/18/18, 20:22:43:568] info: Store: NEW_NOTIFICATION
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "DCQPZP45R",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "G883CJhQ9rWmRLg",
+  "imageUri": null,
+  "launchUri": "slack://channel?id=DCQPZP45R&message=1539861763.000100&team=T913C3A8P",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T913C3A8P",
+  "title": "[REDACTED]"
+}
+[10/18/18, 20:22:43:569] info: Creating new Electron notification.
+[10/18/18, 20:23:42:819] info: Store: NEW_NOTIFICATION
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "DCQPZP45R",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "vZZGCEiAmwE0g2B",
+  "imageUri": null,
+  "launchUri": "slack://channel?id=DCQPZP45R&message=1539861822.000200&team=T913C3A8P",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T913C3A8P",
+  "title": "[REDACTED]"
+}
+[10/18/18, 20:23:42:820] info: Creating new Electron notification.

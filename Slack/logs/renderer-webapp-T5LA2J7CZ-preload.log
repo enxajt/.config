@@ -1,0 +1,335 @@
+[10/18/18, 16:59:28:527] info: ╔═════════════════════════════════════════════════════════════════════════════════╗
+[10/18/18, 16:59:28:528] info: ║      Slack 3.3.3, linux 4.15.0-36-generic on x64 at 10/18/18, 16:59:28:525      ║
+[10/18/18, 16:59:28:528] info: ╚═════════════════════════════════════════════════════════════════════════════════╝
+[10/18/18, 16:59:28:608] info: Initializing local storage instance at path: /home/enxajt/.config/Slack/local-settings.json
+[10/18/18, 16:59:28:906] info: cld3::loadModule: loading cld3 module
+[10/18/18, 16:59:28:924] info: cld3Loader::loadModule: running environment is NODE
+[10/18/18, 16:59:28:924] info: cld3Loader::loadModule: constructed module object for runtime
+[10/18/18, 16:59:29:116] info: cld3Loader::initializeRuntime: successfully initialized module
+[10/18/18, 16:59:29:116] info: cld3Loader::loadModule: initialized wasm binary Runtime
+[10/18/18, 16:59:29:121] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, spellchecker is not available
+[10/18/18, 16:59:29:121] info: TranslationLookup: locale set to ja-JP for renderer
+[10/18/18, 16:59:29:130] info: Main window preload script finished
+{
+  "readyTime": 789.803954
+}
+[10/18/18, 16:59:31:298] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 20,
+  "state": "loaded",
+  "teamId": "T5LA2J7CZ"
+}
+[10/18/18, 16:59:32:070] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T5LA2J7CZ"
+}
+[10/18/18, 16:59:32:817] info: Store: SELECT_CHANNEL C5M0516R3
+[10/18/18, 16:59:32:818] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "ja-JP",
+  "teamId": "T5LA2J7CZ"
+}
+[10/18/18, 16:59:32:818] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T5LA2J7CZ",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/18/18, 16:59:33:347] info: postLoadTaskSetup: Desktop client fully loaded
+{
+  "loadedTime": 232776.137307
+}
+[10/18/18, 16:59:33:396] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "ja-JP",
+  "teamId": "T5LA2J7CZ"
+}
+[10/18/18, 16:59:33:396] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 20,
+  "state": "webapp-loaded",
+  "teamId": "T5LA2J7CZ"
+}
+[10/18/18, 16:59:33:397] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/18/18, 16:59:33:398] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T5LA2J7CZ"
+}
+[10/18/18, 16:59:33:399] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T5LA2J7CZ",
+  "token": "xoxs-⋯"
+}
+[10/18/18, 16:59:43:205] info: postLoadTaskSetup: Setup spellchecker
+{
+  "version": "V1"
+}
+[10/18/18, 16:59:43:585] info: Raw Locale list: ["C","C.UTF-8","en_AG","en_AG.utf8","en_AU.utf8","en_BW.utf8","en_CA.utf8","en_DK.utf8","en_GB.utf8","en_HK.utf8","en_IE.utf8","en_IN","en_IN.utf8","en_NG","en_NG.utf8","en_NZ.utf8","en_PH.utf8","en_SG.utf8","en_US.utf8","en_ZA.utf8","en_ZM","en_ZM.utf8","en_ZW.utf8","ja_JP.utf8","POSIX",""]
+[10/18/18, 16:59:43:585] info: Filtered Locale list: ["en_AG","en_AG","en_AU","en_BW","en_CA","en_DK","en_GB","en_HK","en_IE","en_IN","en_IN","en_NG","en_NG","en_NZ","en_PH","en_SG","en_US","en_ZA","en_ZM","en_ZM","en_ZW","ja_JP"]
+[10/18/18, 16:59:43:586] info: Counts: {"en":["en_AG","en_AG","en_AU","en_BW","en_CA","en_DK","en_GB","en_HK","en_IE","en_IN","en_IN","en_NG","en_NG","en_NZ","en_PH","en_SG","en_US","en_ZA","en_ZM","en_ZM","en_ZW"],"ja":["ja_JP"]}
+[10/18/18, 16:59:43:586] info: Setting ja
+[10/18/18, 16:59:43:586] info: Result: {"ja":"ja-JP","en":"en-US"}
+[10/18/18, 16:59:43:587] info: Requesting to load ja-JP, alternatives are ["ja-JP","ja-JP","ja-JP"]
+[10/18/18, 16:59:43:588] info: Loading dictionary for language ja-JP
+[10/18/18, 16:59:43:588] info: Returning local copy: /home/enxajt/.config/Slack/dictionaries/ja-JP.bdic
+[10/18/18, 16:59:43:612] info: Failed to read file /home/enxajt/.config/Slack/dictionaries/ja-JP.bdic: File exists but is most likely bogus
+[10/18/18, 16:59:43:614] info: Actually downloading https://redirector.gvt1.com/edgedl/chrome/dict/ja-jp-3-0.bdic
+[10/18/18, 16:59:43:862] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    2,
+    24
+  ],
+  "size": [
+    1916,
+    1029
+  ]
+}
+[10/18/18, 16:59:44:043] info: Loading dictionary for language ja-JP
+[10/18/18, 16:59:44:043] info: Returning local copy: /home/enxajt/.config/Slack/dictionaries/ja-JP.bdic
+[10/18/18, 16:59:44:044] info: Failed to read file /home/enxajt/.config/Slack/dictionaries/ja-JP.bdic: File exists but is most likely bogus
+[10/18/18, 16:59:44:044] info: Actually downloading https://redirector.gvt1.com/edgedl/chrome/dict/ja-jp-3-0.bdic
+[10/18/18, 16:59:44:271] info: Loading dictionary for language ja-JP
+[10/18/18, 16:59:44:271] info: Returning local copy: /home/enxajt/.config/Slack/dictionaries/ja-JP.bdic
+[10/18/18, 16:59:44:272] info: Failed to read file /home/enxajt/.config/Slack/dictionaries/ja-JP.bdic: File exists but is most likely bogus
+[10/18/18, 16:59:44:272] info: Actually downloading https://redirector.gvt1.com/edgedl/chrome/dict/ja-jp-3-0.bdic
+[10/18/18, 16:59:44:468] info: dictionary for ja-JP_ja-JP is not available
+[10/18/18, 16:59:44:469] info: Actually installing spell check provider to Electron
+[10/18/18, 16:59:51:613] info: Store: SHOW_LOGIN_DIALOG
+[10/18/18, 16:59:51:614] info: Store: ADD_WINDOW
+{
+  "id": 21,
+  "type": "sign-in"
+}
+[10/18/18, 16:59:51:619] info: Unloading spellchecker
+[10/18/18, 16:59:51:649] info: Unloading spellchecker
+[10/18/18, 17:00:17:756] info: Store: SIGN_IN_COMPLETE
+[10/18/18, 17:00:18:700] info: Store: SIGN_IN_CANCELED
+[10/18/18, 17:00:18:701] info: Store: REMOVE_WINDOW 21
+[10/18/18, 17:00:18:705] info: Store: ADD_NEW_TEAM
+{
+  "id": "UBX426VPD",
+  "name": "[REDACTED]",
+  "team_id": "TBJMSNACR",
+  "team_name": "[REDACTED]",
+  "team_url": "[REDACTED]"
+}
+[10/18/18, 17:00:18:708] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 24,
+  "state": "unloaded",
+  "teamId": "TBJMSNACR"
+}
+[10/18/18, 17:00:18:726] info: Unloading spellchecker
+[10/18/18, 17:00:22:855] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 24,
+  "state": "loaded",
+  "teamId": "TBJMSNACR"
+}
+[10/18/18, 17:00:23:926] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "TBJMSNACR"
+}
+[10/18/18, 17:00:24:405] info: Store: SELECT_CHANNEL CBK54MHPV
+[10/18/18, 17:00:24:408] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "ja-JP",
+  "teamId": "TBJMSNACR"
+}
+[10/18/18, 17:00:24:416] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "TBJMSNACR",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/18/18, 17:00:24:743] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "ja-JP",
+  "teamId": "TBJMSNACR"
+}
+[10/18/18, 17:00:24:756] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 24,
+  "state": "webapp-loaded",
+  "teamId": "TBJMSNACR"
+}
+[10/18/18, 17:00:24:759] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/18/18, 17:00:24:826] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "TBJMSNACR"
+}
+[10/18/18, 17:00:24:827] info: Store: STORE_API_TOKEN
+{
+  "teamId": "TBJMSNACR",
+  "token": "xoxs-⋯"
+}
+[10/18/18, 17:00:25:674] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    2,
+    24
+  ],
+  "size": [
+    1916,
+    1029
+  ]
+}
+[10/18/18, 17:00:35:434] info: Store: MAIN_WINDOW_FOCUSED
+[10/18/18, 17:00:35:521] info: Store: SELECT_TEAM T5LA2J7CZ
+[10/18/18, 17:00:35:533] info: Restoring spellchecker
+[10/18/18, 17:00:35:534] info: Requesting to load ja-JP, alternatives are ["ja-JP","ja-JP","ja-JP"]
+[10/18/18, 17:00:35:534] info: Loading dictionary for language ja-JP
+[10/18/18, 17:00:35:534] info: Actually downloading https://redirector.gvt1.com/edgedl/chrome/dict/ja-jp-3-0.bdic
+[10/18/18, 17:00:35:575] info: Restoring spellchecker
+[10/18/18, 17:00:35:575] info: Requesting to load ja-JP, alternatives are ["ja-JP","ja-JP","ja-JP"]
+[10/18/18, 17:00:35:575] info: Loading dictionary for language ja-JP
+[10/18/18, 17:00:35:575] info: Actually downloading https://redirector.gvt1.com/edgedl/chrome/dict/ja-jp-3-0.bdic
+[10/18/18, 17:00:36:147] info: Loading dictionary for language ja-JP
+[10/18/18, 17:00:36:147] info: Returning local copy: /home/enxajt/.config/Slack/dictionaries/ja-JP.bdic
+[10/18/18, 17:00:36:149] info: Failed to read file /home/enxajt/.config/Slack/dictionaries/ja-JP.bdic: File exists but is most likely bogus
+[10/18/18, 17:00:36:150] info: Actually downloading https://redirector.gvt1.com/edgedl/chrome/dict/ja-jp-3-0.bdic
+[10/18/18, 17:00:36:430] info: Loading dictionary for language ja-JP
+[10/18/18, 17:00:36:431] info: Returning local copy: /home/enxajt/.config/Slack/dictionaries/ja-JP.bdic
+[10/18/18, 17:00:36:432] info: Failed to read file /home/enxajt/.config/Slack/dictionaries/ja-JP.bdic: File exists but is most likely bogus
+[10/18/18, 17:00:36:433] info: Actually downloading https://redirector.gvt1.com/edgedl/chrome/dict/ja-jp-3-0.bdic
+[10/18/18, 17:00:36:505] info: Loading dictionary for language ja-JP
+[10/18/18, 17:00:36:506] info: Returning local copy: /home/enxajt/.config/Slack/dictionaries/ja-JP.bdic
+[10/18/18, 17:00:36:507] info: Failed to read file /home/enxajt/.config/Slack/dictionaries/ja-JP.bdic: File exists but is most likely bogus
+[10/18/18, 17:00:36:508] info: Actually downloading https://redirector.gvt1.com/edgedl/chrome/dict/ja-jp-3-0.bdic
+[10/18/18, 17:00:36:808] info: Loading dictionary for language ja-JP
+[10/18/18, 17:00:36:808] info: Returning local copy: /home/enxajt/.config/Slack/dictionaries/ja-JP.bdic
+[10/18/18, 17:00:36:810] info: Failed to read file /home/enxajt/.config/Slack/dictionaries/ja-JP.bdic: File exists but is most likely bogus
+[10/18/18, 17:00:36:811] info: Actually downloading https://redirector.gvt1.com/edgedl/chrome/dict/ja-jp-3-0.bdic
+[10/18/18, 17:00:36:847] info: dictionary for ja-JP_ja-JP is not available
+[10/18/18, 17:00:37:139] info: dictionary for ja-JP_ja-JP is not available
+[10/18/18, 17:00:47:712] info: Unloading spellchecker
+[10/18/18, 17:00:47:741] info: Store: UPDATE_SETTINGS
+{
+  "hasRunFromTray": true
+}
+[10/18/18, 17:00:47:742] info: Store: SHOW_TRAY_BALLOON
+{
+  "content": "通知領域でSlackは常に稼働しています。これを変更したい場合には、環境設定から Linux 版アプリを選択してください。",
+  "title": "なぜSlackが閉じてしまったのですか？"
+}
+[10/18/18, 17:34:59:166] info: Store: NEW_NOTIFICATION
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "G880VLDQF",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "nJ2QhGhZDvpyjqm",
+  "launchUri": "slack://channel?id=G880VLDQF&message=1539851698.000100&team=T5LA2J7CZ",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T5LA2J7CZ",
+  "title": "[REDACTED]"
+}
+[10/18/18, 17:37:38:445] info: Store: NEW_NOTIFICATION
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "G880VLDQF",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "AORqsZiYDB27n8n",
+  "launchUri": "slack://channel?id=G880VLDQF&message=1539851858.000100&team=T5LA2J7CZ",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T5LA2J7CZ",
+  "title": "[REDACTED]"
+}
+[10/18/18, 17:38:20:017] info: Store: NEW_NOTIFICATION
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "G880VLDQF",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "KEgXC8sAR2o6Dlk",
+  "launchUri": "slack://channel?id=G880VLDQF&message=1539851899.000100&team=T5LA2J7CZ",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T5LA2J7CZ",
+  "title": "[REDACTED]"
+}
+[10/18/18, 18:08:33:424] info: Store: NEW_NOTIFICATION
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "G880VLDQF",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "PJnmh5tjKmZQjZE",
+  "launchUri": "slack://channel?id=G880VLDQF&message=1539853713.000100&team=T5LA2J7CZ",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T5LA2J7CZ",
+  "title": "[REDACTED]"
+}
+[10/18/18, 20:22:43:569] info: Store: NEW_NOTIFICATION
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "DCQPZP45R",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "G883CJhQ9rWmRLg",
+  "imageUri": null,
+  "launchUri": "slack://channel?id=DCQPZP45R&message=1539861763.000100&team=T913C3A8P",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T913C3A8P",
+  "title": "[REDACTED]"
+}
+[10/18/18, 20:23:42:821] info: Store: NEW_NOTIFICATION
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "DCQPZP45R",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "vZZGCEiAmwE0g2B",
+  "imageUri": null,
+  "launchUri": "slack://channel?id=DCQPZP45R&message=1539861822.000200&team=T913C3A8P",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "",
+  "teamId": "T913C3A8P",
+  "title": "[REDACTED]"
+}

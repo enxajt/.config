@@ -1,3 +1,9 @@
+# hook_add 	プラグインが dein.vim によって追加されたとき 	OK 	OK
+# hook_source 	プラグインが読み込まれる直前 	NG 	OK
+# hook_post_source 	プラグインが読み込まれた直後 	NG 	OK
+# hook_post_update 	プラグインが更新された直後 	OK 	OK
+# hook_done_update 	プラグイン全ての更新が終わった直後 	OK 	OK
+
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
@@ -20,6 +26,21 @@ let g:context_filetype#filetypes = {
       \ ],
       \}"}}}
 '''
+
+# markdown table
+[[plugins]]
+repo = 'junegunn/vim-easy-align'
+hook_add = '''
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap <CR> <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap <CR> <Plug>(EasyAlign)
+
+" " Alignを日本語環境で使用するための設定
+" :let g:Align_xstrlen = 3
+" ":AlignCtrl p0P0
+'''
+
 
 [[plugins]] # カーソル位置のコンテキストのftを判定するライブラリ
 repo = 'Shougo/context_filetype.vim'
@@ -116,6 +137,7 @@ hook_add = '''
   au MyAutoCmd VimEnter * highlight htmlH3 ctermfg=cyan cterm=bold
   au MyAutoCmd VimEnter * highlight htmlH4 ctermfg=magenta cterm=bold
   au MyAutoCmd VimEnter * highlight htmlH5 ctermfg=yellow cterm=bold
+  au MyAutoCmd VimEnter * highlight htmlCodeBlock ctermfg=yellow cterm=bold
 
   " Makes the background transparent
   au MyAutoCmd VimEnter * nested highlight Normal ctermbg=NONE guibg=NONE
@@ -200,6 +222,10 @@ repo = 'shougo/neco-syntax'
 
 [[plugins]]
 repo = 'plasticboy/vim-markdown'
+hook_add = '''
+"Default is ['c++=cpp', 'viml=vim', 'bash=sh', 'ini=dosini'].
+"let g:vim_markdown_fenced_languages = ['csharp=cs']
+'''
 
 [[plugins]]
 repo = 'Yggdroot/indentLine'

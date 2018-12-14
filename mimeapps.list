@@ -2,10 +2,10 @@
 video/mp4=vlc.desktop;chromium-browser.desktop;org.gnome.Totem.desktop;
 audio/mpeg=vlc.desktop;org.gnome.Totem.desktop;chromium-browser.desktop;
 application/x-7z-compressed=userapp-7z-TIC1DZ.desktop;
-image/jpeg=eog.desktop;gimp.desktop;firefox.desktop;
-image/png=firefox.desktop;eog.desktop;
+image/jpeg=eog.desktop;firefox.desktop;gimp.desktop;
+image/png=eog.desktop;feh.desktop;firefox.desktop;
 application/pdf=zathura-pdf-poppler.desktop;gimp.desktop;evince.desktop;firefox.desktop;YACReader.desktop;calibre-gui.desktop;
-text/plain=vlc.desktop;gedit.desktop;firefox.desktop;wine-extension-txt.desktop;remmina.desktop;
+text/plain=gedit.desktop;vlc.desktop;firefox.desktop;wine-extension-txt.desktop;remmina.desktop;
 application/x-freeplane=freeplane.desktop;
 application/x-rar=YACReader.desktop;org.gnome.FileRoller.desktop;userapp-7z-TIC1DZ.desktop;
 application/zip=YACReader.desktop;org.gnome.FileRoller.desktop;mount-archive.desktop;userapp-7z-TIC1DZ.desktop;
@@ -47,6 +47,10 @@ application/xhtml+xml=firefox.desktop;
 application/x-font-ttf=org.gnome.font-viewer.desktop;
 image/gif=eog.desktop;
 application/xml=nvim.desktop;
+image/tiff=eog.desktop;gimp.desktop;
+text/x-log=gedit.desktop;
+application/vnd.oasis.opendocument.database=libreoffice-base.desktop;
+application/octet-stream=firefox.desktop;
 
 [Default Applications]
 application/x-7z-compressed=userapp-7z-TIC1DZ.desktop
@@ -58,6 +62,6 @@ video/mp2t=vlc.desktop
 video/x-ms-wmv=vlc.desktop
 video/x-matroska=vlc.desktop
 video/quicktime=vlc.desktop
-image/png=firefox.desktop
+image/png=eog.desktop
 video/x-flv=vlc.desktop
 audio/mp4=vlc.desktop

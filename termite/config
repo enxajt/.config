@@ -1,5 +1,11 @@
 [options]
-font = Monospace 14
+# 47linesOn13
+font = DejaVuSansMono 13
+
+# #NG:i tooWideLineSpace
+# kfont = SourceCodePro 13
+# 47linesOn14 thin NG:★が重なる
+#font = RictyDiminished 15
 
 #fullscreen = true
 #geometry = 640x480

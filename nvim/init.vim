@@ -128,26 +128,20 @@ command! -bang -bar -complete=file -nargs=? Euc
 " Open in UTF-16 again.
 command! -bang -bar -complete=file -nargs=? Utf16
       \ edit<bang> ++enc=ucs-2le <args>
-" Open in latin1 again.
-command! -bang -bar -complete=file -nargs=? Latin
-      \ edit<bang> ++enc=latin1 <args>
+" " Open in latin1 again.
+" command! -bang -bar -complete=file -nargs=? Latin
+"       \ edit<bang> ++enc=latin1 <args>
 
 " Tried to make a file note version.
 command! WUtf8 setlocal fenc=utf-8
 command! WCp932 setlocal fenc=cp932
-command! WLatin1 setlocal fenc=latin1
+"command! WLatin1 setlocal fenc=latin1
 
 " Appoint a line feed.
 command! -bang -complete=file -nargs=? WUnix
       \ write<bang> ++fileformat=unix <args> | edit <args>
 command! -bang -complete=file -nargs=? WDos
       \ write<bang> ++fileformat=dos <args> | edit <args>
-
-"---------------------------------------------------------------
-" file(md)
-"
-let g:vim_markdown_folding_disabled = 1
-"let g:vim_markdown_folding_level = 6
 
 "---------------------------------------------------------------
 " file(拡張子)
@@ -158,6 +152,14 @@ au BufRead,BufNewFile *.ejs set filetype=html
 au BufRead,BufNewFile *.coffee set filetype=javascript
 au BufRead,BufNewFile *.scss set filetype=scss.css
 "au BufWritePost *.scss,*.sass sass @% @%.css
+
+"---------------------------------------------------------------
+" file(md)
+"
+let g:vim_markdown_folding_disabled = 1
+"let g:vim_markdown_folding_level = 6
+
+let g:markdown_fenced_languages = ['bash=sh', 'css', 'django', 'handlebars', 'javascript', 'js=javascript', 'json=javascript', 'perl', 'php', 'python', 'ruby', 'sass', 'xml', 'html']
 
 "---------------------------------------------------------------
 " file(ファイル名の大文字小文字)
@@ -528,15 +530,6 @@ function! Capture(cmd)
   1,2delete _
 endfunction
 
-""---------------------------------------------------------------
-"" Shougo/deoplete.nvim
-
-""---------------------------------------------------------------
-"" Alignを日本語環境で使用するための設定
-""
-":let g:Align_xstrlen = 3
-"":AlignCtrl p0P0
-
 "---------------------------------------------------------------
 " key-mappings
 "
@@ -571,16 +564,6 @@ let g:CtrlSpaceDefaultMappingKey = "<C-space>"
 autocmd vimenter * inoremap <C-Space> <nop>
 "autocmd vimenter * inoremap <C-@> <C-Space>
 
-""---------------------------------------------------------------
-"" key-mappings (junegunn/vim-easy-align)
-""
-"" repo = 'junegunn/vim-easy-align'
-"" Start interactive EasyAlign in visual mode (e.g. vipga)
-"" xmap ga <Plug>(EasyAlign)
-"vmap <Enter> <Plug>(EasyAlign)
-"" Start interactive EasyAlign for a motion/text object (e.g. gaip)
-"nmap ga <Plug>(EasyAlign)
-"
 ""---------------------------------------------------------------
 "" key-mappings (neocomplete)
 ""
@@ -679,9 +662,7 @@ endif
   let g:unite_source_file_mru_limit = 5000
   "file_mruの表示フォーマットを指定。空にすると表示スピードが高速化される
   let g:unite_source_file_mru_filename_format = ''
-  nmap <silent> [unite]mt :<C-u>Unite file_mru -default-action=tabopen<CR>
-  nmap <silent> [unite]mv :<C-u>Unite file_mru -default-action=vsplit<CR>
-  nmap <silent> [unite]ms :<C-u>Unite file_mru -default-action=split<CR>
+  nmap <silent> [unite]f :<C-u>Unite file_mru -default-action=split<CR>
   "nnoremap <leader>frt :Unite -quick-match file_mru -default-action=tabopen<CR>
   "nnoremap <leader>frh :Unite -quick-match file_mru -default-action=split<CR>
   "nnoremap <leader>frf :Unite -quick-match file_mru<CR>
@@ -773,10 +754,8 @@ endif
 "---------------------------------------------------------------
 " plantuml
 "
-let g:plantuml_executable_script = "$HOME/docker-plantuml/plantuml"
-"au FileType plantuml command! OpenUml :!chromium-browser %
+"let g:plantuml_executable_script = "$HOME/docker-plantuml/plantuml"
 "au BufWritePost *.pu,*.uml :silent exec "!chromium-browser %"
-au BufWritePost *.pu,*.uml :silent exec "!chromium-browser %"
 
 "---------------------------------------------------------------
 " go

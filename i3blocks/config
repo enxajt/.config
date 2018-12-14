@@ -1,36 +1,10 @@
-# Please see man i3blocks for a complete reference!
-#
-# List of valid properties:
-#
-# align
-# color
-# command
-# full_text
-# instance
-# interval
-# label
-# min_width
-# name
-# separator
-# separator_block_width
-# short_text
-# signal
-# urgent
-
-# Global properties
-# The top properties below are applied to every block, but can be overridden.
-# Each block command defaults to the script name to avoid boilerplate.
-# Change $SCRIPT_DIR to the location of your scripts!
 command=/usr/share/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
-# The battery instance defaults to 0.
 [battery]
 label=🔋
-#instance=1
 interval=1
-#color=#9ee3e5
 
 [lightness]
 label=💡
@@ -39,15 +13,37 @@ interval=1
 color=#9ee3e5
 
 [volume]
+color=#00FF00
 label=🔊
 instance=Master
-#instance=PCM
 interval=1
-#command=/usr/share/i3blocks/volume
-#command=[ `/usr/share/i3blocks/volume` = 0% ] && color='#6e7177' || color='#439ad3' && /usr/share/i3blocks/volume && echo -e "\n${color}"
-command=[ `/usr/share/i3blocks/volume` = 0% ] && color='#439ad3' || color='#6e7177' && /usr/share/i3blocks/volume && echo -e "\n${color}"
+command=[ `/usr/share/i3blocks/volume` = 0% ] && color='#a5eeb7' || color='#6e7177' && /usr/share/i3blocks/volume && echo -e "\n${color}"
 
-# The type defaults to "mem" if the instance is not specified.
+[load average]
+label=LA
+command=echo "$(uptime | sed 's/.*load average: \(.*\)/\1/' | cut -d, -f1)/$(cat /proc/cpuinfo | grep processor | wc -l)"
+interval=1
+color=#9ee3e5
+
+[cpu_usage]
+label=CPU
+interval=10
+min_width=CPU 100.00%
+separator=true
+color=#9ee3e5
+
+# Support multiple chips, though lm-sensors.
+# The script may be called with -w and -c switches to specify thresholds,
+# see the script for details.
+#[temperature]
+#label=TEMP
+#interval=1
+#command=./i3blocks-contrib/temperature/temperature
+#separator=true
+#T_WARN=70
+#T_CRIT=90
+#SENSOR_CHIP=""
+
 [memory]
 label=Mem
 separator=false
@@ -55,13 +51,8 @@ interval=1
 command=free -h | awk 'match($0, /^Mem/){print $3 "/" $2}'
 color=#9ee3e5
 
-[memory]
-separator=false
-interval=1
-color=#9ee3e5
-
-[memory]
-label=Swap
+[swap]
+label=swap
 instance=swap
 separator=false
 interval=1
@@ -76,24 +67,15 @@ label=df
 interval=1
 color=#9ee3e5
 
-#[network]
-[ssid]
-label=SSID
-command=[[ $(iw dev wlp59s0 link) != 'Not connected.' ]] && echo "$(iw dev wlp59s0 link | sed '/SSID/!d;s/ //g;s/[^:]*://')/-$(iw dev wlp59s0 link | grep signal | grep -o '[0-9]*')dBm"
-interval=1
-color=#9ee3e5
-
-# If the instance is not specified, use the interface used for default route.
-# The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
 [iface]
 instance=wlp59s0
-color=#00FF00
 interval=1
 separator=false
 
-[wifi]
-instance=wlp59s0
+[essid]
+command=iwconfig wlp59s0 2> /dev/null | grep ESSID | awk -F\" '{print $2}'
 interval=1
+color=#00FF00
 separator=false
 
 [bandwidth]
@@ -102,38 +84,14 @@ instance=wlp59s0
 interval=1
 color=#9ee3e5
 
-[load average]
-label=LA
-command=echo "$(uptime | sed 's/.*load average: \(.*\)/\1/' | cut -d, -f1)/$(cat /proc/cpuinfo | grep processor | wc -l)"
-interval=1
-color=#9ee3e5
-
-# The script may be called with -w and -c switches to specify thresholds,
-# see the script for details.
-[cpu_usage]
-label=CPU
-interval=10
-min_width=CPU 100.00%
-separator=false
-color=#9ee3e5
-
-# Support multiple chips, though lm-sensors.
-# The script may be called with -w and -c switches to specify thresholds,
-# see the script for details.
-[temperature]
-label=TEMP
-interval=1
-command=./i3blocks-contrib/temperature/temperature
-#color=#8caba8
-color=#dcedc1
-separator=true
+# Support multiple VPN, with colors.
+#[openvpn]
+#interval=20
 
 [time]
 command=date '+%Y-%m(%b)-%d(%a)%H:%M:%S'
 interval=1
 
-# Generic media player support
-#
 # This displays "ARTIST - SONG" if a music is playing.
 # Supported players are: spotify, vlc, audacious, xmms2, mplayer, and others.
 #[mediaplayer]
@@ -141,30 +99,7 @@ interval=1
 #interval=5
 #signal=10
 
-# OpenVPN support
-#
-# Support multiple VPN, with colors.
-#[openvpn]
-#interval=20
-
-# Temperature
-#
-# Support multiple chips, though lm-sensors.
-# The script may be called with -w and -c switches to specify thresholds,
-# see the script for details.
-[temperature]
-command=./i3blocks-contrib/temperature/temperature
-label=TEMP
-interval=1
-#T_WARN=70
-#T_CRIT=90
-#SENSOR_CHIP=""
-#color=#dcedc1
-
-# Key indicators
-#
 # Add the following bindings to i3 config file:
-#
 # bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
 # bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
 #[keyindicator]

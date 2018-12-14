@@ -1,0 +1,13 @@
+[10/18/18, 16:55:46:806] info: ╔═════════════════════════════════════════════════════════════════════════════════╗
+[10/18/18, 16:55:46:807] info: ║      Slack 3.3.3, linux 4.15.0-36-generic on x64 at 10/18/18, 16:55:46:804      ║
+[10/18/18, 16:55:46:807] info: ╚═════════════════════════════════════════════════════════════════════════════════╝
+[10/18/18, 16:55:46:892] info: Initializing local storage instance at path: /home/enxajt/.config/Slack/local-settings.json
+[10/18/18, 16:55:47:388] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/18/18, 16:55:47:391] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/18/18, 16:55:48:281] info: Store: SET_NETWORK_STATUS online
+[10/18/18, 16:55:48:283] info: Store: MAIN_WINDOW_SHOWN
+[10/18/18, 16:55:48:314] info: Store: ADD_WINDOW
+{
+  "id": 3,
+  "type": "sign-in"
+}
