@@ -181,6 +181,11 @@ function! ImInActivate()
   call system('fcitx-remote -c')
 endfunction
 inoremap <silent> <C-[> <ESC>:call ImInActivate()<CR>
+"---------------------------------------------------------------
+" Binding F1 to ESC
+"
+imap <F1> <Esc>
+nmap <F1> <Esc>
 
 "---------------------------------------------------------------
 " view 
@@ -209,9 +214,29 @@ set visualbell
 set t_vb=
 
 "---------------------------------------------------------------
+" view (color) 
+"
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
+" Output the current syntax group
+nnoremap <f10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<cr>
+
+" 編集行のハイライト
+set cursorline
+
+" cursorlineの色をクリア
+hi clear CursorLine
+
+"---------------------------------------------------------------
 " view (全角スペースをハイライト)
 function! ZenkakuSpace()
-    highlight ZenkakuSpace cterm=reverse ctermfg=grey gui=reverse guifg=#2F4F4F
+  highlight ZenkakuSpace cterm=reverse ctermfg=grey gui=reverse guifg=#2F4F4F
 endfunction
 "darkgrey 文字色っぽい
 "dimgrey 文字色っぽい
@@ -328,61 +353,6 @@ set statusline+=%4l/%L,%c%V%4P
 "set statusline=%F%m%r%h%w%=\ %{fugitive#statusline()}\ [%{&ff}:%{&fileencoding}]\ [%Y]\ [%04l,%04v]\ [%l/%L]\ %{strftime(\"%Y/%m/%d\ %H:%M:%S\")}
 
 "set statusline=%F%m%r%h%w%=\ %{fugitive#statusline()}\ [%{&ff}:%{&fileencoding}]\ [%Y]\ [%04l,%04v]\ [%l/%L]\ %{strftime(\"%Y/%m/%d\ %H:%M:%S\")}
-
-"---------------------------------------------------------------
-" view (color) 
-"
-"colorschemeコマンドを実行する前に設定する
-set t_co=256
-syntax on
-
-set virtualedit=block
-if has('nvim')
-  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-endif
-
-" 画面を黒地に白にする (次行の先頭の " を削除すれば有効になる)
-set background=dark
-"colorscheme hybrid " (Windows用gvim使用時はgvimrcを編集すること)
-
-function! s:load_after_colors()
-  if has('win32')
-    let color = expand($VIMDIR.'/colors/color_enxajt.vim')
-  else
-    let color = expand($VIMDIR.'/after.vim')
-  endif
-  if filereadable(color)
-    execute 'source ' color
-  endif
-endfunction
-augroup MyColors
-  autocmd!
-  autocmd ColorScheme * call s:load_after_colors()
-augroup END
-
-" 編集行のハイライト
-"set cursorline
-" cursorlineの色をクリア
-hi clear CursorLine
-
-"---------------------------------------------------------------
-" view (コンソールでのカラー表示)
-"
-if has('unix') && !has('gui_running')
-  let s:uname = system('uname')
-  if s:uname =~? "linux"
-    let &t_AB="\e[48;5;%dm"
-    let &t_AF="\e[38;5;%dm"
-  elseif s:uname =~? "freebsd"
-    set term=builtin_cons25
-  elseif s:uname =~? "Darwin"
-"    set term=beos-ansi
-"    set term=builtin_ansi
-  else
-    set term=builtin_xterm
-  endif
-  unlet s:uname
-endif
 
 "---------------------------------------------------------------
 " move

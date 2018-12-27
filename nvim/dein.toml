@@ -84,7 +84,6 @@ on_ft = ['javascript', 'javascript.jsx']
 #repo = 'joshdick/onedark.vim'
 #hook_add = '''
 #  "set background=dark
-#  " let g:gruvbox_italic=1
 #  au MyAutoCmd VimEnter * nested colorscheme onedark
 #  au MyAutoCmd VimEnter * highlight Visual ctermbg=216
 #  " Makes the background transparent
@@ -95,7 +94,6 @@ on_ft = ['javascript', 'javascript.jsx']
 #repo = 'mhartington/oceanic-next'
 #hook_add = '''
 #  set background=dark
-#  " let g:gruvbox_italic=1
 #  au MyAutoCmd VimEnter * nested colorscheme OceanicNext
 #  au MyAutoCmd VimEnter * highlight Visual ctermbg=216
 #  " " Makes the background transparent
@@ -128,24 +126,34 @@ on_ft = ['javascript', 'javascript.jsx']
 [[plugins]]
 repo = 'morhetz/gruvbox'
 hook_add = '''
-  set background=dark
+  "set background=dark
   let g:gruvbox_italic=1
-  au MyAutoCmd VimEnter * nested colorscheme gruvbox
-  au MyAutoCmd VimEnter * highlight Visual ctermbg=216
-  au MyAutoCmd VimEnter * highlight htmlBold ctermfg=black ctermbg=lightgray cterm=italic
-  au MyAutoCmd VimEnter * highlight htmlH2 ctermfg=darkblue cterm=bold
-  au MyAutoCmd VimEnter * highlight htmlH3 ctermfg=cyan cterm=bold
-  au MyAutoCmd VimEnter * highlight htmlH4 ctermfg=magenta cterm=bold
-  au MyAutoCmd VimEnter * highlight htmlH5 ctermfg=yellow cterm=bold
-  au MyAutoCmd VimEnter * highlight htmlCodeBlock ctermfg=yellow cterm=bold
+  autocmd VimEnter * highlight Visual guibg=#a89984
+  augroup markdown_highlight
+    autocmd!
+    autocmd ColorScheme * highlight htmlH1 gui=bold guifg=#bae1ff "#f1f9b5
+    autocmd ColorScheme * highlight htmlH2 gui=bold guifg=#baffc9 "#beeae0
+    autocmd ColorScheme * highlight htmlH3 gui=bold guifg=#ffffba "#b8d1fb
+    autocmd ColorScheme * highlight htmlH4 gui=bold guifg=#ffdfba "#f6bcd7
+    autocmd ColorScheme * highlight htmlH5 gui=bold guifg=#ffb3ba
+    autocmd ColorScheme * highlight htmlH6 gui=bold guifg=#cfa5f2 "#f48fb1
+    autocmd ColorScheme * highlight htmlBold gui=bold
+    autocmd ColorScheme * highlight mkdNonListItemBlock guifg=#ffffff
+    autocmd ColorScheme * highlight mkdCode guifg=#8cb33e gui=italic
+  augroup END
+  colorscheme gruvbox
 
-  " Makes the background transparent
-  au MyAutoCmd VimEnter * nested highlight Normal ctermbg=NONE guibg=NONE
-  au MyAutoCmd VimEnter * nested highlight NonText ctermbg=NONE guibg=NONE
+  " " Makes the background transparent
+  " au MyAutoCmd VimEnter * nested highlight Normal ctermbg=NONE guibg=NONE
+  " au MyAutoCmd VimEnter * nested highlight NonText ctermbg=NONE guibg=NONE
 '''
 
 [[plugins]]
-repo = 'ap/vim-css-color'
+#repo = 'ap/vim-css-color'
+repo = 'chrisbra/Colorizer'
+hook_add = '''
+  let g:colorizer_auto_color=1
+'''
 
 [[plugins]]
 repo = 'sheerun/vim-polyglot'

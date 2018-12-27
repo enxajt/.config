@@ -25,32 +25,23 @@ mvt ~/.config/pulse
 pulseaudio -k
 pulseaudio --start
 
-sleep 1s
+#sleep 1s
+sleep 0.6s
 setxkbmap -option "ctrl:swapcaps"
-#setxkbmap -option "swapcaps:ctrl"
 
-#xrandr --output eDP1 --mode 1920x1080 --output DP1 --auto --above eDP1 #VGA@KRC
-#xrandr --output eDP-1 --mode 1920x1080 --output HDMI-2 --auto --above eDP-1 #projector extend
-#xrandr --output eDP-1 --mode 1920x1080 --output HDMI-2 --auto --same-as eDP-1 #projector duplicate
-#xrandr --output eDP1 --mode 1920x1080 --output HDMI1 --mode 1920x1080 --rotate normal --above eDP1
-#xrandr --output eDP1 --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI1 --mode 1920x1080 --rotate normal --above eDP1
-xrandr --output eDP1 --mode 1920x1080 
+xrandr --output eDP1 --mode 1920x1080
+xrandr --output HDMI2 --mode 2560x1440 --above eDP1 #HDMI-direct
+xrandr --output DP1 --mode 1280x1024 --right-of HDMI2 #Princeton@KRC
 
-#Acer@Kuya HDMI-direct
-xrandr --output eDP1 --mode 1920x1080 --output HDMI2 --mode 2560x1440 --above eDP1
 #Acer@Kuya miniDisplayPort
 xrandr --newmode "2560x1440R" 241.50 2560 2608 2640 2720 1440 1443 1448 1481 +hsync -vsync
 xrandr --addmode HDMI1 2560x1440R
 xrandr --output eDP1 --mode 1920x1080 --output HDMI1 --mode 2560x1440R --above eDP1
 
-#KRC
-xrandr --output eDP1 --mode 1920x1080 --output DP1 --mode 1920x1080 --above eDP1 #Princeton
-xrandr --output eDP1 --mode 1920x1080 --output HDMI1 --mode 1920x1080 --above eDP1 #DELL
-
 dropbox lansync n
 dropbox start
 
-synergy
+synergy &
 
 # disable suspend
 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
