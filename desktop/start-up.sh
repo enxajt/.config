@@ -41,8 +41,6 @@ xrandr --output eDP1 --mode 1920x1080 --output HDMI1 --mode 2560x1440R --above e
 dropbox lansync n
 dropbox start
 
-synergy &
-
 # disable suspend
 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 # re-enable suspend

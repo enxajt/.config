@@ -2,11 +2,8 @@ status	key	command
 Composition	Backspace	Backspace
 Conversion	Backspace	Cancel
 Precomposition	Backspace	Revert
-Prediction	Ctrl Delete	DeleteSelectedCandidate
+Composition	Ctrl ;	DisplayAsHalfAlphanumeric
 Composition	Ctrl Shift Space	DisplayAsHiragana
-Conversion	Ctrl Shift Space	DisplayAsHiragana
-Composition	Ctrl Space	DisplayAsHalfAlphanumeric
-Conversion	Ctrl Space	DisplayAsHalfAlphanumeric
 Composition	Delete	Delete
 Conversion	Down	ConvertNext
 Suggestion	Down	PredictAndConvert
@@ -53,6 +50,8 @@ Precomposition	Space	InsertSpace
 Composition	Tab	PredictAndConvert
 Conversion	Tab	PredictAndConvert
 Conversion	Up	ConvertPrev
+Precomposition	Ctrl Space	InputModeHalfAlphanumeric
+Precomposition	Ctrl Shift Space	InputModeHiragana
 Composition	Kanji	IMEOff
 Composition	OFF	IMEOff
 Composition	ON	IMEOn
