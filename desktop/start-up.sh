@@ -38,6 +38,8 @@ xrandr --newmode "2560x1440R" 241.50 2560 2608 2640 2720 1440 1443 1448 1481 +hs
 xrandr --addmode HDMI1 2560x1440R
 xrandr --output eDP1 --mode 1920x1080 --output HDMI1 --mode 2560x1440R --above eDP1
 
+xsetroot -solid "#000000"
+
 dropbox lansync n
 dropbox start
 
