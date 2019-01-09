@@ -126,7 +126,7 @@ on_ft = ['javascript', 'javascript.jsx']
 [[plugins]]
 repo = 'morhetz/gruvbox'
 hook_add = '''
-  "set background=dark
+  set background=dark
   let g:gruvbox_italic=1
   autocmd VimEnter * highlight Visual guibg=#a89984
   augroup markdown_highlight
