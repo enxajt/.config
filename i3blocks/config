@@ -68,19 +68,19 @@ interval=1
 color=#9ee3e5
 
 [iface]
-instance=wlp59s0
+instance=wlp2s0
 interval=1
 separator=false
 
 [essid]
-command=iwconfig wlp59s0 2> /dev/null | grep ESSID | awk -F\" '{print $2}'
+command=iwconfig wlp2s0 2> /dev/null | grep ESSID | awk -F\" '{print $2}'
 interval=1
 color=#00FF00
 separator=false
 
 [bandwidth]
 #instance=eth0
-instance=wlp59s0
+instance=wlp2s0
 interval=1
 color=#9ee3e5
 

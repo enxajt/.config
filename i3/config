@@ -4,6 +4,9 @@ exec ($HOME/.config/desktop/start-up.sh > $I3LOG) 2>&1 | tee -a $I3LOG
 exec --no-startup-id termite -e 'tmux -2f $HOME/.config/tmux/tmux.conf'
 exec --no-startup-id dunst
 
+# To ensure that no multiple instances of fusuma are started, was previously an issue
+exec_always --no-startup-id sh -c "pkill fusuma; fusuma -d"
+
 exec sudo apt update
 exec sudo apt upgrade -y
 exec sudo apt autoremove -y
@@ -25,12 +28,15 @@ floating_modifier $mod
 
 bindsym $mod+Return exec termite -e 'tmux -2f $HOME/.config/tmux/tmux.conf'
 
-# start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+#bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+
+set $execute exec rofi -show drun -eh 2 -padding 16
+bindsym $mod+d $execute
+bindsym XF86Search $execute
+bindsym $mod+Tab exec rofi -show window
+#bindsym $mod+Shift+d exec rofi -show run -eh 2 -padding 16
+
 bindsym $mod+q kill
 
 bindsym $mod+h focus left

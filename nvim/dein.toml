@@ -139,7 +139,7 @@ hook_add = '''
     autocmd ColorScheme * highlight htmlH6 gui=bold guifg=#cfa5f2 "#f48fb1
     autocmd ColorScheme * highlight htmlBold gui=bold
     autocmd ColorScheme * highlight mkdNonListItemBlock guifg=#ffffff
-    autocmd ColorScheme * highlight mkdCode guifg=#8cb33e gui=italic
+    autocmd ColorScheme * highlight mkdCode guifg=white guibg=darkgreen
   augroup END
   colorscheme gruvbox
 

@@ -8,11 +8,14 @@ synclient AreaRightEdge=5000 # Disable touchpad right edge
 # speed (default=12.5)
 xinput set-prop 'SynPS/2 Synaptics TouchPad' 'Device Accel Velocity Scaling' 14
 # Acceleration: small is fast
-#xinput set-prop 'SynPS/2 Synaptics TouchPad' 'Device Accel Constant Deceleration' 1.0
-# Natural scrolling
-xinput set-prop 'SynPS/2 Synaptics TouchPad' 'Synaptics Scrolling Distance' -119 -119
-# Horizontal scrolling
-xinput set-prop 'SynPS/2 Synaptics TouchPad' 'Synaptics Two-Finger Scrolling' 1 1
+xinput set-prop 'SynPS/2 Synaptics TouchPad' 'libinput Natural Scrolling Enabled' 1
+xinput set-prop 'SynPS/2 Synaptics TouchPad' 'libinput Tapping Enabled' 1
+xinput set-prop 'SynPS/2 Synaptics TouchPad' 'libinput Tapping Drag Lock Enabled' 1
+xinput set-prop 'DELL07E6:00 06CB:76AF Touchpad' 'libinput Natural Scrolling Enabled' 1
+xinput set-prop 'DELL07E6:00 06CB:76AF Touchpad' 'libinput Tapping Enabled' 1
+xinput set-prop 'DELL07E6:00 06CB:76AF Touchpad' 'libinput Tapping Drag Lock Enabled' 1
+xinput set-prop 'DELL07E6:00 06CB:76AF Touchpad' 'libinput Accel Speed' 1
+
 
 redshift -O 4200
 
@@ -29,9 +32,9 @@ pulseaudio --start
 sleep 0.6s
 setxkbmap -option "ctrl:swapcaps"
 
-xrandr --output eDP1 --mode 1920x1080
-xrandr --output HDMI2 --mode 2560x1440 --above eDP1 #HDMI-direct
-xrandr --output DP1 --mode 1280x1024 --right-of HDMI2 #Princeton@KRC
+xrandr --output eDP1 --mode 1920x1080 #kuya
+xrandr --output DP1 --mode 2560x1440 --above eDP1
+xrandr --output DP2 --mode 1280x1024 --right-of DP1
 
 #Acer@Kuya miniDisplayPort
 xrandr --newmode "2560x1440R" 241.50 2560 2608 2640 2720 1440 1443 1448 1481 +hsync -vsync
