@@ -3,6 +3,7 @@ set $I3LOG $HOME/.config/i3/log
 exec ($HOME/.config/desktop/start-up.sh > $I3LOG) 2>&1 | tee -a $I3LOG
 exec --no-startup-id termite -e 'tmux -2f $HOME/.config/tmux/tmux.conf'
 exec --no-startup-id dunst
+exec_always --no-startup-id flashfocus
 
 # To ensure that no multiple instances of fusuma are started, was previously an issue
 exec_always --no-startup-id sh -c "pkill fusuma; fusuma -d"
