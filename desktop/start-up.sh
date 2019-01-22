@@ -32,14 +32,23 @@ pulseaudio --start
 sleep 0.6s
 setxkbmap -option "ctrl:swapcaps"
 
-xrandr --output eDP1 --mode 1920x1080 #kuya
+#xrandr --output DP2 --mode 1600x1200 --above eDP1 # KRC Projector
+
+xrandr --output eDP1 --mode 1920x1080 #KRC
 xrandr --output DP1 --mode 2560x1440 --above eDP1
 xrandr --output DP2 --mode 1280x1024 --right-of DP1
 
+xrandr --output eDP1 --mode 1920x1080 #KRC
+xrandr --output DP2 --mode 2560x1440 --above eDP1
+xrandr --output DP1 --mode 1280x1024 --right-of DP2
+
+xrandr --output eDP1 --mode 1920x1080 #kuya
+xrandr --output DP1 --mode 2560x1440 --above eDP1
+
 #Acer@Kuya miniDisplayPort
-xrandr --newmode "2560x1440R" 241.50 2560 2608 2640 2720 1440 1443 1448 1481 +hsync -vsync
-xrandr --addmode HDMI1 2560x1440R
-xrandr --output eDP1 --mode 1920x1080 --output HDMI1 --mode 2560x1440R --above eDP1
+#xrandr --newmode "2560x1440R" 241.50 2560 2608 2640 2720 1440 1443 1448 1481 +hsync -vsync
+#xrandr --addmode HDMI1 2560x1440R
+#xrandr --output eDP1 --mode 1920x1080 --output HDMI1 --mode 2560x1440R --above eDP1
 
 xsetroot -solid "#000000"
 

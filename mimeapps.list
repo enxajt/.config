@@ -2,9 +2,9 @@
 video/mp4=vlc.desktop;chromium-browser.desktop;org.gnome.Totem.desktop;
 audio/mpeg=vlc.desktop;org.gnome.Totem.desktop;chromium-browser.desktop;
 application/x-7z-compressed=userapp-7z-TIC1DZ.desktop;
-image/jpeg=gimp.desktop;firefox.desktop;eog.desktop;
-image/png=firefox.desktop;eog.desktop;feh.desktop;
-application/pdf=zathura-pdf-poppler.desktop;firefox.desktop;evince.desktop;YACReader.desktop;gimp.desktop;calibre-gui.desktop;
+image/jpeg=eog.desktop;org.gnome.gThumb.desktop;nomacs.desktop;gimp.desktop;firefox.desktop;
+image/png=eog.desktop;gimp.desktop;firefox.desktop;feh.desktop;
+application/pdf=zathura-pdf-poppler.desktop;YACReader.desktop;libreoffice-draw.desktop;gimp.desktop;firefox.desktop;evince.desktop;calibre-gui.desktop;
 text/plain=vim.desktop;vlc.desktop;gedit.desktop;firefox.desktop;wine-extension-txt.desktop;remmina.desktop;
 application/x-freeplane=freeplane.desktop;
 application/x-rar=YACReader.desktop;org.gnome.FileRoller.desktop;userapp-7z-TIC1DZ.desktop;
@@ -54,6 +54,7 @@ application/octet-stream=firefox.desktop;
 application/x-xpinstall=firefox.desktop;
 application/x-theme=panel-desktop-handler.desktop;
 image/vnd.microsoft.icon=shutter.desktop;
+application/vnd.oasis.opendocument.graphics=libreoffice-draw.desktop;
 
 [Default Applications]
 application/x-7z-compressed=userapp-7z-TIC1DZ.desktop
@@ -68,3 +69,4 @@ video/quicktime=vlc.desktop
 image/png=eog.desktop
 video/x-flv=vlc.desktop
 audio/mp4=vlc.desktop
+image/jpeg=eog.desktop

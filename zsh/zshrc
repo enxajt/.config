@@ -238,6 +238,28 @@ setopt ignore_eof
 #stty erase ^H
 bindkey "^[[3~" delete-char
 
+function _git_status() {
+    echo git status
+    git status
+    zle reset-prompt
+}
+zle -N git_status _git_status
+bindkey '^G^S' git_status
+
+function _xbacklight_dec() {
+  xbacklight -dec 10 -steps 1
+  zle reset-prompt
+}
+zle -N xbacklight_dec _xbacklight_dec
+bindkey "\e[18~" xbacklight_dec
+
+function _xbacklight_inc() {
+  xbacklight -inc 10 -steps 1
+  zle reset-prompt
+}
+zle -N xbacklight_inc _xbacklight_inc
+bindkey "\e[19~" xbacklight_inc
+
 ########################################
 # エイリアス
 ########################################

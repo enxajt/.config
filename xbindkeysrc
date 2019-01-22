@@ -1,15 +1,12 @@
-#pavucontrol
-
-# Decrease volume
 "amixer -M set Master 5-"
    XF86AudioLowerVolume
 
-# Increase volume
 "amixer -M set Master 5+"
    XF86AudioRaiseVolume
 
-"xbacklight -dec 5 -steps 1"
-   XF86MonBrightnessDown 
-
-"xbacklight -inc 5 -steps 1"
-   XF86MonBrightnessUp
+# Not working in 18.04
+# "xbacklight -dec 5 -steps 1"
+#    XF86MonBrightnessDown 
+# 
+# "xbacklight -inc 6 -steps 1"
+#    XF86MonBrightnessUp
