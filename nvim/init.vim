@@ -1,3 +1,4 @@
+
 "---------------------------------------------------------------
 " vi互換モード禁止
 " 各種プラグイン等機能しなくなったりするため
@@ -92,6 +93,40 @@ set fileformats=unix,dos,mac
 set formatoptions=q
 
 "---------------------------------------------------------------
+" Input Japanese
+"
+nnoremap あ a
+nnoremap い i
+nnoremap う u
+nnoremap お o
+nnoremap っd dd
+nnoremap っy yy
+
+"---------------------------------------------------------------
+" keep input method during normal mode.
+"
+let w:insert_input_active = 0
+function FcitxEnterInsert()
+  if w:insert_input_active != 0
+    let l:a = system("fcitx-remote -o")
+    let w:insert_input_active = 0
+  endif
+endfunction
+
+function FcitxLeaveInsert()
+  let s:input_status = system("fcitx-remote")
+  if s:input_status == 2
+    let w:insert_input_active = 1
+    let l:a = system("fcitx-remote -c")
+  endif
+endfunction
+
+autocmd InsertLeave * call FcitxLeaveInsert()
+autocmd InsertEnter * call FcitxEnterInsert()
+set timeoutlen=15
+
+
+"---------------------------------------------------------------
 " file(文字コードの自動認識)
 "
 " The automatic recognition of the character code.
@@ -174,13 +209,6 @@ endif
 "    set tags& tags + =.tags, tags
 "endif
 
-"---------------------------------------------------------------
-" japanese IME
-"
-function! ImInActivate()
-  call system('fcitx-remote -c')
-endfunction
-inoremap <silent> <C-[> <ESC>:call ImInActivate()<CR>
 "---------------------------------------------------------------
 " Binding F1 to ESC
 "
@@ -333,7 +361,7 @@ set laststatus=2
 " %h - ヘルプバッファ
 " %w - preview window flag
 "set statusline=%<%f\ %m%r%h%w
-set statusline=%<%f\ %m\ %r%h%w
+set statusline=%<%F\ %m\ %r%h%w
 
 set statusline+=%{'['.(&fenc!=''?&fenc:&enc).']['.&fileformat.']'}
 
@@ -675,28 +703,6 @@ endif
   
   endfunction
 "endif
-
-"---------------------------------------------------------------
-" diffchar.vim (vimdiff)
-"
-" F7でトグル
-" vimdiffで起動した際自動的に単語単位の差分(diffchar.vim)を有効
-if &diff
-  augroup enable_diffchar
-    autocmd!
-    autocmd VimEnter * execute "%SDChar"
-  augroup END
-endif
-
-"Char" : 全ての文字間
-"Word1" : \w\+ と隣接する \W の境目
-"Word2" : 非空白文字と空白文字の境目
-"Word3" : \< または \> に該当する境目。vimオプションiskeywordの影響あり
-"逆に言えばiskeywordを設定している場合"Word3"を指定すると便利です。
-"CSV(,)" : カンマ(,)、セミコロン(;)及びタブ文字(\t)による境目
-let g:DiffUnit = "Word3"
-"編集中に差分ハイライトを自動で更新するかどうか 0更新しない 1更新する
-let g:DiffUpdate = 1
 
 "---------------------------------------------------------------
 " neomake.vim and esling (javascript check)

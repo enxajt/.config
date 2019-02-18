@@ -13,11 +13,10 @@ interval=1
 color=#9ee3e5
 
 [volume]
-color=#00FF00
 label=🔊
 instance=Master
 interval=1
-command=[ `/usr/share/i3blocks/volume` = 0% ] && color='#a5eeb7' || color='#6e7177' && /usr/share/i3blocks/volume && echo -e "\n${color}"
+command= if [ `/usr/share/i3blocks/volume | sed -e 's/%$//g'` -eq 0 ]; then color='#9ee3e5'; else color='#FF0000'; fi; /usr/share/i3blocks/volume && echo -e "\n${color}"
 
 [load average]
 label=LA
@@ -62,10 +61,14 @@ color=#9ee3e5
 # The script may be called with a optional argument to set the alert
 # (defaults to 10 for 10%).
 [disk]
-label=df
+label=df:
 #DIR=/mnt/data
 interval=1
 color=#9ee3e5
+
+
+
+# wifi network
 
 [iface]
 instance=wlp2s0
@@ -88,16 +91,18 @@ color=#9ee3e5
 #[openvpn]
 #interval=20
 
+
+
 [time]
 command=date '+%Y-%m(%b)-%d(%a)%H:%M:%S'
 interval=1
 
 # This displays "ARTIST - SONG" if a music is playing.
 # Supported players are: spotify, vlc, audacious, xmms2, mplayer, and others.
-#[mediaplayer]
-#instance=spotify
-#interval=5
-#signal=10
+[mediaplayer]
+instance=vlc
+interval=5
+signal=10
 
 # Add the following bindings to i3 config file:
 # bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks

@@ -246,6 +246,26 @@ repo = 'othree/yajs.vim'
 
 [[plugins]]
 repo = 'vim-scripts/diffchar.vim'
+hook_add = '''
+" F7でトグル
+" vimdiffで起動した際自動的に単語単位の差分(diffchar.vim)を有効
+if &diff
+  augroup enable_diffchar
+    autocmd!
+    autocmd VimEnter * execute "%SDChar"
+  augroup END
+endif
+
+"Char" : 全ての文字間
+"Word1" : \w\+ と隣接する \W の境目
+"Word2" : 非空白文字と空白文字の境目
+"Word3" : \< または \> に該当する境目。vimオプションiskeywordの影響あり
+"逆に言えばiskeywordを設定している場合"Word3"を指定すると便利です。
+"CSV(,)" : カンマ(,)、セミコロン(;)及びタブ文字(\t)による境目
+let g:DiffUnit = "Word3"
+"編集中に差分ハイライトを自動で更新するかどうか 0更新しない 1更新する
+let g:DiffUpdate = 1
+'''
 
 [[plugins]] # check javascript
 repo = 'neomake/neomake'

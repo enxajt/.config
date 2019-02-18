@@ -2,13 +2,13 @@
 video/mp4=vlc.desktop;chromium-browser.desktop;org.gnome.Totem.desktop;
 audio/mpeg=vlc.desktop;org.gnome.Totem.desktop;chromium-browser.desktop;
 application/x-7z-compressed=userapp-7z-TIC1DZ.desktop;
-image/jpeg=eog.desktop;org.gnome.gThumb.desktop;nomacs.desktop;gimp.desktop;firefox.desktop;
+image/jpeg=shutter.desktop;eog.desktop;gimp.desktop;org.gnome.gThumb.desktop;nomacs.desktop;firefox.desktop;
 image/png=eog.desktop;gimp.desktop;firefox.desktop;feh.desktop;
-application/pdf=zathura-pdf-poppler.desktop;YACReader.desktop;libreoffice-draw.desktop;gimp.desktop;firefox.desktop;evince.desktop;calibre-gui.desktop;
+application/pdf=okularApplication_pdf.desktop;AdobeReader.desktop;libreoffice-draw.desktop;zathura-pdf-poppler.desktop;firefox.desktop;pdfarranger.desktop;YACReader.desktop;gimp.desktop;evince.desktop;calibre-gui.desktop;
 text/plain=vim.desktop;vlc.desktop;gedit.desktop;firefox.desktop;wine-extension-txt.desktop;remmina.desktop;
 application/x-freeplane=freeplane.desktop;
 application/x-rar=YACReader.desktop;org.gnome.FileRoller.desktop;userapp-7z-TIC1DZ.desktop;
-application/zip=YACReader.desktop;org.gnome.FileRoller.desktop;mount-archive.desktop;userapp-7z-TIC1DZ.desktop;
+application/zip=org.gnome.FileRoller.desktop;YACReader.desktop;mount-archive.desktop;userapp-7z-TIC1DZ.desktop;
 video/x-msvideo=vlc.desktop;org.gnome.Totem.desktop;
 application/epub+zip=calibre-gui.desktop;wine-extension-epub.desktop;
 application/x-mobipocket-ebook=wine-extension-azw.desktop;
@@ -55,6 +55,9 @@ application/x-xpinstall=firefox.desktop;
 application/x-theme=panel-desktop-handler.desktop;
 image/vnd.microsoft.icon=shutter.desktop;
 application/vnd.oasis.opendocument.graphics=libreoffice-draw.desktop;
+application/javascript=vim.desktop;
+application/x-bittorrent=transmission-gtk.desktop;
+application/vnd.apple.mpegurl=vlc.desktop;
 
 [Default Applications]
 application/x-7z-compressed=userapp-7z-TIC1DZ.desktop

@@ -1,7 +1,24 @@
 #!/bin/sh
 
-# ~/.xbindkeysrc volume, backlight
-xbindkeys
+#xrandr --output DP2 --mode 1600x1200 --above eDP1 # KRC Projector
+# 起動時はDPのみ、後にVGA追加
+# Ctrl Alt F1 and switch back to (the standard graphical) tty7 with Ctrl Alt F7
+xrandr --output eDP1 --mode 1920x1080
+xrandr --output DP1 --auto --above   eDP1 --rotate normal
+xrandr --output DP2 --auto --right-of DP1 --rotate normal
+
+redshift -O 4200
+xsetroot -solid "#000000" # Desktop background
+
+echo 0 | sudo tee /sys/class/leds/dell::kbd_backlight/brightness
+
+STATE=`upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep state`
+if [[ "$STATE" == *"discharging"* ]];
+then xbacklight -set 1;
+else xbacklight -set 10;
+fi
+
+
 
 syndaemon -i 1 -d -t -K # Disable touchpad while typing
 synclient AreaRightEdge=5000 # Disable touchpad right edge
@@ -16,54 +33,29 @@ xinput set-prop 'DELL07E6:00 06CB:76AF Touchpad' 'libinput Tapping Enabled' 1
 xinput set-prop 'DELL07E6:00 06CB:76AF Touchpad' 'libinput Tapping Drag Lock Enabled' 1
 xinput set-prop 'DELL07E6:00 06CB:76AF Touchpad' 'libinput Accel Speed' 1
 
-
-redshift -O 4200
-
-mvt $home/.local/share/recently-used.xbel
+# ~/.xbindkeysrc volume, backlight
+xbindkeys
 
 #pavucontrol
+#alsamixer
 #pulseaudio
-#amixer
+amixer -M set Master 0
 mvt ~/.config/pulse
 pulseaudio -k
 pulseaudio --start
 
-#sleep 1s
-sleep 0.6s
+#sleep 0.6s
+sleep 0.5s
 setxkbmap -option "ctrl:swapcaps"
 
-#xrandr --output DP2 --mode 1600x1200 --above eDP1 # KRC Projector
 
-xrandr --output eDP1 --mode 1920x1080 #KRC
-xrandr --output DP1 --mode 2560x1440 --above eDP1
-xrandr --output DP2 --mode 1280x1024 --right-of DP1
-
-xrandr --output eDP1 --mode 1920x1080 #KRC
-xrandr --output DP2 --mode 2560x1440 --above eDP1
-xrandr --output DP1 --mode 1280x1024 --right-of DP2
-
-xrandr --output eDP1 --mode 1920x1080 #kuya
-xrandr --output DP1 --mode 2560x1440 --above eDP1
-
-#Acer@Kuya miniDisplayPort
-#xrandr --newmode "2560x1440R" 241.50 2560 2608 2640 2720 1440 1443 1448 1481 +hsync -vsync
-#xrandr --addmode HDMI1 2560x1440R
-#xrandr --output eDP1 --mode 1920x1080 --output HDMI1 --mode 2560x1440R --above eDP1
-
-xsetroot -solid "#000000"
-
-dropbox lansync n
-dropbox start
 
 # disable suspend
 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 # re-enable suspend
 #sudo systemctl unmask sleep.target suspend.target hibernate.target hybrid-sleep.target
 
-# working 2018.11.14.
-sudo apt-get update 
-sudo apt-get upgrade -y 
-sudo apt-get autoremove -y
-sudo apt-get dist-upgrade -y
+mvt $home/.local/share/recently-used.xbel
 
-udisksctl unlock -b /dev/sda && udisksctl mount -b /dev/dm-3
+dropbox lansync n
+dropbox start
