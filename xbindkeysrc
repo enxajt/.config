@@ -1,20 +1,24 @@
-"amixer -M set Master 0"
+#"amixer -M set Master 5-" Not working for bluetooth
+"zsh -c 'VOLUME='0'; for SINK in `pacmd list-sinks | grep 'index:' | cut -b12-`; do; pactl set-sink-volume $SINK $VOLUME; done'; pactl set-sink-mute 0 1"
     XF86AudioMute
 
-"amixer -M set Master 5-"
+"zsh -c 'VOLUME='-2%'; for SINK in `pacmd list-sinks | grep 'index:' | cut -b12-`; do; pactl set-sink-volume $SINK $VOLUME; done'"
     XF86AudioLowerVolume
 
-"amixer -M set Master 5+"
+"zsh -c 'VOLUME='+2%'; for SINK in `pacmd list-sinks | grep 'index:' | cut -b12-`; do; pactl set-sink-volume $SINK $VOLUME; done'; pactl set-sink-mute 0 0"
     XF86AudioRaiseVolume
 
-"xbacklight -dec 5 -steps 1"
+"xbacklight -dec 2"
     XF86MonBrightnessDown 
 
-"xbacklight -inc 5 -steps 1"
+"xbacklight -inc 2"
     XF86MonBrightnessUp
 
 "fcitx -r" 
   alt + grave
+
+"xvkbd -xsendevent -text '\[Alt]'"
+  Muhenkan
 
 # For the benefit of emacs users: -*- shell-script -*-
 ###########################

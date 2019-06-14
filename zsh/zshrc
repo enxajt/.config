@@ -45,6 +45,7 @@ export TERM=tmux-256color
 autoload -Uz colors
 colors
 
+alias clock='$HOME/script/clock.sh'
 alias e='exit'
 alias shut='shutdown -h now'
 alias ls='ls -G'
@@ -52,30 +53,30 @@ alias grep='grep --color'
 alias diff='colordiff'
 export MANPAGER='less -R'
 man() {
-    env \
-        LESS_TERMCAP_mb=$(printf "\e[1;31m") \
-        LESS_TERMCAP_md=$(printf "\e[1;31m") \
-        LESS_TERMCAP_me=$(printf "\e[0m") \
-        LESS_TERMCAP_se=$(printf "\e[0m") \
-        LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
-        LESS_TERMCAP_ue=$(printf "\e[0m") \
-        LESS_TERMCAP_us=$(printf "\e[1;32m") \
-        man "$@"
+  env \
+    LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+    LESS_TERMCAP_md=$(printf "\e[1;31m") \
+    LESS_TERMCAP_me=$(printf "\e[0m") \
+    LESS_TERMCAP_se=$(printf "\e[0m") \
+    LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
+    LESS_TERMCAP_ue=$(printf "\e[0m") \
+    LESS_TERMCAP_us=$(printf "\e[1;32m") \
+    man "$@"
 }
 
 alias less='less -R'
 zmodload zsh/zpty
 pty() {
-	zpty pty-${UID} ${1+$@}
-	if [[ ! -t 1 ]];then
-		setopt local_traps
-		trap '' INT
-	fi
-	zpty -r pty-${UID}
-	zpty -d pty-${UID}
+  zpty pty-${UID} ${1+$@}
+  if [[ ! -t 1 ]];then
+    setopt local_traps
+    trap '' INT
+  fi
+  zpty -r pty-${UID}
+  zpty -d pty-${UID}
 }
 ptyless() {
-	pty $@ | less
+  pty $@ | less
 }
 
 ########################################
@@ -166,7 +167,7 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*' ignore-parents parent pwd ..
 # sudo の後ろでコマンド名を補完する
 zstyle ':completion:*:sudo:*' command-path /usr/local/sbin /usr/local/bin \
-                   /usr/sbin /usr/bin /sbin /bin /usr/X11R6/bin
+           /usr/sbin /usr/bin /sbin /bin /usr/X11R6/bin
 # ps コマンドのプロセス名補完
 zstyle ':completion:*:processes' command 'ps x -o pid,s,args'
 # 補完後、メニュー選択モードになり左右キーで移動が出来る
@@ -244,9 +245,9 @@ setopt ignore_eof
 bindkey "^[[3~" delete-char
 
 function _git_status() {
-    echo git status
-    git status
-    zle reset-prompt
+  echo git status
+  git status
+  zle reset-prompt
 }
 zle -N git_status _git_status
 bindkey '^G^S' git_status
@@ -302,14 +303,14 @@ alias sudo='sudo '
 ########################################
 # mollifier delta blog : http://mollifier.hatenablog.com/entry/20100317/p1
 if which pbcopy >/dev/null 2>&1 ; then
-    # Mac
-    alias -g C='| pbcopy'
+  # Mac
+  alias -g C='| pbcopy'
 elif which xsel >/dev/null 2>&1 ; then
-    # Linux
-    alias -g C='| xsel --input --clipboard'
+  # Linux
+  alias -g C='| xsel --input --clipboard'
 elif which putclip >/dev/null 2>&1 ; then
-    # Cygwin
-    alias -g C='| putclip'
+  # Cygwin
+  alias -g C='| putclip'
 fi
 
 # cdrコマンドを有効 ログアウトしても有効なディレクトリ履歴
@@ -321,22 +322,22 @@ add-zsh-hook chpwd chpwd_recent_dirs
 ########################################
 # OS 別の設定
 case ${OSTYPE} in
-    darwin*)
-        #Mac用の設定
-        export CLICOLOR=1
-        alias ls='ls -G -F'
-        ;;
-    linux*)
-        #Linux用の設定
-        alias ls='ls -F --color=auto'
-        ;;
+  darwin*)
+    #Mac用の設定
+    export CLICOLOR=1
+    alias ls='ls -G -F'
+    ;;
+  linux*)
+    #Linux用の設定
+    alias ls='ls -F --color=auto'
+    ;;
 esac
 
 ########################################
 # safe rm
 if type trash-put &> /dev/null
 then
-    alias rm=trash-put
+  alias rm=trash-put
 fi
 
 ########################################

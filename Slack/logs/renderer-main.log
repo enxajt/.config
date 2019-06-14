@@ -441,3 +441,519 @@
   "teamId": "T913C3A8P",
   "title": "[REDACTED]"
 }
+[03/31/19, 18:17:43:138] info: ╔═════════════════════════════════════════════════════════════════════════════════╗
+[03/31/19, 18:17:43:138] info: ║      Slack 3.3.8, linux 4.15.0-29-generic on x64 at 03/31/19, 18:17:43:136      ║
+[03/31/19, 18:17:43:138] info: ╚═════════════════════════════════════════════════════════════════════════════════╝
+[03/31/19, 18:17:43:239] info: Initializing local storage instance at path: /home/enxajt/.config/Slack/local-settings.json
+[03/31/19, 18:17:43:361] info: NetworkStatus: Waiting for network online…
+[03/31/19, 18:17:43:479] info: TranslationLookup: locale set to ja-JP for renderer
+[03/31/19, 18:17:43:498] info: Read UUID from file successful
+{
+  "uuid": "2597994a-f0f8-5e80-83f2-c9ce11dd8de7"
+}
+[03/31/19, 18:17:43:579] info: Don't start background client because T913C3A8P is missing token
+[03/31/19, 18:17:43:579] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[03/31/19, 18:17:43:593] info: Don't start background client because T5LA2J7CZ is selected team
+[03/31/19, 18:17:43:594] info: Don't start background client because TBJMSNACR is missing token
+[03/31/19, 18:17:43:599] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[03/31/19, 18:17:43:749] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[03/31/19, 18:17:44:151] info: Store: SET_NETWORK_STATUS online
+[03/31/19, 18:17:44:398] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "loaded",
+  "teamId": "TBJMSNACR"
+}
+[03/31/19, 18:17:44:403] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "page-will-navigate",
+  "teamId": "TBJMSNACR"
+}
+[03/31/19, 18:17:44:747] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "TBJMSNACR"
+}
+[03/31/19, 18:17:45:444] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:17:45:451] info: Store: MAIN_WINDOW_SHOWN
+[03/31/19, 18:17:45:473] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:17:45:808] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:17:46:475] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    2,
+    24
+  ],
+  "size": [
+    2556,
+    1389
+  ]
+}
+[03/31/19, 18:17:47:064] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "loaded",
+  "teamId": "TBJMSNACR"
+}
+[03/31/19, 18:17:47:068] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 4,
+  "state": "loaded",
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:17:47:382] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:17:47:721] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "TBJMSNACR"
+}
+[03/31/19, 18:17:48:063] info: Store: SELECT_CHANNEL C8ZU42SM9
+[03/31/19, 18:17:48:065] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:17:48:069] info: Store: UPDATE_SETTINGS
+{
+  "locale": "ja-JP"
+}
+[03/31/19, 18:17:48:075] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T913C3A8P",
+  "theme": {
+    "active_item": "#1264A3",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#2BAC76",
+    "badge": "#CD2553",
+    "column_bg": "#3F0E40",
+    "hover_item": "#350D36",
+    "menu_bg": "#350d36",
+    "text_color": "#FFFFFF"
+  }
+}
+[03/31/19, 18:17:48:221] info: Store: UPDATE_TEAM_ICONS
+{
+  "icons": {
+    "image_102": "https://avatars.slack-edge.com/2018-07-26/405441404085_4cf77c43180df6b56861_102.png",
+    "image_132": "https://avatars.slack-edge.com/2018-07-26/405441404085_4cf77c43180df6b56861_132.png",
+    "image_230": "https://avatars.slack-edge.com/2018-07-26/405441404085_4cf77c43180df6b56861_230.png",
+    "image_34": "https://avatars.slack-edge.com/2018-07-26/405441404085_4cf77c43180df6b56861_34.png",
+    "image_44": "https://avatars.slack-edge.com/2018-07-26/405441404085_4cf77c43180df6b56861_44.png",
+    "image_68": "https://avatars.slack-edge.com/2018-07-26/405441404085_4cf77c43180df6b56861_68.png",
+    "image_88": "https://avatars.slack-edge.com/2018-07-26/405441404085_4cf77c43180df6b56861_88.png",
+    "image_original": "https://avatars.slack-edge.com/2018-07-26/405441404085_4cf77c43180df6b56861_original.png"
+  },
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:17:48:548] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:17:48:706] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:17:48:722] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 4,
+  "state": "webapp-loaded",
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:17:48:729] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[03/31/19, 18:17:48:848] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:17:48:852] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T913C3A8P",
+  "token": "xoxs-⋯"
+}
+[03/31/19, 18:17:48:868] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:17:59:896] info: Store: HANDLE_DEEP_LINK
+{
+  "causedLaunch": false,
+  "url": "slack://T5LA2J7CZ/magic-login/585766260033-988bb60e3d36a5c67c02f8e9234ac255d1d4ed2c4aba43fd81bd53d0f704a607"
+}
+[03/31/19, 18:18:00:350] info: Store: ADD_NEW_TEAM
+{
+  "id": "U5LAP6FKJ",
+  "team_id": "T5LA2J7CZ"
+}
+[03/31/19, 18:18:00:573] info: Store: RELOAD
+{
+  "everything": false
+}
+[03/31/19, 18:18:00:910] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    2,
+    24
+  ],
+  "size": [
+    2556,
+    1389
+  ]
+}
+[03/31/19, 18:18:03:552] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:18:04:041] info: Store: SELECT_CHANNEL C5M0516R3
+[03/31/19, 18:18:04:044] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "ja-JP",
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:18:04:048] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T5LA2J7CZ",
+  "theme": {
+    "active_item": "#1264A3",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#2BAC76",
+    "badge": "#CD2553",
+    "column_bg": "#3F0E40",
+    "hover_item": "#350D36",
+    "menu_bg": "#350d36",
+    "text_color": "#FFFFFF"
+  }
+}
+[03/31/19, 18:18:04:762] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:18:05:561] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "ja-JP",
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:18:05:576] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:18:05:584] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[03/31/19, 18:18:05:845] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:18:05:847] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T5LA2J7CZ",
+  "token": "xoxs-⋯"
+}
+[03/31/19, 18:18:08:156] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    2,
+    24
+  ],
+  "size": [
+    2556,
+    1389
+  ]
+}
+[03/31/19, 18:18:12:505] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:18:12:686] info: Store: SELECT_TEAM TBJMSNACR
+[03/31/19, 18:18:22:328] info: Store: HANDLE_DEEP_LINK
+{
+  "causedLaunch": false,
+  "url": "slack://TBJMSNACR/magic-login/595559205031-803b9733a9bab4cc8b79d8546108188dba737c6be437b75f2c2b4ed631613db5"
+}
+[03/31/19, 18:18:22:372] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:18:22:704] info: Store: ADD_NEW_TEAM
+{
+  "id": "UBX426VPD",
+  "team_id": "TBJMSNACR"
+}
+[03/31/19, 18:18:22:959] info: Store: RELOAD
+{
+  "everything": false
+}
+[03/31/19, 18:18:23:341] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    2,
+    24
+  ],
+  "size": [
+    2556,
+    1389
+  ]
+}
+[03/31/19, 18:18:25:936] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "loaded",
+  "teamId": "TBJMSNACR"
+}
+[03/31/19, 18:18:27:039] info: Store: SELECT_CHANNEL CBK54MHPV
+[03/31/19, 18:18:27:042] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "ja-JP",
+  "teamId": "TBJMSNACR"
+}
+[03/31/19, 18:18:27:047] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "TBJMSNACR",
+  "theme": {
+    "active_item": "#1264A3",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#2BAC76",
+    "badge": "#CD2553",
+    "column_bg": "#3F0E40",
+    "hover_item": "#350D36",
+    "menu_bg": "#350d36",
+    "text_color": "#FFFFFF"
+  }
+}
+[03/31/19, 18:18:27:076] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "TBJMSNACR"
+}
+[03/31/19, 18:18:28:565] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "ja-JP",
+  "teamId": "TBJMSNACR"
+}
+[03/31/19, 18:18:28:580] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "webapp-loaded",
+  "teamId": "TBJMSNACR"
+}
+[03/31/19, 18:18:28:585] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[03/31/19, 18:18:28:812] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "TBJMSNACR"
+}
+[03/31/19, 18:18:28:814] info: Store: STORE_API_TOKEN
+{
+  "teamId": "TBJMSNACR",
+  "token": "xoxs-⋯"
+}
+[03/31/19, 18:18:31:778] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:18:32:721] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    2,
+    24
+  ],
+  "size": [
+    2556,
+    1389
+  ]
+}
+[03/31/19, 18:18:33:532] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:18:33:711] info: Store: SELECT_TEAM T913C3A8P
+[03/31/19, 18:18:33:740] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[03/31/19, 18:18:33:742] info: TranslationLookup: locale set to en-US for renderer
+[03/31/19, 18:18:39:618] info: Store: SELECT_CHANNEL DBXNADUR2
+[03/31/19, 18:19:56:397] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:19:57:391] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    2,
+    24
+  ],
+  "size": [
+    2556,
+    1389
+  ]
+}
+[03/31/19, 18:20:28:834] info: Store: SELECT_CHANNEL DBXD3AELR
+[03/31/19, 18:20:35:098] info: Store: SELECT_CHANNEL DBXNADUR2
+[03/31/19, 18:21:20:467] info: Store: SELECT_CHANNEL CFWNTBDJA
+[03/31/19, 18:21:49:065] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:21:50:057] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    2,
+    24
+  ],
+  "size": [
+    2556,
+    1389
+  ]
+}
+[03/31/19, 18:24:08:443] info: Store: SELECT_CHANNEL DBXNADUR2
+[03/31/19, 18:24:43:964] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:24:44:951] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    2,
+    24
+  ],
+  "size": [
+    2556,
+    1389
+  ]
+}
+[03/31/19, 18:24:55:411] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:24:55:426] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:24:55:428] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:24:56:411] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    2,
+    24
+  ],
+  "size": [
+    2556,
+    1389
+  ]
+}
+[03/31/19, 18:24:57:274] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:24:58:243] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    2,
+    24
+  ],
+  "size": [
+    2556,
+    1389
+  ]
+}
+[03/31/19, 18:28:45:229] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:28:46:083] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:28:47:047] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    2,
+    24
+  ],
+  "size": [
+    2556,
+    1389
+  ]
+}
+[03/31/19, 18:28:58:862] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:28:59:805] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    2,
+    24
+  ],
+  "size": [
+    2556,
+    1389
+  ]
+}
+[03/31/19, 18:29:10:752] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:29:10:773] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:29:10:775] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:29:11:747] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    2,
+    24
+  ],
+  "size": [
+    2556,
+    1389
+  ]
+}
+[03/31/19, 18:29:46:475] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:29:47:465] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    2,
+    24
+  ],
+  "size": [
+    2556,
+    1389
+  ]
+}
+[03/31/19, 18:29:48:636] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:29:49:551] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    2,
+    24
+  ],
+  "size": [
+    2556,
+    1389
+  ]
+}
+[03/31/19, 18:29:50:155] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:29:51:143] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    2,
+    24
+  ],
+  "size": [
+    2556,
+    1389
+  ]
+}
+[03/31/19, 18:29:52:606] info: Store: SET_FULL_SCREEN

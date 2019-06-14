@@ -13,6 +13,12 @@ repo = 'Shougo/dein.vim'
 #  let g:markdown_preview_eager = 1
 #'''
 
+[[plugins]]
+repo = 'previm/previm'
+hook_add = '''
+  let g:previm_open_cmd = 'firefox'
+'''
+
 [[plugins]] # カーソル位置のコンテキストに合わせてftを切り替える
 repo = 'osyo-manga/vim-precious'
 depends = ['context_filetype.vim', 'vim-textobj-user']

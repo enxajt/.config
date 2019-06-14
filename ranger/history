@@ -9,7 +9,9 @@ search test
 search .local
 termite
 terminal
-search down
 rename
 rename 2019.01.16.KRCパンフレット原稿_W2P,アプリ開発.pdf
 search krc
+search note
+search enx
+search down

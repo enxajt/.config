@@ -910,3 +910,1049 @@
   "title": "[REDACTED]"
 }
 [10/18/18, 20:23:42:820] info: Creating new Electron notification.
+[03/31/19, 18:17:24:934] info: ╔═════════════════════════════════════════════════════════════════════════════════╗
+[03/31/19, 18:17:24:934] info: ║      Slack 3.3.8, linux 4.15.0-29-generic on x64 at 03/31/19, 18:17:24:933      ║
+[03/31/19, 18:17:24:934] info: ╚═════════════════════════════════════════════════════════════════════════════════╝
+[03/31/19, 18:17:25:141] info: Initializing local storage instance at path: /home/enxajt/.config/Slack/local-settings.json
+[03/31/19, 18:17:25:380] info: TraceRecorder: setting up trace recorder, trace will be stored under /home/enxajt/.config/Slack/logs/recorded-trace
+[03/31/19, 18:17:25:385] info: Copying current Cookies into StaleCookies
+[03/31/19, 18:17:25:394] info: Configuring uncaughtExceptionHandler
+[03/31/19, 18:17:25:394] info: Configuring unhandledRejectionHandler
+[03/31/19, 18:17:25:394] info: Registered with apiKey acaff8df67924f677747922423057034
+[03/31/19, 18:17:42:411] info: Store: persist/REHYDRATE
+{
+  "appTeams": {
+    "selectedTeamId": "T5LA2J7CZ",
+    "teamsByIndex": [
+      "T913C3A8P",
+      "T5LA2J7CZ",
+      "TBJMSNACR"
+    ],
+    "teamsToSignOut": []
+  },
+  "enterprise": {
+    "T913C3A8P": null,
+    "T5LA2J7CZ": null,
+    "TBJMSNACR": null
+  },
+  "settings": {
+    "appVersion": "3.3.3",
+    "versionName": "Dirty Computer",
+    "platform": "linux",
+    "platformVersion": {
+      "major": 4,
+      "minor": 15,
+      "build": 0
+    },
+    "isWin10": false,
+    "isBeforeWin10": false,
+    "resourcePath": "/usr/lib/slack/resources/app.asar",
+    "webappSrcPath": null,
+    "webappParams": null,
+    "isDevMode": false,
+    "devEnv": null,
+    "logFile": null,
+    "rxLogging": false,
+    "openDevToolsOnStart": false,
+    "pretendNotReallyWindows10": false,
+    "releaseChannel": "prod",
+    "autoHideMenuBar": false,
+    "defaultSigninTeam": null,
+    "isTitleBarHidden": false,
+    "hasRunApp": true,
+    "hasRunFromTray": true,
+    "reportIssueOnStartup": false,
+    "isSignedIntoSlackOrg": false,
+    "isGpuCompositionAvailable": true,
+    "runFromTray": true,
+    "launchOnStartup": false,
+    "spellcheckerLanguage": null,
+    "zoomLevel": 0,
+    "workspaceIdleTimeout": 43200000,
+    "whitelistedUrlSchemes": [
+      "http:",
+      "https:",
+      "mailto:",
+      "skype:",
+      "spotify:",
+      "live:",
+      "callto:",
+      "tel:",
+      "im:",
+      "sip:",
+      "sips:",
+      "slack:"
+    ],
+    "isTitleBarForcedByUser": false,
+    "useHwAcceleration": true,
+    "isOpenExternalShellForced": true,
+    "PrefSSBFileDownloadPath": "/home/enxajt/Downloads",
+    "notificationMethod": null,
+    "notificationPlayback": null,
+    "notificationFailover": 0,
+    "notificationFailoverEnabled": true,
+    "notificationClickThrough": false,
+    "notificationClickThroughMain": true,
+    "notificationTimeout": 6000,
+    "notificationAfterHoverTimeout": 2000,
+    "notificationMaxItems": 3,
+    "notificationZoomLevel": null,
+    "notificationStyle": null,
+    "notificationPresentationCheck": null,
+    "notifyPosition": {
+      "corner": "bottom_right",
+      "display": "same_as_app"
+    },
+    "locale": "ja-JP",
+    "spellCheckerVersion": "V2",
+    "os": false,
+    "release": false,
+    "desktopEnvironment": false,
+    "isAeroGlassEnabled": false,
+    "linux": {
+      "os": "Ubuntu 16.04.5 LTS",
+      "release": "xenial",
+      "desktopEnvironment": "i3"
+    },
+    "sandboxSigninWindow": true
+  },
+  "windowFrame": {
+    "windowSettings": {
+      "size": [
+        1916,
+        1029
+      ],
+      "position": [
+        2,
+        24
+      ],
+      "isMaximized": false
+    },
+    "isFullScreen": false
+  }
+}
+[03/31/19, 18:17:42:427] info: initializeMainWindowEpic: Waiting for selected team to load
+{
+  "selectedTeamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:17:42:428] info: Store: UPDATE_SETTINGS
+{
+  "isSignedIntoSlackOrg": false
+}
+[03/31/19, 18:17:42:429] info: UpdaterEpics: Updates disabled because
+{
+  "reasons": [
+    "using Linux"
+  ]
+}
+[03/31/19, 18:17:42:430] info: Read UUID from file successful
+{
+  "uuid": "2597994a-f0f8-5e80-83f2-c9ce11dd8de7"
+}
+[03/31/19, 18:17:42:564] info: TranslationLookup: locale set to ja-JP for browser
+[03/31/19, 18:17:42:601] info: Store: INITIALIZE_SETTINGS
+{
+  "releaseChannel": "prod",
+  "platformVersion": {
+    "major": 4,
+    "minor": 15,
+    "build": 0
+  },
+  "isTitleBarHidden": false,
+  "isDevMode": false,
+  "appVersion": "3.3.8",
+  "versionName": "Alaska",
+  "devEnv": null,
+  "resourcePath": "/usr/lib/slack/resources/app.asar",
+  "webappSrcPath": null,
+  "webappParams": null,
+  "launchOnStartup": false,
+  "openDevToolsOnStart": false,
+  "logFile": null,
+  "pretendNotReallyWindows10": false,
+  "isAeroGlassEnabled": false,
+  "isGpuCompositionAvailable": true,
+  "linux": {
+    "os": "Ubuntu 18.04.2 LTS",
+    "release": "bionic",
+    "desktopEnvironment": "i3"
+  }
+}
+[03/31/19, 18:17:42:602] info: AutoLoginEpic: Checking for autologin.
+[03/31/19, 18:17:42:607] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:17:42:608] info: Store: ADD_WINDOW
+{
+  "id": 2,
+  "type": "main"
+}
+[03/31/19, 18:17:42:609] info: BrowserViewManager: Starting initialization
+[03/31/19, 18:17:42:609] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:17:42:609] info: BrowserViewManager: Creating BrowserView
+{
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:17:42:610] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:17:42:610] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "teamId": "T5LA2J7CZ",
+  "state": "unloaded"
+}
+[03/31/19, 18:17:42:613] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T913C3A8P |       |            |
+|-----------+-------+------------+
+| T5LA2J7CZ | start |            |
+|-----------+-------+------------+
+| TBJMSNACR |       |            |
++-----------+-------+------------+
+[03/31/19, 18:17:42:616] info: Don't start background client because T913C3A8P is missing token
+[03/31/19, 18:17:42:616] info: Don't start background client because TBJMSNACR is missing token
+[03/31/19, 18:17:42:616] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:17:42:617] info: BrowserViewManager: Creating BrowserView
+{
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:17:42:617] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:17:42:618] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 4,
+  "teamId": "T913C3A8P",
+  "state": "unloaded"
+}
+[03/31/19, 18:17:42:619] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T913C3A8P | start |            |
+|-----------+-------+------------+
+| T5LA2J7CZ | start |            |
+|-----------+-------+------------+
+| TBJMSNACR |       |            |
++-----------+-------+------------+
+[03/31/19, 18:17:42:630] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "TBJMSNACR"
+}
+[03/31/19, 18:17:42:630] info: BrowserViewManager: Creating BrowserView
+{
+  "teamId": "TBJMSNACR"
+}
+[03/31/19, 18:17:42:631] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:17:42:632] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "teamId": "TBJMSNACR",
+  "state": "unloaded"
+}
+[03/31/19, 18:17:42:633] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T913C3A8P | start |            |
+|-----------+-------+------------+
+| T5LA2J7CZ | start |            |
+|-----------+-------+------------+
+| TBJMSNACR | start |            |
++-----------+-------+------------+
+[03/31/19, 18:17:42:636] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:17:42:637] info: BrowserViewManager: Finished initialization
+[03/31/19, 18:17:42:639] info: PersistSettingsWindowBehavior: Loading windowMetrics
+{
+  "settings": {
+    "size": [
+      1916,
+      1029
+    ],
+    "position": [
+      2,
+      24
+    ],
+    "isMaximized": false
+  }
+}
+[03/31/19, 18:17:42:640] info: rectIsMostlyContainedIn: Window too far top for display (229.8 < 1440)
+[03/31/19, 18:17:42:818] info: Application: Setting main window ID
+{
+  "id": 2
+}
+[03/31/19, 18:17:42:819] info: App: Welcome to Slack 3.3.8 x64
+[03/31/19, 18:17:42:819] info: App load time: 18,27797349
+[03/31/19, 18:17:43:539] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[03/31/19, 18:17:43:598] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[03/31/19, 18:17:43:599] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:17:43:614] info: Team boot count
+{
+  "count": 1
+}
+[03/31/19, 18:17:44:150] info: Store: SET_NETWORK_STATUS online
+[03/31/19, 18:17:44:363] info: Team boot count
+{
+  "count": 2
+}
+[03/31/19, 18:17:44:397] info: WebContents LifeCycle: webContents:5 from 'unloaded' to 'loaded' took 1764 ms
+[03/31/19, 18:17:44:397] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "loaded",
+  "teamId": "TBJMSNACR"
+}
+[03/31/19, 18:17:44:398] info: Background Clients Update: 
++-----------+---------+------------+
+|           | Full    | Background |
+|-----------+---------+------------+
+| T913C3A8P | start   |            |
+|-----------+---------+------------+
+| T5LA2J7CZ | start   |            |
+|-----------+---------+------------+
+| TBJMSNACR | loading |            |
++-----------+---------+------------+
+[03/31/19, 18:17:44:399] info: WebContents LifeCycle: webContents:5 from 'loaded' to 'page-will-navigate' took 2 ms
+[03/31/19, 18:17:44:399] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "page-will-navigate",
+  "teamId": "TBJMSNACR"
+}
+[03/31/19, 18:17:44:401] info: Background Clients Update: 
++-----------+----------+------------+
+|           | Full     | Background |
+|-----------+----------+------------+
+| T913C3A8P | start    |            |
+|-----------+----------+------------+
+| T5LA2J7CZ | start    |            |
+|-----------+----------+------------+
+| TBJMSNACR | navigate |            |
++-----------+----------+------------+
+[03/31/19, 18:17:44:642] info: Team boot count
+{
+  "count": 3
+}
+[03/31/19, 18:17:44:746] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "TBJMSNACR"
+}
+[03/31/19, 18:17:44:807] info: Team boot count
+{
+  "count": 4
+}
+[03/31/19, 18:17:45:440] info: WebContents LifeCycle: webContents:3 from 'unloaded' to 'loaded' took 2826 ms
+[03/31/19, 18:17:45:441] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:17:45:447] info: Background Clients Update: 
++-----------+----------+------------+
+|           | Full     | Background |
+|-----------+----------+------------+
+| T913C3A8P | start    |            |
+|-----------+----------+------------+
+| T5LA2J7CZ | loading  |            |
+|-----------+----------+------------+
+| TBJMSNACR | navigate |            |
++-----------+----------+------------+
+[03/31/19, 18:17:45:448] info: initializeMainWindowEpic: Showing main window
+{
+  "shouldMinimize": false,
+  "shouldMaximize": false,
+  "shouldHide": false
+}
+[03/31/19, 18:17:45:449] info: Store: MAIN_WINDOW_SHOWN
+[03/31/19, 18:17:45:469] info: WebContents LifeCycle: webContents:3 from 'loaded' to 'page-will-navigate' took 28 ms
+[03/31/19, 18:17:45:469] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:17:45:470] info: Background Clients Update: 
++-----------+----------+------------+
+|           | Full     | Background |
+|-----------+----------+------------+
+| T913C3A8P | start    |            |
+|-----------+----------+------------+
+| T5LA2J7CZ | navigate |            |
+|-----------+----------+------------+
+| TBJMSNACR | navigate |            |
++-----------+----------+------------+
+[03/31/19, 18:17:45:807] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:17:46:378] info: Team boot count
+{
+  "count": 5
+}
+[03/31/19, 18:17:46:474] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    2556,
+    1389
+  ],
+  "position": [
+    2,
+    24
+  ],
+  "isMaximized": false
+}
+[03/31/19, 18:17:47:062] info: WebContents LifeCycle: webContents:5 from 'page-will-navigate' to 'loaded' took 2663 ms
+[03/31/19, 18:17:47:062] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "loaded",
+  "teamId": "TBJMSNACR"
+}
+[03/31/19, 18:17:47:064] info: Background Clients Update: 
++-----------+----------+------------+
+|           | Full     | Background |
+|-----------+----------+------------+
+| T913C3A8P | start    |            |
+|-----------+----------+------------+
+| T5LA2J7CZ | navigate |            |
+|-----------+----------+------------+
+| TBJMSNACR | loading  |            |
++-----------+----------+------------+
+[03/31/19, 18:17:47:066] info: WebContents LifeCycle: webContents:4 from 'unloaded' to 'loaded' took 4447 ms
+[03/31/19, 18:17:47:067] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 4,
+  "state": "loaded",
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:17:47:068] info: Background Clients Update: 
++-----------+----------+------------+
+|           | Full     | Background |
+|-----------+----------+------------+
+| T913C3A8P | loading  |            |
+|-----------+----------+------------+
+| T5LA2J7CZ | navigate |            |
+|-----------+----------+------------+
+| TBJMSNACR | loading  |            |
++-----------+----------+------------+
+[03/31/19, 18:17:47:380] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:17:47:720] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "TBJMSNACR"
+}
+[03/31/19, 18:17:48:061] info: Store: SELECT_CHANNEL C8ZU42SM9
+[03/31/19, 18:17:48:064] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:17:48:069] info: Store: UPDATE_SETTINGS
+{
+  "locale": "ja-JP"
+}
+[03/31/19, 18:17:48:073] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T913C3A8P",
+  "theme": {
+    "active_item": "#1264A3",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#2BAC76",
+    "badge": "#CD2553",
+    "column_bg": "#3F0E40",
+    "hover_item": "#350D36",
+    "menu_bg": "#350d36",
+    "text_color": "#FFFFFF"
+  }
+}
+[03/31/19, 18:17:48:219] info: Store: UPDATE_TEAM_ICONS
+{
+  "icons": {
+    "image_102": "https://avatars.slack-edge.com/2018-07-26/405441404085_4cf77c43180df6b56861_102.png",
+    "image_132": "https://avatars.slack-edge.com/2018-07-26/405441404085_4cf77c43180df6b56861_132.png",
+    "image_230": "https://avatars.slack-edge.com/2018-07-26/405441404085_4cf77c43180df6b56861_230.png",
+    "image_34": "https://avatars.slack-edge.com/2018-07-26/405441404085_4cf77c43180df6b56861_34.png",
+    "image_44": "https://avatars.slack-edge.com/2018-07-26/405441404085_4cf77c43180df6b56861_44.png",
+    "image_68": "https://avatars.slack-edge.com/2018-07-26/405441404085_4cf77c43180df6b56861_68.png",
+    "image_88": "https://avatars.slack-edge.com/2018-07-26/405441404085_4cf77c43180df6b56861_88.png",
+    "image_original": "https://avatars.slack-edge.com/2018-07-26/405441404085_4cf77c43180df6b56861_original.png"
+  },
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:17:48:546] info: WebContents LifeCycle: webContents:3 from 'page-will-navigate' to 'loaded' took 3078 ms
+[03/31/19, 18:17:48:546] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:17:48:548] info: Background Clients Update: 
++-----------+---------+------------+
+|           | Full    | Background |
+|-----------+---------+------------+
+| T913C3A8P | loading |            |
+|-----------+---------+------------+
+| T5LA2J7CZ | loading |            |
+|-----------+---------+------------+
+| TBJMSNACR | loading |            |
++-----------+---------+------------+
+[03/31/19, 18:17:48:703] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:17:48:719] info: WebContents LifeCycle: webContents:4 from 'loaded' to 'webapp-loaded' took 1653 ms
+[03/31/19, 18:17:48:720] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 4,
+  "state": "webapp-loaded",
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:17:48:723] info: Background Clients Update: 
++-----------+---------+------------+
+|           | Full    | Background |
+|-----------+---------+------------+
+| T913C3A8P | ready   |            |
+|-----------+---------+------------+
+| T5LA2J7CZ | loading |            |
+|-----------+---------+------------+
+| TBJMSNACR | loading |            |
++-----------+---------+------------+
+[03/31/19, 18:17:48:726] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[03/31/19, 18:17:48:847] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "teamId": "T913C3A8P",
+  "enterpriseId": null
+}
+[03/31/19, 18:17:48:848] info: Store: STORE_API_TOKEN
+{
+  "token": "xoxs-⋯",
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:17:48:864] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:17:59:894] info: App: Received deep link protocol activation.
+[03/31/19, 18:17:59:894] info: Store: HANDLE_DEEP_LINK
+{
+  "url": "slack://T5LA2J7CZ/magic-login/585766260033-988bb60e3d36a5c67c02f8e9234ac255d1d4ed2c4aba43fd81bd53d0f704a607",
+  "causedLaunch": false
+}
+[03/31/19, 18:17:59:902] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:17:59:902] info: MagicLogin: Making magic login API request to https://slack.com/api/
+[03/31/19, 18:17:59:906] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:18:00:349] info: Store: ADD_NEW_TEAM
+{
+  "team_id": "T5LA2J7CZ",
+  "id": "U5LAP6FKJ"
+}
+[03/31/19, 18:18:00:351] info: MagicLogin: added team T5LA2J7CZ
+[03/31/19, 18:18:00:351] info: Application: handleDeepLink for magic login complete
+[03/31/19, 18:18:00:571] info: Store: RELOAD
+{
+  "everything": false
+}
+[03/31/19, 18:18:00:907] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    2556,
+    1389
+  ],
+  "position": [
+    2,
+    24
+  ],
+  "isMaximized": false
+}
+[03/31/19, 18:18:02:024] info: Team boot count
+{
+  "count": 6
+}
+[03/31/19, 18:18:03:551] info: WebContents LifeCycle: webContents:3 from 'loaded' to 'loaded' took 15005 ms
+[03/31/19, 18:18:03:551] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:18:04:040] info: Store: SELECT_CHANNEL C5M0516R3
+[03/31/19, 18:18:04:042] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "ja-JP",
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:18:04:048] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T5LA2J7CZ",
+  "theme": {
+    "active_item": "#1264A3",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#2BAC76",
+    "badge": "#CD2553",
+    "column_bg": "#3F0E40",
+    "hover_item": "#350D36",
+    "menu_bg": "#350d36",
+    "text_color": "#FFFFFF"
+  }
+}
+[03/31/19, 18:18:04:761] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:18:05:557] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "ja-JP",
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:18:05:574] info: WebContents LifeCycle: webContents:3 from 'loaded' to 'webapp-loaded' took 2023 ms
+[03/31/19, 18:18:05:574] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:18:05:580] info: Background Clients Update: 
++-----------+---------+------------+
+|           | Full    | Background |
+|-----------+---------+------------+
+| T913C3A8P | ready   |            |
+|-----------+---------+------------+
+| T5LA2J7CZ | ready   |            |
+|-----------+---------+------------+
+| TBJMSNACR | loading |            |
++-----------+---------+------------+
+[03/31/19, 18:18:05:583] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[03/31/19, 18:18:05:844] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "teamId": "T5LA2J7CZ",
+  "enterpriseId": null
+}
+[03/31/19, 18:18:05:845] info: Store: STORE_API_TOKEN
+{
+  "token": "xoxs-⋯",
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:18:06:575] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:18:06:830] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:18:07:152] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T5LA2J7CZ"
+}
+[03/31/19, 18:18:07:284] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:18:08:155] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    2556,
+    1389
+  ],
+  "position": [
+    2,
+    24
+  ],
+  "isMaximized": false
+}
+[03/31/19, 18:18:12:503] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:18:12:681] info: Store: SELECT_TEAM TBJMSNACR
+[03/31/19, 18:18:12:685] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "TBJMSNACR"
+}
+[03/31/19, 18:18:12:696] info: dispatchWebappEventsEpic: Dispatch 'blur' on T5LA2J7CZ, 'focus' on TBJMSNACR
+[03/31/19, 18:18:22:327] info: App: Received deep link protocol activation.
+[03/31/19, 18:18:22:327] info: Store: HANDLE_DEEP_LINK
+{
+  "url": "slack://TBJMSNACR/magic-login/595559205031-803b9733a9bab4cc8b79d8546108188dba737c6be437b75f2c2b4ed631613db5",
+  "causedLaunch": false
+}
+[03/31/19, 18:18:22:333] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:18:22:333] info: MagicLogin: Making magic login API request to https://slack.com/api/
+[03/31/19, 18:18:22:336] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "TBJMSNACR"
+}
+[03/31/19, 18:18:22:371] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:18:22:703] info: Store: ADD_NEW_TEAM
+{
+  "team_id": "TBJMSNACR",
+  "id": "UBX426VPD"
+}
+[03/31/19, 18:18:22:704] info: MagicLogin: added team TBJMSNACR
+[03/31/19, 18:18:22:704] info: Application: handleDeepLink for magic login complete
+[03/31/19, 18:18:22:954] info: Store: RELOAD
+{
+  "everything": false
+}
+[03/31/19, 18:18:23:339] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    2556,
+    1389
+  ],
+  "position": [
+    2,
+    24
+  ],
+  "isMaximized": false
+}
+[03/31/19, 18:18:23:867] info: Team boot count
+{
+  "count": 7
+}
+[03/31/19, 18:18:25:935] info: WebContents LifeCycle: webContents:5 from 'loaded' to 'loaded' took 38873 ms
+[03/31/19, 18:18:25:935] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "loaded",
+  "teamId": "TBJMSNACR"
+}
+[03/31/19, 18:18:27:038] info: Store: SELECT_CHANNEL CBK54MHPV
+[03/31/19, 18:18:27:041] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "ja-JP",
+  "teamId": "TBJMSNACR"
+}
+[03/31/19, 18:18:27:046] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "TBJMSNACR",
+  "theme": {
+    "active_item": "#1264A3",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#2BAC76",
+    "badge": "#CD2553",
+    "column_bg": "#3F0E40",
+    "hover_item": "#350D36",
+    "menu_bg": "#350d36",
+    "text_color": "#FFFFFF"
+  }
+}
+[03/31/19, 18:18:27:075] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "TBJMSNACR"
+}
+[03/31/19, 18:18:28:563] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "ja-JP",
+  "teamId": "TBJMSNACR"
+}
+[03/31/19, 18:18:28:578] info: WebContents LifeCycle: webContents:5 from 'loaded' to 'webapp-loaded' took 2643 ms
+[03/31/19, 18:18:28:578] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 5,
+  "state": "webapp-loaded",
+  "teamId": "TBJMSNACR"
+}
+[03/31/19, 18:18:28:581] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T913C3A8P | ready |            |
+|-----------+-------+------------+
+| T5LA2J7CZ | ready |            |
+|-----------+-------+------------+
+| TBJMSNACR | ready |            |
++-----------+-------+------------+
+[03/31/19, 18:18:28:584] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[03/31/19, 18:18:28:811] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "teamId": "TBJMSNACR",
+  "enterpriseId": null
+}
+[03/31/19, 18:18:28:812] info: Store: STORE_API_TOKEN
+{
+  "token": "xoxs-⋯",
+  "teamId": "TBJMSNACR"
+}
+[03/31/19, 18:18:29:556] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:18:29:842] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:18:30:580] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:18:31:715] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "TBJMSNACR"
+}
+[03/31/19, 18:18:31:733] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:18:32:718] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    2556,
+    1389
+  ],
+  "position": [
+    2,
+    24
+  ],
+  "isMaximized": false
+}
+[03/31/19, 18:18:33:529] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:18:33:709] info: Store: SELECT_TEAM T913C3A8P
+[03/31/19, 18:18:33:712] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:18:33:718] info: TranslationLookup: locale set to en-US for browser
+[03/31/19, 18:18:33:737] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[03/31/19, 18:18:33:771] info: dispatchWebappEventsEpic: Dispatch 'blur' on TBJMSNACR, 'focus' on T913C3A8P
+[03/31/19, 18:18:34:348] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:18:34:717] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:18:39:617] info: Store: SELECT_CHANNEL DBXNADUR2
+[03/31/19, 18:18:41:634] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:19:56:380] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:19:56:393] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:19:56:470] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:19:56:501] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:19:57:385] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    2556,
+    1389
+  ],
+  "position": [
+    2,
+    24
+  ],
+  "isMaximized": false
+}
+[03/31/19, 18:20:28:832] info: Store: SELECT_CHANNEL DBXD3AELR
+[03/31/19, 18:20:30:849] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:20:31:124] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:20:35:097] info: Store: SELECT_CHANNEL DBXNADUR2
+[03/31/19, 18:21:20:465] info: Store: SELECT_CHANNEL CFWNTBDJA
+[03/31/19, 18:21:49:049] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:21:49:060] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:21:49:144] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:21:49:174] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:21:50:054] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    2556,
+    1389
+  ],
+  "position": [
+    2,
+    24
+  ],
+  "isMaximized": false
+}
+[03/31/19, 18:24:08:442] info: Store: SELECT_CHANNEL DBXNADUR2
+[03/31/19, 18:24:08:580] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:24:43:945] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:24:43:954] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:24:44:025] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:24:44:053] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:24:44:949] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    2556,
+    1389
+  ],
+  "position": [
+    2,
+    24
+  ],
+  "isMaximized": false
+}
+[03/31/19, 18:24:55:404] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:24:55:410] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:24:55:415] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:24:55:416] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:24:55:523] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:24:55:549] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:24:55:582] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:24:55:611] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:24:56:409] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    2556,
+    1389
+  ],
+  "position": [
+    2,
+    24
+  ],
+  "isMaximized": false
+}
+[03/31/19, 18:24:57:238] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:24:57:248] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:24:58:242] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    2556,
+    1389
+  ],
+  "position": [
+    2,
+    24
+  ],
+  "isMaximized": false
+}
+[03/31/19, 18:28:45:183] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:28:45:201] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:28:45:310] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:28:45:341] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:28:46:040] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:28:46:058] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:28:46:081] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:28:47:045] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    2556,
+    1389
+  ],
+  "position": [
+    2,
+    24
+  ],
+  "isMaximized": false
+}
+[03/31/19, 18:28:58:799] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:28:58:816] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:28:58:943] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:28:58:972] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:28:59:803] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    2556,
+    1389
+  ],
+  "position": [
+    2,
+    24
+  ],
+  "isMaximized": false
+}
+[03/31/19, 18:29:10:737] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:29:10:746] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:29:10:764] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:29:10:765] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:29:10:864] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:29:10:892] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:29:10:940] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:29:10:977] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:29:11:743] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    2556,
+    1389
+  ],
+  "position": [
+    2,
+    24
+  ],
+  "isMaximized": false
+}
+[03/31/19, 18:29:46:460] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:29:46:468] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:29:46:552] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:29:46:585] info: WebContentsMediator: Attaching to new webContents
+[03/31/19, 18:29:47:463] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    2556,
+    1389
+  ],
+  "position": [
+    2,
+    24
+  ],
+  "isMaximized": false
+}
+[03/31/19, 18:29:48:546] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:29:48:560] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:29:49:549] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    2556,
+    1389
+  ],
+  "position": [
+    2,
+    24
+  ],
+  "isMaximized": false
+}
+[03/31/19, 18:29:50:137] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T913C3A8P"
+}
+[03/31/19, 18:29:50:145] info: Store: MAIN_WINDOW_FOCUSED
+[03/31/19, 18:29:51:141] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    2556,
+    1389
+  ],
+  "position": [
+    2,
+    24
+  ],
+  "isMaximized": false
+}
+[03/31/19, 18:29:52:582] info: WindowCloseBehavior: Attempted to close the window, hiding due to run from tray
+[03/31/19, 18:29:52:598] info: Store: SET_FULL_SCREEN

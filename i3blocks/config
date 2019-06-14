@@ -2,8 +2,42 @@ command=/usr/share/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
+
+
+[worldClock]
+command=$HOME/script/clock.sh
+interval=1
+
+
+
+# wifi network
+
+[bandwidth]
+#instance=eth0
+instance=wlp2s0
+interval=1
+color=#9ee3e5
+
+[iface]
+instance=wlp2s0
+interval=1
+color=#00FF00
+separator=false
+
+[essid]
+command=iwconfig wlp2s0 2> /dev/null | grep ESSID | awk -F\" '{print $2}' | tr -d " \t"
+interval=1
+color=#00FF00
+separator=false
+
+# Support multiple VPN, with colors.
+#[openvpn]
+#interval=20
+
+
+
 [battery]
-label=🔋
+#label=🔋
 interval=1
 
 [lightness]
@@ -17,17 +51,17 @@ label=🔊
 instance=Master
 interval=1
 command= if [ `/usr/share/i3blocks/volume | sed -e 's/%$//g'` -eq 0 ]; then color='#9ee3e5'; else color='#FF0000'; fi; /usr/share/i3blocks/volume && echo -e "\n${color}"
+command= pacmd list-sinks | grep -m 1 'volume: front-left:' | cut -f 2 -d / | tr -d " \t%"
 
 [load average]
-label=LA
+#label=LA
 command=echo "$(uptime | sed 's/.*load average: \(.*\)/\1/' | cut -d, -f1)/$(cat /proc/cpuinfo | grep processor | wc -l)"
 interval=1
 color=#9ee3e5
 
 [cpu_usage]
-label=CPU
-interval=10
-min_width=CPU 100.00%
+#label=CPU
+interval=1
 separator=true
 color=#9ee3e5
 
@@ -44,10 +78,10 @@ color=#9ee3e5
 #SENSOR_CHIP=""
 
 [memory]
-label=Mem
+#label=Mem
 separator=false
 interval=1
-command=free -h | awk 'match($0, /^Mem/){print $3 "/" $2}'
+command=free -h | awk 'match($0, /^Mem/){print $3 "/" $2}' | tr -d " \t"
 color=#9ee3e5
 
 [swap]
@@ -61,40 +95,16 @@ color=#9ee3e5
 # The script may be called with a optional argument to set the alert
 # (defaults to 10 for 10%).
 [disk]
-label=df:
+#label=df
 #DIR=/mnt/data
 interval=1
 color=#9ee3e5
 
 
 
-# wifi network
-
-[iface]
-instance=wlp2s0
-interval=1
-separator=false
-
-[essid]
-command=iwconfig wlp2s0 2> /dev/null | grep ESSID | awk -F\" '{print $2}'
-interval=1
-color=#00FF00
-separator=false
-
-[bandwidth]
-#instance=eth0
-instance=wlp2s0
-interval=1
-color=#9ee3e5
-
-# Support multiple VPN, with colors.
-#[openvpn]
-#interval=20
-
-
-
 [time]
-command=date '+%Y-%m(%b)-%d(%a)%H:%M:%S'
+#command=date '+%Y-%m(%b)-%d(%a)%H:%M:%S'
+command=date '+%Y.%m.%d.%a %H:%M:%S'
 interval=1
 
 # This displays "ARTIST - SONG" if a music is playing.

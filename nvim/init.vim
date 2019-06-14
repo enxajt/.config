@@ -1,4 +1,3 @@
-
 "---------------------------------------------------------------
 " vi互換モード禁止
 " 各種プラグイン等機能しなくなったりするため
@@ -83,6 +82,15 @@ augroup backup
   endfunction
 augroup END
 
+if has('win32')
+  nmap <Space>. :<C-u>tabedit $VIM/_gvimrc<CR>
+  nmap <Space>, :<C-u>tabedit $VIM/_vimrc<CR>
+elseif has('unix')
+  "nmap <Space>, :<C-u>tabedit /root/neovim/share/nvim/sysinit.vim<CR>
+  nmap <Space>, :<C-u>tabedit $VIMDIR/init.vim<CR>
+  nmap <Space>. :<C-u>tabedit $VIMDIR/dein.toml<CR>
+endif
+
 "---------------------------------------------------------------
 " file(encode, format)
 "
@@ -105,26 +113,27 @@ nnoremap っy yy
 "---------------------------------------------------------------
 " keep input method during normal mode.
 "
-let w:insert_input_active = 0
+let g:insert_input_active = 0
+
 function FcitxEnterInsert()
-  if w:insert_input_active != 0
+  if g:insert_input_active != 0
     let l:a = system("fcitx-remote -o")
-    let w:insert_input_active = 0
+    let g:insert_input_active = 0
   endif
 endfunction
 
 function FcitxLeaveInsert()
   let s:input_status = system("fcitx-remote")
   if s:input_status == 2
-    let w:insert_input_active = 1
+    let g:insert_input_active = 1
     let l:a = system("fcitx-remote -c")
   endif
 endfunction
 
 autocmd InsertLeave * call FcitxLeaveInsert()
 autocmd InsertEnter * call FcitxEnterInsert()
-set timeoutlen=15
 
+set timeout timeoutlen=1000 ttimeoutlen=50
 
 "---------------------------------------------------------------
 " file(文字コードの自動認識)
@@ -204,10 +213,6 @@ if filereadable($VIM . '/vimrc') && filereadable($VIM . '/ViMrC')
   " tagsファイルの重複防止
   set tags=./tags,tags
 endif
-
-"if has('path_extra')
-"    set tags& tags + =.tags, tags
-"endif
 
 "---------------------------------------------------------------
 " Binding F1 to ESC
@@ -290,24 +295,9 @@ set list
 "set listchars=tab:>-,trail:.,eol:↲,nbsp:%
 set listchars=tab:▸\ ,eol:↲,nbsp:%
 
-" " 'Yggdroot/indentLine'
-" "let g:indentLine_faster = 1
-" let g:indentLine_leadingSpaceEnabled = 1
-" let g:indentLine_leadingSpaceChar = '.'
-" "nmap <silent><Leader>i :<C-u>IndentLinesToggle<CR>
-
-" 折り返しマーク
-"set showbreak=
-
-" 勝手に改行するのをやめる
-" set textwidth=0    " 日本語入力時には効かなかった
- 
 " 長い行を折り返して表示 (nowrap:折り返さない)
 set wrap
 
-"---------------------------------------------------------------
-" view (tab)
-"
 " タブをスペースに展開
 " 本当のタブ文字を挿入したい場合は <C-v><Tab>
 set expandtab
@@ -345,9 +335,6 @@ set showcmd
 " コマンドラインの高さ (Windows用gvim使用時はgvimrcを編集すること)
 set cmdheight=2
 
-" show window title
-"set title
-
 "---------------------------------------------------------------
 " view (status)
 "
@@ -368,19 +355,12 @@ set statusline+=%{'['.(&fenc!=''?&fenc:&enc).']['.&fileformat.']'}
 " %= - 左寄せと右寄せ項目の区切り（続くアイテムを右寄せにする）
 set statusline+=%=
 
-"if has('win32')
-"  set statusline+=%{anzu#search_status()}
-"endif
-
 " "set ruler" (~行目の,~文字目 ~~%) 代わり
 " %l - 現在のカーソルの行番号, %L - 総行数
 " %c - column番号
 " %V - カラム番号
 " %P - カーソルの場所 %表示
 set statusline+=%4l/%L,%c%V%4P
-"set statusline=%F%m%r%h%w%=\ %{fugitive#statusline()}\ [%{&ff}:%{&fileencoding}]\ [%Y]\ [%04l,%04v]\ [%l/%L]\ %{strftime(\"%Y/%m/%d\ %H:%M:%S\")}
-
-"set statusline=%F%m%r%h%w%=\ %{fugitive#statusline()}\ [%{&ff}:%{&fileencoding}]\ [%Y]\ [%04l,%04v]\ [%l/%L]\ %{strftime(\"%Y/%m/%d\ %H:%M:%S\")}
 
 "---------------------------------------------------------------
 " move
@@ -391,17 +371,8 @@ nmap k gk
 nmap <Down> gj
 nmap <Up>   gk
 
-" 入力モードでのカーソル移動 ctrl+shift+j と干渉
-"inoremap <C-j> <Down>
-"inoremap <C-k> <Up>
-"inoremap <C-h> <Left>
-"inoremap <C-l> <Right>
-
- " Stop certain movements from always going to the first character of a line.
- " While this behaviour deviates from that of Vi, it does what most users
- " coming from other editors would expect.
- " 移動コマンドを使ったとき、行頭に移動しない
- set nostartofline
+" 移動コマンドを使ったとき、行頭に移動しない
+set nostartofline
 
  " Instead of failing a command because of unsaved changes, instead raise a
  " dialogue asking if you wish to save changed files.
@@ -426,51 +397,14 @@ augroup END
 " search
 "
 set incsearch
-
 " 検索時に大文字小文字を無視 (noignorecase:無視しない)
 set ignorecase
-
 " 大文字小文字の両方が含まれている場合は大文字小文字を区別
 set smartcase
-
 " 検索時にファイルの最後まで行ったら最初に戻る (nowrapscan:戻らない)
 set wrapscan
-
 " 検索語を強調表示
 set hlsearch
-
-"\v(Very Magic) Vim方言を使わずに、一般的な正規表現に近い形で書ける
-":help magic
-" nmap / /\v
-" nmap ? ?\v
-
-" if has('win32')
-"   map /  <Plug>(incsearch-forward)
-"   map ?  <Plug>(incsearch-backward)
-"   map g/ <Plug>(incsearch-stay)
-" endif
-
-" 検索語が画面の真ん中に来るようにする
-"nmap n nzz
-""nmap N Nzz "逆方向検索できなくなる  
-"nmap * *zz 
-"nmap # #zz 
-"nmap g* g*zz 
-"nmap g# g#zz
-
-" "---------------------------------------------------------------
-" " search (osyo-manga/vim-anzu)
-" "
-" nmap n <Plug>(anzu-n-with-echo)zz
-" nmap N <Plug>(anzu-N-with-echo)zz
-" nmap * <Plug>(anzu-star-with-echo)
-" nmap # <Plug>(anzu-sharp-with-echo)zz
-" nmap <Esc><Esc> <Plug>(anzu-clear-search-status)
-" 
-" " if start anzu-mode key mapping
-" " anzu-mode is anzu(12/51) in screen
-" " nmap n <Plug>(anzu-mode-n)
-" " nmap N <Plug>(anzu-mode-N)
 
 "---------------------------------------------------------------
 " edit
@@ -496,16 +430,15 @@ set formatoptions+=mM
 "set guioptions+=a
 
 " コンソール版で環境変数$DISPLAYが設定されていると起動が遅くなる件へ対応
-"if !has('gui_running') && has('xterm_clipboard')
-"  set clipboard=exclude:cons\\\|linux\\\|cygwin\\\|rxvt\\\|screen
-"endif
+if !has('gui_running') && has('xterm_clipboard')
+  set clipboard=exclude:cons\\\|linux\\\|cygwin\\\|rxvt\\\|screen
+endif
 
 "通常は無名レジスタに入るヤンク/カットが、*レジスタにも入るようになる
 "*レジスタにデータを入れると、クリップボードにデータが入る
 set clipboard=unnamed
 set clipboard+=unnamedplus
 
-" Capture
 command!
       \ -nargs=1
       \ -complete=command
@@ -533,17 +466,8 @@ endfunction
 "
 " h map-modes
 "
-if has('win32')
-  nmap <Space>. :<C-u>tabedit $VIM/_gvimrc<CR>
-  nmap <Space>, :<C-u>tabedit $VIM/_vimrc<CR>
-elseif has('unix')
-  "nmap <Space>, :<C-u>tabedit /root/neovim/share/nvim/sysinit.vim<CR>
-  nmap <Space>, :<C-u>tabedit $VIMDIR/init.vim<CR>
-  nmap <Space>. :<C-u>tabedit $VIMDIR/dein.toml<CR>
-endif
-
-nmap <C-i>d <ESC>a<C-r>=strftime("%Y.%m.%d".)<CR>
-nmap <C-i>t <ESC>a<C-r>=strftime("%H:%M:%S" )<CR>
+nnoremap <C-i>d <ESC>a<C-r>=strftime("%Y.%m.%d".)<CR>
+nnoremap <C-i>t <ESC>a<C-r>=strftime("%H:%M:%S" )<CR>
 
 nnoremap <C-o>u :GundoToggle<CR>
 
