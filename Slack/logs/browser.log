@@ -1956,3 +1956,2069 @@
 }
 [03/31/19, 18:29:52:582] info: WindowCloseBehavior: Attempted to close the window, hiding due to run from tray
 [03/31/19, 18:29:52:598] info: Store: SET_FULL_SCREEN
+[08/07/19, 11:43:32:005] info: ╔════════════════════════════════════════════════════════════════════════════════╗ 
+[08/07/19, 11:43:31:855] info: ╔════════════════════════════════════════════════════════════════════════════════╗ 
+[08/07/19, 11:43:32:005] info: ║      Slack 4.0.1, linux 5.0.0-23-generic on x64 at 08/07/19, 11:43:32:005      ║ 
+[08/07/19, 11:43:32:005] info: ╚════════════════════════════════════════════════════════════════════════════════╝ 
+[08/07/19, 11:43:32:005] info: Configured logger via 
+{
+  "logLevel": "info"
+}
+[08/07/19, 11:43:32:005] info: Predefined values for process 
+{
+  "platform": "linux",
+  "NODE_ENV": "production",
+  "type": "browser",
+  "PACKAGE_MANIFEST.productName": "Slack",
+  "PACKAGE_MANIFEST.version": "4.0.1",
+  "PACKAGE_MANIFEST.versionName": "The Final Countdown",
+  "PACKAGE_MANIFEST.commit": "d9a7448",
+  "PACKAGE_MANIFEST.branch": "HEAD"
+}
+[08/07/19, 11:43:31:855] info: ║      Slack 4.0.1, linux 5.0.0-23-generic on x64 at 08/07/19, 11:43:31:854      ║ 
+[08/07/19, 11:43:31:856] info: ╚════════════════════════════════════════════════════════════════════════════════╝ 
+[08/07/19, 11:43:31:856] info: Configured logger via 
+{
+  "logLevel": "info"
+}
+[08/07/19, 11:43:31:857] info: Predefined values for process 
+{
+  "platform": "linux",
+  "NODE_ENV": "production",
+  "type": "browser",
+  "PACKAGE_MANIFEST.productName": "Slack",
+  "PACKAGE_MANIFEST.version": "4.0.1",
+  "PACKAGE_MANIFEST.versionName": "The Final Countdown",
+  "PACKAGE_MANIFEST.commit": "d9a7448",
+  "PACKAGE_MANIFEST.branch": "HEAD"
+}
+[08/07/19, 11:43:31:965] info: Read UUID from file successful 
+{
+  "uuid": "2597994a-f0f8-5e80-83f2-c9ce11dd8de7"
+}
+[08/07/19, 11:43:31:991] info: TraceRecorder: setting up trace recorder, trace will be stored under /home/enxajt/.config/Slack/logs/recorded-trace
+[08/07/19, 11:43:31:992] info: Copying current Cookies into StaleCookies-0 
+[08/07/19, 11:43:32:007] info: BrowserStore: Skip keychain access in Sonic 
+[08/07/19, 11:43:32:022] info: Store: persist/REHYDRATE 
+{
+  "appTeams": {
+    "selectedTeamId": "T913C3A8P",
+    "teamsByIndex": [
+      "T913C3A8P",
+      "T5LA2J7CZ",
+      "TBJMSNACR"
+    ],
+    "teamsToSignOut": []
+  },
+  "dialog": "[REDACTED]",
+  "downloads": "[REDACTED]",
+  "enterprise": {
+    "T913C3A8P": null,
+    "T5LA2J7CZ": null,
+    "TBJMSNACR": null
+  },
+  "settings": {
+    "appVersion": "3.3.8",
+    "versionName": "Alaska",
+    "platform": "linux",
+    "platformVersion": {
+      "major": 4,
+      "minor": 15,
+      "build": 0
+    },
+    "isWin10": false,
+    "isBeforeWin10": false,
+    "resourcePath": "/usr/lib/slack/resources/app.asar",
+    "webappSrcPath": null,
+    "webappParams": null,
+    "isDevMode": false,
+    "devEnv": null,
+    "logFile": null,
+    "rxLogging": false,
+    "openDevToolsOnStart": false,
+    "pretendNotReallyWindows10": false,
+    "releaseChannel": "prod",
+    "autoHideMenuBar": false,
+    "defaultSigninTeam": null,
+    "isTitleBarHidden": false,
+    "isUsingBrowserSignin": true,
+    "hasRunApp": true,
+    "hasRunFromTray": true,
+    "reportIssueOnStartup": false,
+    "isSignedIntoSlackOrg": false,
+    "isGpuCompositionAvailable": true,
+    "runFromTray": true,
+    "launchOnStartup": false,
+    "spellcheckerLanguage": null,
+    "zoomLevel": 0,
+    "workspaceIdleTimeout": 43200000,
+    "whitelistedUrlSchemes": [
+      "http:",
+      "https:",
+      "mailto:",
+      "skype:",
+      "spotify:",
+      "live:",
+      "callto:",
+      "tel:",
+      "im:",
+      "sip:",
+      "sips:",
+      "slack:"
+    ],
+    "isTitleBarForcedByUser": false,
+    "useHwAcceleration": true,
+    "isOpenExternalShellForced": true,
+    "PrefSSBFileDownloadPath": "/home/enxajt/Downloads",
+    "notificationMethod": null,
+    "notificationPlayback": null,
+    "notificationFailover": 0,
+    "notificationFailoverEnabled": true,
+    "notificationClickThrough": false,
+    "notificationClickThroughMain": true,
+    "notificationTimeout": 6000,
+    "notificationAfterHoverTimeout": 2000,
+    "notificationMaxItems": 3,
+    "notificationZoomLevel": null,
+    "notificationStyle": null,
+    "notificationPresentationCheck": null,
+    "notifyPosition": {
+      "corner": "bottom_right",
+      "display": "same_as_app"
+    },
+    "locale": "en-US",
+    "spellCheckerVersion": "V2",
+    "os": false,
+    "release": false,
+    "desktopEnvironment": false,
+    "isAeroGlassEnabled": false,
+    "linux": {
+      "os": "Ubuntu 18.04.2 LTS",
+      "release": "bionic",
+      "desktopEnvironment": "i3"
+    },
+    "sandboxSigninWindow": true
+  },
+  "teams": "[REDACTED]"
+}
+[08/07/19, 11:43:32:023] info: UpdaterEpics: Updates disabled because 
+{
+  "issues": [
+    "using Linux"
+  ]
+}
+[08/07/19, 11:43:32:023] info: Store: INITIALIZE 
+{
+  "resourcePath": "/usr/lib/slack/resources/app.asar",
+  "protoUrl": "slack://team?team=T913C3A8P&id=UBP4KVAFL&client_path=/messages/C8ZU42SM9/team/UBP4KVAFL"
+}
+[08/07/19, 11:43:32:051] warn: Failed to install protocol handler for slack:// links 
+[08/07/19, 11:43:32:103] info: Store: CREATE_WINDOW 
+{
+  "type": "main"
+}
+[08/07/19, 11:43:32:104] info: Store: HANDLE_DEEP_LINK 
+{
+  "url": "slack://team?team=T913C3A8P&id=UBP4KVAFL&client_path=/messages/C8ZU42SM9/team/UBP4KVAFL",
+  "causedLaunch": true
+}
+[08/07/19, 11:43:32:108] info: App: Welcome to Slack 0.0.0 x64 
+[08/07/19, 11:43:32:108] info: App load time: 0,466441414 
+[08/07/19, 11:43:32:121] info: Store: READY 
+{
+  "resourcePath": "/usr/lib/slack/resources/app.asar",
+  "protoUrl": "slack://team?team=T913C3A8P&id=UBP4KVAFL&client_path=/messages/C8ZU42SM9/team/UBP4KVAFL",
+  "appVersion": "4.0.1",
+  "isGpuCompositionAvailable": true,
+  "isTitleBarHidden": false,
+  "isSonic": true,
+  "platformVersion": {
+    "major": 5,
+    "minor": 0,
+    "build": 0
+  },
+  "releaseChannel": "prod",
+  "sessionId": "MjU5Nzk5NGEtZjBmOC01ZTgwLTgzZjItYzljZTExZGQ4ZGU3XzE1NjUxNDU4MTE5NjU=",
+  "versionName": "The Final Countdown",
+  "linux": {
+    "os": "Ubuntu 18.04.2 LTS",
+    "name": "18.04",
+    "release": "bionic",
+    "codename": "",
+    "desktopEnvironment": "i3"
+  }
+}
+[08/07/19, 11:43:32:122] info: Applying operation DevEnvironmentURLOperation to URL 
+{
+  "before": "https://dev-krc.slack.com/",
+  "after": "https://dev-krc.slack.com/"
+}
+[08/07/19, 11:43:32:123] info: Store: UPDATE_SETTINGS 
+{
+  "isSignedIntoSlackOrg": false
+}
+[08/07/19, 11:43:32:125] info: AutoLoginEpic: Checking for autologin. 
+[08/07/19, 11:43:32:126] info: Client Boot Config
+	localSettings: undefined
+	version: 4.0.1
+	productName: Slack
+	commandLine:  
+[08/07/19, 11:43:32:129] info: Store: TOKEN_FILE_PROCESSED 
+[08/07/19, 11:43:32:130] info: AutoLoginEpic: Processing token file for autologin. 
+[08/07/19, 11:43:32:130] info: Store: AUTOLOGIN_TEAMS_COMPLETE 
+[08/07/19, 11:43:32:130] info: AutoLoginEpic: Setting default sign-in team to null 
+[08/07/19, 11:43:32:130] info: Store: UPDATE_SETTINGS 
+{
+  "defaultSigninTeam": null
+}
+[08/07/19, 11:43:32:144] info: WebContentsMediator: Attaching to new webContents 
+[08/07/19, 11:43:32:149] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "teamId": "app",
+  "state": "unloaded"
+}
+[08/07/19, 11:43:32:156] info: MainWindowEpics: Setting main window ID 
+{
+  "id": 1
+}
+[08/07/19, 11:43:32:159] info: Store: WINDOW_CREATED 
+{
+  "frame": {
+    "isFullScreen": false,
+    "isMinimized": false,
+    "isMaximized": false,
+    "isVisible": false,
+    "isFocused": false,
+    "bounds": {
+      "x": 880,
+      "y": 420,
+      "width": 800,
+      "height": 600
+    }
+  },
+  "type": "main",
+  "id": 1
+}
+[08/07/19, 11:43:33:266] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "bounds": {
+      "x": 448,
+      "y": 1596,
+      "width": 1024,
+      "height": 768
+    },
+    "isMaximized": false
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:43:33:270] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "bounds": {
+      "x": 448,
+      "y": 1596,
+      "width": 1024,
+      "height": 768
+    },
+    "isMaximized": false
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:43:33:478] info: Team boot count 
+{
+  "count": 1
+}
+[08/07/19, 11:43:33:573] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:43:33:581] info: WebContents LifeCycle: webContents:1 from 'unloaded' to 'loaded' took 1429 ms 
+[08/07/19, 11:43:33:581] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "state": "loaded",
+  "teamId": "app"
+}
+[08/07/19, 11:43:33:583] info: initializeMainWindowEpic: Showing main window 
+{
+  "maximized": false,
+  "fullScreen": false
+}
+[08/07/19, 11:43:33:583] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isVisible": true
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:43:33:584] info: Store: MAIN_WINDOW_SHOWN 
+[08/07/19, 11:43:33:585] info: Store: UPDATE_SETTINGS 
+{
+  "mainWindowSettings": {
+    "fullScreen": false,
+    "maximized": false,
+    "bounds": {
+      "x": 448,
+      "y": 1596,
+      "width": 1024,
+      "height": 768
+    }
+  }
+}
+[08/07/19, 11:43:33:586] info: UpdaterEpics: Updates disabled because 
+{
+  "issues": [
+    "using Linux"
+  ]
+}
+[08/07/19, 11:43:33:603] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isMinimized": true
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:43:34:274] info: Store: SET_NETWORK_STATUS online
+[08/07/19, 11:43:34:606] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "bounds": {
+      "x": 2,
+      "y": 24,
+      "width": 2556,
+      "height": 1389
+    },
+    "isMaximized": false
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:43:34:607] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "bounds": {
+      "x": 2,
+      "y": 24,
+      "width": 2556,
+      "height": 1389
+    },
+    "isMaximized": false
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:43:34:666] info: Store: UPDATE_SETTINGS 
+{
+  "mainWindowSettings": {
+    "fullScreen": false,
+    "maximized": false,
+    "bounds": {
+      "x": 2,
+      "y": 24,
+      "width": 2556,
+      "height": 1389
+    }
+  }
+}
+[08/07/19, 11:43:35:092] info: WebContents LifeCycle: webContents:1 from 'loaded' to 'page-will-navigate' took 1511 ms 
+[08/07/19, 11:43:35:092] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "history": "[REDACTED]",
+  "state": "page-will-navigate",
+  "teamId": "app"
+}
+[08/07/19, 11:43:35:799] info: Team boot count 
+{
+  "count": 2
+}
+[08/07/19, 11:43:35:801] info: attempting to restart service worker 
+[08/07/19, 11:43:35:803] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.enable"
+}
+[08/07/19, 11:43:35:804] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.stopAllWorkers"
+}
+[08/07/19, 11:43:35:804] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.disable"
+}
+[08/07/19, 11:43:35:805] info: successfully restarted service worker 
+[08/07/19, 11:43:35:900] info: WebContents LifeCycle: webContents:1 from 'page-will-navigate' to 'loaded' took 808 ms 
+[08/07/19, 11:43:35:900] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "state": "loaded",
+  "teamId": "app"
+}
+[08/07/19, 11:43:36:103] info: WebContents LifeCycle: webContents:1 from 'loaded' to 'page-will-navigate' took 204 ms 
+[08/07/19, 11:43:36:104] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "history": "[REDACTED]",
+  "state": "page-will-navigate",
+  "teamId": "app"
+}
+[08/07/19, 11:43:36:918] info: Team boot count 
+{
+  "count": 3
+}
+[08/07/19, 11:43:36:918] info: attempting to restart service worker 
+[08/07/19, 11:43:36:919] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.enable"
+}
+[08/07/19, 11:43:36:919] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.stopAllWorkers"
+}
+[08/07/19, 11:43:36:919] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.disable"
+}
+[08/07/19, 11:43:36:919] info: successfully restarted service worker 
+[08/07/19, 11:43:37:116] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:43:37:294] info: WebContents LifeCycle: webContents:1 from 'page-will-navigate' to 'loaded' took 1191 ms 
+[08/07/19, 11:43:37:294] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "state": "loaded",
+  "teamId": "app"
+}
+[08/07/19, 11:43:37:296] info: WebContents LifeCycle: webContents:1 from 'loaded' to 'page-will-navigate' took 2 ms 
+[08/07/19, 11:43:37:297] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "history": "[REDACTED]",
+  "state": "page-will-navigate",
+  "teamId": "app"
+}
+[08/07/19, 11:43:38:263] info: Team boot count 
+{
+  "count": 4
+}
+[08/07/19, 11:43:38:264] info: attempting to restart service worker 
+[08/07/19, 11:43:38:265] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.enable"
+}
+[08/07/19, 11:43:38:265] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.stopAllWorkers"
+}
+[08/07/19, 11:43:38:265] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.disable"
+}
+[08/07/19, 11:43:38:266] info: successfully restarted service worker 
+[08/07/19, 11:43:38:368] info: Store: SET_NETWORK_STATUS online
+[08/07/19, 11:43:39:686] info: Store: SET_NETWORK_STATUS online
+[08/07/19, 11:43:40:678] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isMinimized": false
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:43:40:684] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "bounds": {
+      "x": 2,
+      "y": 24,
+      "width": 2556,
+      "height": 1389
+    }
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:43:40:690] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:43:41:682] info: Store: UPDATE_SETTINGS 
+{
+  "mainWindowSettings": {
+    "fullScreen": false,
+    "maximized": false,
+    "bounds": {
+      "x": 2,
+      "y": 24,
+      "width": 2556,
+      "height": 1389
+    }
+  }
+}
+[08/07/19, 11:43:42:228] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T00000000": {
+      "bootConfig": {
+        "isSonicDisabled": false,
+        "isSonicEnabled": false
+      },
+      "featureFlags": {},
+      "theme": {
+        "titlebarBackground": "#1F0020",
+        "titlebarTextColor": "#FFFFFF"
+      },
+      "unreads": {
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[08/07/19, 11:43:42:230] info: enableSonicNextSessionEpic: Reset the boot Sonic preference 
+[08/07/19, 11:43:42:250] info: WebContents LifeCycle: webContents:1 from 'page-will-navigate' to 'loaded' took 4954 ms 
+[08/07/19, 11:43:42:250] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "state": "loaded",
+  "teamId": "app"
+}
+[08/07/19, 11:43:42:252] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T00000000": {
+      "bootConfig": {
+        "isSonicDisabled": false,
+        "isSonicEnabled": true
+      }
+    }
+  }
+}
+[08/07/19, 11:43:42:253] info: enableSonicNextSessionEpic: Set to boot Sonic 'once' 
+[08/07/19, 11:43:42:436] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isMinimized": true
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:43:42:439] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:44:02:112] info: Removed log file /home/enxajt/.config/Slack/logs/renderer-loading-screen.log
+[08/07/19, 11:44:02:113] info: Removed log file /home/enxajt/.config/Slack/logs/renderer-webapp-T5LA2J7CZ-preload.log
+[08/07/19, 11:44:02:114] info: Removed log file /home/enxajt/.config/Slack/logs/renderer-webapp-T913C3A8P-preload.log
+[08/07/19, 11:44:02:115] info: Removed log file /home/enxajt/.config/Slack/logs/renderer-webapp-TBJMSNACR-preload.log
+[08/07/19, 11:44:02:116] info: Removed log file /home/enxajt/.config/Slack/logs/webapp-T5LA2J7CZ-console.log
+[08/07/19, 11:44:02:117] info: Removed log file /home/enxajt/.config/Slack/logs/webapp-T913C3A8P-console.log
+[08/07/19, 11:44:02:118] info: Removed log file /home/enxajt/.config/Slack/logs/webapp-TBJMSNACR-console.log
+[08/07/19, 11:44:07:948] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isMinimized": false
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:44:07:952] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "bounds": {
+      "x": 2,
+      "y": 24,
+      "width": 2556,
+      "height": 1389
+    }
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:44:07:954] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:44:08:953] info: Store: UPDATE_SETTINGS 
+{
+  "mainWindowSettings": {
+    "fullScreen": false,
+    "maximized": false,
+    "bounds": {
+      "x": 2,
+      "y": 24,
+      "width": 2556,
+      "height": 1389
+    }
+  }
+}
+[08/07/19, 11:44:09:749] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isMinimized": true
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:44:09:750] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:44:19:868] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isMinimized": false
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:44:19:873] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "bounds": {
+      "x": 2,
+      "y": 24,
+      "width": 2556,
+      "height": 1389
+    }
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:44:19:882] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:44:19:900] info: WebContentsMediator: Attaching to new webContents 
+[08/07/19, 11:44:19:902] info: MagicLogin: Making magic login API request to https://slack.com/api/ 
+[08/07/19, 11:44:20:236] info: WebContents LifeCycle: webContents:1 from 'loaded' to 'page-will-navigate' took 37986 ms 
+[08/07/19, 11:44:20:237] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "history": "[REDACTED]",
+  "state": "page-will-navigate",
+  "teamId": "app"
+}
+[08/07/19, 11:44:20:317] info: MagicLogin: added team T913C3A8P 
+[08/07/19, 11:44:20:873] info: Store: UPDATE_SETTINGS 
+{
+  "mainWindowSettings": {
+    "fullScreen": false,
+    "maximized": false,
+    "bounds": {
+      "x": 2,
+      "y": 24,
+      "width": 2556,
+      "height": 1389
+    }
+  }
+}
+[08/07/19, 11:44:21:010] info: Team boot count 
+{
+  "count": 5
+}
+[08/07/19, 11:44:21:011] info: attempting to restart service worker 
+[08/07/19, 11:44:21:012] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.enable"
+}
+[08/07/19, 11:44:21:012] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.stopAllWorkers"
+}
+[08/07/19, 11:44:21:012] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.disable"
+}
+[08/07/19, 11:44:21:013] info: successfully restarted service worker 
+[08/07/19, 11:44:21:099] info: WebContents LifeCycle: webContents:1 from 'page-will-navigate' to 'loaded' took 863 ms 
+[08/07/19, 11:44:21:099] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "state": "loaded",
+  "teamId": "app"
+}
+[08/07/19, 11:44:21:102] info: WebContents LifeCycle: webContents:1 from 'loaded' to 'page-will-navigate' took 3 ms 
+[08/07/19, 11:44:21:102] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "history": "[REDACTED]",
+  "state": "page-will-navigate",
+  "teamId": "app"
+}
+[08/07/19, 11:44:21:601] info: Team boot count 
+{
+  "count": 6
+}
+[08/07/19, 11:44:21:603] info: attempting to restart service worker 
+[08/07/19, 11:44:21:603] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.enable"
+}
+[08/07/19, 11:44:21:603] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.stopAllWorkers"
+}
+[08/07/19, 11:44:21:603] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.disable"
+}
+[08/07/19, 11:44:21:604] info: successfully restarted service worker 
+[08/07/19, 11:44:21:685] info: Store: SET_NETWORK_STATUS offline
+[08/07/19, 11:44:21:692] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:44:21:700] info: WebContents LifeCycle: webContents:1 from 'page-will-navigate' to 'loaded' took 598 ms 
+[08/07/19, 11:44:21:701] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "state": "loaded",
+  "teamId": "app"
+}
+[08/07/19, 11:44:22:271] info: Store: SET_NETWORK_STATUS online
+[08/07/19, 11:44:24:671] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isMinimized": true
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:44:24:672] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:44:24:683] info: Store: SYNC Bad or empty workspaces payload
+[08/07/19, 11:44:24:684] info: Store: SELECTION_CHANGED T913C3A8P
+[08/07/19, 11:44:24:736] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "bootConfig": {
+        "isSonicDisabled": false,
+        "isSonicEnabled": false
+      },
+      "featureFlags": {},
+      "theme": {
+        "titlebarBackground": "#1F0020",
+        "titlebarTextColor": "#FFFFFF"
+      },
+      "unreads": {
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[08/07/19, 11:44:24:737] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "bootConfig": {
+        "isSonicDisabled": false,
+        "isSonicEnabled": true
+      },
+      "theme": {
+        "titlebarBackground": "#1F0020",
+        "titlebarTextColor": "#FFFFFF"
+      }
+    }
+  }
+}
+[08/07/19, 11:44:24:739] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "bootConfig": {
+        "isSonicDisabled": false,
+        "isSonicEnabled": true
+      }
+    }
+  }
+}
+[08/07/19, 11:44:24:750] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "theme": {
+        "titlebarBackground": "#1F0020",
+        "titlebarTextColor": "#FFFFFF"
+      },
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[08/07/19, 11:44:24:780] info: Store: SYNC Synced 1 workspaces with IDs [T913C3A8P]
+[08/07/19, 11:44:24:788] info: Store: SELECTION_CHANGED T913C3A8P
+[08/07/19, 11:44:24:929] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:44:26:973] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isMinimized": false
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:44:26:980] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "bounds": {
+      "x": 2,
+      "y": 24,
+      "width": 2556,
+      "height": 1389
+    }
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:44:26:984] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:44:27:110] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 1
+      }
+    }
+  }
+}
+[08/07/19, 11:44:27:979] info: Store: UPDATE_SETTINGS 
+{
+  "mainWindowSettings": {
+    "fullScreen": false,
+    "maximized": false,
+    "bounds": {
+      "x": 2,
+      "y": 24,
+      "width": 2556,
+      "height": 1389
+    }
+  }
+}
+[08/07/19, 11:44:31:105] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isMinimized": true
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:44:31:107] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:44:32:123] info: Store: UPDATE_SETTINGS 
+{
+  "lastClogForProxyInfo": 1565145872123
+}
+[08/07/19, 11:44:34:322] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isMinimized": false
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:44:34:337] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "bounds": {
+      "x": 2,
+      "y": 24,
+      "width": 2556,
+      "height": 1389
+    }
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:44:34:344] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:44:35:327] info: Store: UPDATE_SETTINGS 
+{
+  "mainWindowSettings": {
+    "fullScreen": false,
+    "maximized": false,
+    "bounds": {
+      "x": 2,
+      "y": 24,
+      "width": 2556,
+      "height": 1389
+    }
+  }
+}
+[08/07/19, 11:44:37:331] info: Attempted to close the window, hiding due to run from tray 
+[08/07/19, 11:44:37:333] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isVisible": false
+  },
+  "fromEvent": true
+}
+[08/07/19, 11:44:37:343] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFullScreen": false
+  },
+  "fromEvent": true
+}
+[08/07/19, 12:09:33:938] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 12:16:21:404] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[08/07/19, 12:16:21:464] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[08/07/19, 12:16:21:466] info: Store: NEW_NOTIFICATION 
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "CFWNTBDJA",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "Z4ZJfMhyB1l2nD1",
+  "imageUri": null,
+  "launchUri": "slack://channel?id=CFWNTBDJA&message=1565147781.000300&team=T913C3A8P",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "[REDACTED]",
+  "teamId": "T913C3A8P",
+  "title": "[REDACTED]"
+}
+[08/07/19, 12:16:21:468] info: Creating new Electron notification. 
+[08/07/19, 12:16:21:482] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 1
+      }
+    }
+  }
+}
+[08/07/19, 12:16:34:047] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 12:16:54:053] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 12:26:34:200] info: Store: SET_SYSTEM_IDLE idle_presence
+[08/07/19, 12:34:14:524] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 12:40:49:961] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[08/07/19, 12:41:14:623] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 12:45:54:694] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 12:55:23:583] info: Store: NEW_NOTIFICATION 
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "CFWNTBDJA",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "2RG5SKs27V35BPY",
+  "imageUri": null,
+  "launchUri": "slack://channel?id=CFWNTBDJA&message=1565150123.000400&team=T913C3A8P",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "[REDACTED]",
+  "teamId": "T913C3A8P",
+  "title": "[REDACTED]"
+}
+[08/07/19, 12:55:23:584] info: Creating new Electron notification. 
+[08/07/19, 12:55:24:122] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 1
+      }
+    }
+  }
+}
+[08/07/19, 12:57:03:422] info: Store: DISPLAY_REMOVED 
+[08/07/19, 12:57:05:738] info: Store: DISPLAY_REMOVED 
+[08/07/19, 12:57:14:833] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 12:57:34:839] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 13:00:19:777] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[08/07/19, 13:01:54:896] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 13:02:14:901] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 13:05:34:945] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 13:06:34:961] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 13:06:54:969] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 13:07:14:976] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 13:07:33:730] info: Store: DISPLAY_ADDED 
+[08/07/19, 13:07:34:982] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 13:10:55:033] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 13:21:04:480] info: Store: DISPLAY_ADDED 
+[08/07/19, 13:30:15:407] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 13:30:55:418] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 13:33:55:497] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 13:34:35:518] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 13:52:21:073] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 1
+      }
+    }
+  }
+}
+[08/07/19, 13:52:21:105] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[08/07/19, 13:52:21:106] info: Store: NEW_NOTIFICATION 
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "CCD3XSMGF",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "O7Jrcvur2VZRWqj",
+  "imageUri": null,
+  "launchUri": "slack://channel?id=CCD3XSMGF&message=1565153540.000300&team=T913C3A8P",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "[REDACTED]",
+  "teamId": "T913C3A8P",
+  "title": "[REDACTED]"
+}
+[08/07/19, 13:52:21:107] info: Creating new Electron notification. 
+[08/07/19, 13:52:21:109] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 1,
+        "unreads": 1
+      }
+    }
+  }
+}
+[08/07/19, 13:52:25:659] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[08/07/19, 13:52:25:661] info: Store: NEW_NOTIFICATION 
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "D9ACL2UMN",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "DRw5SnFZ1g46vEL",
+  "imageUri": null,
+  "launchUri": "slack://channel?id=D9ACL2UMN&message=1565153545.002300&team=T913C3A8P",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "[REDACTED]",
+  "teamId": "T913C3A8P",
+  "title": "[REDACTED]"
+}
+[08/07/19, 13:52:25:662] info: Creating new Electron notification. 
+[08/07/19, 13:52:25:664] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 2,
+        "unreads": 2
+      }
+    }
+  }
+}
+[08/07/19, 13:52:41:832] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[08/07/19, 13:52:41:833] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 1,
+        "unreads": 1
+      }
+    }
+  }
+}
+[08/07/19, 13:53:15:979] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 13:54:16:009] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 13:59:56:159] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 14:01:36:203] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 14:07:16:804] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 1,
+        "unreads": 0
+      }
+    }
+  }
+}
+[08/07/19, 14:07:16:806] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[08/07/19, 14:07:16:808] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[08/07/19, 14:08:16:446] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 14:17:56:707] info: Store: SET_SYSTEM_IDLE idle_presence
+[08/07/19, 14:26:56:918] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 14:27:16:930] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 14:27:36:936] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 14:29:32:896] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[08/07/19, 14:29:32:899] info: Store: NEW_NOTIFICATION 
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "D9ACL2UMN",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "Rg8xtyIOAJgALxr",
+  "imageUri": null,
+  "launchUri": "slack://channel?id=D9ACL2UMN&message=1565155772.016900&team=T913C3A8P",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "[REDACTED]",
+  "teamId": "T913C3A8P",
+  "title": "[REDACTED]"
+}
+[08/07/19, 14:29:32:900] info: Creating new Electron notification. 
+[08/07/19, 14:29:32:902] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 1,
+        "unreads": 1
+      }
+    }
+  }
+}
+[08/07/19, 14:29:53:618] info: Store: DISPLAY_REMOVED 
+[08/07/19, 14:29:54:213] info: Store: DISPLAY_REMOVED 
+[08/07/19, 14:30:16:997] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 14:31:17:024] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 14:31:57:048] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 14:33:37:093] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 14:33:57:103] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 14:36:17:178] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 14:36:57:198] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 14:37:17:220] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 14:38:37:256] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 14:41:37:827] info: Store: NEW_NOTIFICATION 
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "CFWNTBDJA",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "0gA6tjTWXMx2A9A",
+  "imageUri": null,
+  "launchUri": "slack://channel?id=CFWNTBDJA&message=1565156497.000500&team=T913C3A8P",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "[REDACTED]",
+  "teamId": "T913C3A8P",
+  "title": "[REDACTED]"
+}
+[08/07/19, 14:41:37:830] info: Creating new Electron notification. 
+[08/07/19, 14:41:38:153] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 1,
+        "unreads": 2
+      }
+    }
+  }
+}
+[08/07/19, 14:41:57:348] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 14:42:57:372] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 14:43:17:383] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 14:44:57:429] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 14:48:57:530] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 14:50:15:235] info: Store: SET_NETWORK_STATUS offline
+[08/07/19, 14:50:34:830] info: Store: SET_NETWORK_STATUS online
+[08/07/19, 14:50:52:416] info: Store: SET_NETWORK_STATUS offline
+[08/07/19, 14:51:37:564] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 14:51:57:567] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 14:53:03:540] info: Store: SET_NETWORK_STATUS online
+[08/07/19, 14:53:37:602] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 14:54:57:642] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 14:55:17:663] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 14:58:57:756] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 15:00:57:806] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 15:01:17:813] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 15:01:43:918] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[08/07/19, 15:01:43:922] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 1
+      }
+    }
+  }
+}
+[08/07/19, 15:17:21:322] info: Store: NEW_NOTIFICATION 
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "CFWNTBDJA",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "O7Jrcrcr2Vozkl7",
+  "imageUri": null,
+  "launchUri": "slack://channel?id=CFWNTBDJA&message=1565158640.000600&team=T913C3A8P",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "[REDACTED]",
+  "teamId": "T913C3A8P",
+  "title": "[REDACTED]"
+}
+[08/07/19, 15:17:21:324] info: Creating new Electron notification. 
+[08/07/19, 15:17:21:475] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 2
+      }
+    }
+  }
+}
+[08/07/19, 15:23:38:390] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 15:24:18:419] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 15:25:38:448] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 15:26:18:471] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 15:26:38:479] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 15:26:58:498] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 15:33:17:903] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[08/07/19, 15:33:38:667] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 15:35:21:062] info: Store: NEW_NOTIFICATION 
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "CFWNTBDJA",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "58A5tqh2Z7pER8j",
+  "imageUri": null,
+  "launchUri": "slack://channel?id=CFWNTBDJA&message=1565159720.000700&team=T913C3A8P",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "[REDACTED]",
+  "teamId": "T913C3A8P",
+  "title": "[REDACTED]"
+}
+[08/07/19, 15:35:21:065] info: Creating new Electron notification. 
+[08/07/19, 15:35:21:342] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 1
+      }
+    }
+  }
+}
+[08/07/19, 15:35:38:722] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 15:35:58:740] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 15:37:04:326] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[08/07/19, 15:39:18:836] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 15:39:58:849] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 15:40:38:874] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 15:42:18:917] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 15:42:58:934] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 15:43:58:960] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 15:44:18:970] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 15:45:59:010] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 15:46:19:020] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 15:50:59:139] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 15:51:39:154] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 15:52:19:181] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 15:52:59:201] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 15:53:02:222] info: Store: SET_NETWORK_STATUS offline
+[08/07/19, 15:53:21:711] info: Store: SET_NETWORK_STATUS online
+[08/07/19, 15:56:19:289] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 15:56:59:310] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 15:58:39:354] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 15:58:59:367] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 16:00:39:411] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 16:00:59:421] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 16:01:19:433] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 16:02:19:464] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 16:02:39:478] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 16:02:59:488] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 16:04:19:525] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 16:08:17:765] info: Store: DISPLAY_ADDED 
+[08/07/19, 16:08:19:640] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 16:08:39:652] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 16:08:49:911] info: Store: NEW_NOTIFICATION 
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "CFWNTBDJA",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "g57gI0s3lpn1PLv",
+  "imageUri": null,
+  "launchUri": "slack://channel?id=CFWNTBDJA&message=1565161729.000800&team=T913C3A8P",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "[REDACTED]",
+  "teamId": "T913C3A8P",
+  "title": "[REDACTED]"
+}
+[08/07/19, 16:08:49:912] info: Creating new Electron notification. 
+[08/07/19, 16:08:50:314] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 1
+      }
+    }
+  }
+}
+[08/07/19, 16:08:59:664] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 16:09:19:680] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 16:14:59:832] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 16:15:19:848] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 16:15:39:861] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 16:23:20:067] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 16:23:40:080] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 16:32:20:317] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 16:34:57:015] info: Store: NEW_NOTIFICATION 
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "CFWNTBDJA",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "Nx7qSAuRQ2OQoyY",
+  "imageUri": null,
+  "launchUri": "slack://channel?id=CFWNTBDJA&message=1565163296.000900&team=T913C3A8P",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "[REDACTED]",
+  "teamId": "T913C3A8P",
+  "title": "[REDACTED]"
+}
+[08/07/19, 16:34:57:016] info: Creating new Electron notification. 
+[08/07/19, 16:34:57:572] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 2
+      }
+    }
+  }
+}
+[08/07/19, 16:35:00:388] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 16:35:40:409] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 16:36:20:436] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 16:36:40:444] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 16:37:01:254] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[08/07/19, 16:37:20:473] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 16:39:20:000] info: Store: DISPLAY_ADDED 
+[08/07/19, 16:49:00:782] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 16:49:20:797] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 16:53:21:200] info: Store: SET_NETWORK_STATUS offline
+[08/07/19, 16:53:39:871] info: Store: SET_NETWORK_STATUS online
+[08/07/19, 17:03:10:639] info: Store: NEW_NOTIFICATION 
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "CFWNTBDJA",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "8qX5HEFMv3pljnZ",
+  "imageUri": null,
+  "launchUri": "slack://channel?id=CFWNTBDJA&message=1565164990.001000&team=T913C3A8P",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "[REDACTED]",
+  "teamId": "T913C3A8P",
+  "title": "[REDACTED]"
+}
+[08/07/19, 17:03:10:640] info: Creating new Electron notification. 
+[08/07/19, 17:03:11:158] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 1
+      }
+    }
+  }
+}
+[08/07/19, 17:05:08:655] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[08/07/19, 17:17:01:311] info: Store: NEW_NOTIFICATION 
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "CFWNTBDJA",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "Rg8xtXIOAJ8ZpO4",
+  "imageUri": null,
+  "launchUri": "slack://channel?id=CFWNTBDJA&message=1565165821.001100&team=T913C3A8P",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "[REDACTED]",
+  "teamId": "T913C3A8P",
+  "title": "[REDACTED]"
+}
+[08/07/19, 17:17:01:312] info: Creating new Electron notification. 
+[08/07/19, 17:17:01:859] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 1
+      }
+    }
+  }
+}
+[08/07/19, 17:17:17:960] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[08/07/19, 17:17:41:581] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 17:20:01:648] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 17:20:14:406] info: Store: NEW_NOTIFICATION 
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "CFWNTBDJA",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "66Y5S6T5rZAJJoY",
+  "imageUri": null,
+  "launchUri": "slack://channel?id=CFWNTBDJA&message=1565166014.001200&team=T913C3A8P",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "[REDACTED]",
+  "teamId": "T913C3A8P",
+  "title": "[REDACTED]"
+}
+[08/07/19, 17:20:14:407] info: Creating new Electron notification. 
+[08/07/19, 17:20:15:050] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 1
+      }
+    }
+  }
+}
+[08/07/19, 17:20:41:668] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 17:21:21:692] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 17:23:41:750] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 17:24:01:764] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 17:25:01:793] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 17:26:01:827] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 17:26:41:840] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 17:27:21:867] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 17:33:02:017] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 17:35:49:645] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[08/07/19, 17:39:54:917] info: Store: NEW_NOTIFICATION 
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "CFWNTBDJA",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "DRw5SNcZ1gzOj4Q",
+  "imageUri": null,
+  "launchUri": "slack://channel?id=CFWNTBDJA&message=1565167194.001300&team=T913C3A8P",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "[REDACTED]",
+  "teamId": "T913C3A8P",
+  "title": "[REDACTED]"
+}
+[08/07/19, 17:39:54:918] info: Creating new Electron notification. 
+[08/07/19, 17:39:55:483] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 1
+      }
+    }
+  }
+}
+[08/07/19, 17:40:02:209] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 17:40:10:461] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[08/07/19, 17:40:22:219] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 17:50:02:459] info: Store: SET_SYSTEM_IDLE idle_presence
+[08/07/19, 17:53:38:212] info: Store: SET_NETWORK_STATUS offline
+[08/07/19, 17:53:56:938] info: Store: SET_NETWORK_STATUS online
+[08/07/19, 18:01:28:548] info: Store: NEW_NOTIFICATION 
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "CFWNTBDJA",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "VmJBIQhJnKKNPwA",
+  "imageUri": null,
+  "launchUri": "slack://channel?id=CFWNTBDJA&message=1565168488.001400&team=T913C3A8P",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "[REDACTED]",
+  "teamId": "T913C3A8P",
+  "title": "[REDACTED]"
+}
+[08/07/19, 18:01:28:549] info: Creating new Electron notification. 
+[08/07/19, 18:01:29:030] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 1
+      }
+    }
+  }
+}
+[08/07/19, 18:05:33:671] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[08/07/19, 18:05:42:804] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 18:06:02:817] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 18:06:22:823] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 18:08:42:884] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 18:09:22:912] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 18:09:42:921] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 18:10:02:929] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 18:11:42:977] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 18:12:02:982] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 18:17:56:585] info: Store: NEW_NOTIFICATION 
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "CFWNTBDJA",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "48W7t5sWAggPzMw",
+  "imageUri": null,
+  "launchUri": "slack://channel?id=CFWNTBDJA&message=1565169476.001500&team=T913C3A8P",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "[REDACTED]",
+  "teamId": "T913C3A8P",
+  "title": "[REDACTED]"
+}
+[08/07/19, 18:17:56:586] info: Creating new Electron notification. 
+[08/07/19, 18:17:56:992] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 1
+      }
+    }
+  }
+}
+[08/07/19, 18:22:03:247] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 18:22:23:259] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 18:23:18:651] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[08/07/19, 18:24:03:308] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 18:25:23:347] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 18:26:44:888] info: Store: NEW_NOTIFICATION 
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "CFWNTBDJA",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "66Y5Sgu5rZZZMpg",
+  "imageUri": null,
+  "launchUri": "slack://channel?id=CFWNTBDJA&message=1565170004.001600&team=T913C3A8P",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "[REDACTED]",
+  "teamId": "T913C3A8P",
+  "title": "[REDACTED]"
+}
+[08/07/19, 18:26:44:889] info: Creating new Electron notification. 
+[08/07/19, 18:26:45:407] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 1
+      }
+    }
+  }
+}
+[08/07/19, 18:40:03:737] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 18:40:23:747] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 18:53:57:413] info: Store: SET_NETWORK_STATUS offline
+[08/07/19, 18:54:12:769] info: Store: SET_NETWORK_STATUS online
+[08/07/19, 18:59:44:646] info: Store: NEW_NOTIFICATION 
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "CFWNTBDJA",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "58A5tJF2Z7141Yx",
+  "imageUri": null,
+  "launchUri": "slack://channel?id=CFWNTBDJA&message=1565171984.001700&team=T913C3A8P",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "[REDACTED]",
+  "teamId": "T913C3A8P",
+  "title": "[REDACTED]"
+}
+[08/07/19, 18:59:44:647] info: Creating new Electron notification. 
+[08/07/19, 18:59:45:117] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 2
+      }
+    }
+  }
+}
+[08/07/19, 18:59:54:850] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 1
+      }
+    }
+  }
+}
+[08/07/19, 19:00:13:546] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[08/07/19, 19:00:24:369] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 19:05:44:553] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 19:08:24:621] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 19:08:44:629] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 19:23:30:532] info: Store: NEW_NOTIFICATION 
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "CFWNTBDJA",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "vgmAt3IA7OkLv5N",
+  "imageUri": null,
+  "launchUri": "slack://channel?id=CFWNTBDJA&message=1565173410.001800&team=T913C3A8P",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "[REDACTED]",
+  "teamId": "T913C3A8P",
+  "title": "[REDACTED]"
+}
+[08/07/19, 19:23:30:533] info: Creating new Electron notification. 
+[08/07/19, 19:23:31:110] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 1
+      }
+    }
+  }
+}
+[08/07/19, 19:24:48:536] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[08/07/19, 19:25:05:125] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 19:34:45:398] info: Store: SET_SYSTEM_IDLE idle_presence
+[08/07/19, 19:54:13:510] info: Store: SET_NETWORK_STATUS offline
+[08/07/19, 19:54:29:043] info: Store: SET_NETWORK_STATUS online
+[08/07/19, 20:13:26:406] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 20:15:26:454] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 20:16:32:273] info: Store: NEW_NOTIFICATION 
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "CFWNTBDJA",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "Nx7qSKTRQ2oWM5Z",
+  "imageUri": null,
+  "launchUri": "slack://channel?id=CFWNTBDJA&message=1565176592.001900&team=T913C3A8P",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "[REDACTED]",
+  "teamId": "T913C3A8P",
+  "title": "[REDACTED]"
+}
+[08/07/19, 20:16:32:275] info: Creating new Electron notification. 
+[08/07/19, 20:16:32:673] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 1
+      }
+    }
+  }
+}
+[08/07/19, 20:16:46:500] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 20:17:06:505] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 20:17:46:529] info: Store: SET_SYSTEM_IDLE active
+[08/07/19, 20:17:59:487] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[08/07/19, 20:17:59:545] info: Store: NEW_NOTIFICATION 
+{
+  "authorName": "[REDACTED]",
+  "avatarImage": "[REDACTED]",
+  "channel": "CFWNTBDJA",
+  "channelName": "[REDACTED]",
+  "content": "[REDACTED]",
+  "id": "An85UwcYEVW5DV8",
+  "imageUri": null,
+  "launchUri": "slack://channel?id=CFWNTBDJA&message=1565176679.002000&team=T913C3A8P",
+  "msg": "[REDACTED]",
+  "silent": true,
+  "subtitle": "[REDACTED]",
+  "teamId": "T913C3A8P",
+  "title": "[REDACTED]"
+}
+[08/07/19, 20:17:59:546] info: Creating new Electron notification. 
+[08/07/19, 20:17:59:794] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T913C3A8P": {
+      "unreads": {
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 1
+      }
+    }
+  }
+}
+[08/07/19, 20:21:46:646] info: Store: SET_SYSTEM_IDLE idle_taskbar
+[08/07/19, 20:22:46:669] info: Store: SET_SYSTEM_IDLE active

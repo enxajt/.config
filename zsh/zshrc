@@ -45,6 +45,11 @@ export TERM=tmux-256color
 autoload -Uz colors
 colors
 
+# audio volume
+alias mute="$HOME/script/audio-mute.sh"
+alias bon="echo -e 'connect 00:87:63:11:19:1D \n quit' | bluetoothctl && sleep 2 && mute && $HOME/script/audio-raise-vol.sh 14"
+alias boff="echo -e 'disconnect 00:87:63:11:19:1D \n quit' | bluetoothctl && mute"
+
 alias clock='$HOME/script/clock.sh'
 alias e='exit'
 alias shut='shutdown -h now'
@@ -192,17 +197,18 @@ setopt pushd_ignore_dups
 # cdの後にlsを実行
 chpwd() { ls -atr --color=auto }
 
+HISTFILE=$HOME/.config/zsh/history
+HISTSIZE=1000000
+SAVEHIST=1000000
+HIST_STAMPS="%d/%m/%y %T"
+HIST_STAMPS="mm/dd/yyyy"
 # 同時に起動したzshの間でヒストリを共有する
 setopt share_history
 # 同じコマンドをヒストリに残さない
 setopt hist_ignore_all_dups
 setopt histignorealldups
-# コマンド履歴
-HISTFILE=$HOME/.config/zsh/history
-HISTSIZE=1000000
-SAVEHIST=1000000
-# スペースから始まるコマンド行はヒストリに残さない
-#setopt hist_ignore_space
+# 開始と終了を記録
+setopt EXTENDED_HISTORY
 # ヒストリに保存するときに余分なスペースを削除する
 setopt hist_reduce_blanks
 

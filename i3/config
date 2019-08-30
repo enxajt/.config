@@ -4,7 +4,7 @@ set $I3LOG $HOME/.config/i3/log
 exec ($HOME/.config/desktop/start-up.sh > $I3LOG) 2>&1 | tee -a $I3LOG
 
 exec --no-startup-id termite -e 'tmux -2f $HOME/.config/tmux/tmux.conf'
-exec --no-startup-id dunst
+exec --no-startup-id termite -e 'dunst -mon 2'
 exec_always --no-startup-id flashfocus
 
 # To ensure that no multiple instances of fusuma are started, was previously an issue
@@ -26,7 +26,9 @@ bindsym $mod+r exec termite -e "ranger -r ~/.config/ranger"
 bindsym $mod+i exec firefox
 # standby = suspend : memory power on
 # hibernation : save to HDD
-bindsym $mod+Control+l exec i3lock -ef -c 000000 && systemctl suspend
+
+#bindsym $mod+Control+l exec i3lock -ef -c 000000 && systemctl suspend
+bindsym $mod+Control+o exec i3lock -ef -c 000000 && echo mem > /sys/power/state
 
 font pango:monospace 12
 
@@ -56,6 +58,11 @@ bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
+bindsym $mod+Control+h move workspace to output left
+bindsym $mod+Control+j move workspace to output down
+bindsym $mod+Control+k move workspace to output up
+bindsym $mod+Control+l move workspace to output right
+
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
@@ -79,9 +86,8 @@ bindsym $mod+a focus parent
 # focus the child container
 bindsym $mod+c focus child
 
-bindsym $mod+Tab workspace next
-bindsym $mod+Shift+Tab workspace prev
-
+#bindsym $mod+Tab workspace next
+#bindsym $mod+Shift+Tab workspace prev
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
 bindsym $mod+3 workspace 3
@@ -132,9 +138,10 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $mod+Shift+r restart
 
 bar {
-        #status_command i3status
-        #tray_output primary
-        status_command i3blocks
+  #status_command i3status
+  #tray_output primary
+  status_command i3blocks
+  font pango:monospace 11
 }
 
 # Make the currently focused window a scratchpad

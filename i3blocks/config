@@ -3,11 +3,10 @@ separator_block_width=15
 markup=none
 
 
-
 [worldClock]
 command=$HOME/script/clock.sh
 interval=1
-
+color=#c0c5ce
 
 
 # wifi network
@@ -16,18 +15,18 @@ interval=1
 #instance=eth0
 instance=wlp2s0
 interval=1
-color=#9ee3e5
+color=#a3be8c
 
 [iface]
 instance=wlp2s0
 interval=1
-color=#00FF00
+color=#a3be8c
 separator=false
 
 [essid]
 command=iwconfig wlp2s0 2> /dev/null | grep ESSID | awk -F\" '{print $2}' | tr -d " \t"
 interval=1
-color=#00FF00
+color=#a3be8c
 separator=false
 
 # Support multiple VPN, with colors.
@@ -35,36 +34,40 @@ separator=false
 #interval=20
 
 
-
-[battery]
-#label=🔋
-interval=1
-
 [lightness]
 label=💡
 command=xbacklight -get | awk -F '.' '{print $1}'
 interval=1
-color=#9ee3e5
+color=#c0c5ce
 
 [volume]
-label=🔊
 instance=Master
 interval=1
-command= if [ `/usr/share/i3blocks/volume | sed -e 's/%$//g'` -eq 0 ]; then color='#9ee3e5'; else color='#FF0000'; fi; /usr/share/i3blocks/volume && echo -e "\n${color}"
-command= pacmd list-sinks | grep -m 1 'volume: front-left:' | cut -f 2 -d / | tr -d " \t%"
+command=$HOME/script/audio-get-vol.sh;
+markup=pango
+
+[bluetooth]
+interval=1
+command=$HOME/script/bluetooth.sh;
+markup=pango
+
+[battery]
+label=🔋
+interval=1
+color=#c0c5ce
+separator=true
 
 [load average]
-#label=LA
+label=LA
 command=echo "$(uptime | sed 's/.*load average: \(.*\)/\1/' | cut -d, -f1)/$(cat /proc/cpuinfo | grep processor | wc -l)"
 interval=1
-color=#9ee3e5
+color=#ef919a
 
 [cpu_usage]
-#label=CPU
+label=CPU
 interval=1
 separator=true
-color=#9ee3e5
-
+color=#ef919a
 # Support multiple chips, though lm-sensors.
 # The script may be called with -w and -c switches to specify thresholds,
 # see the script for details.
@@ -78,7 +81,7 @@ color=#9ee3e5
 #SENSOR_CHIP=""
 
 [memory]
-#label=Mem
+label=Mem
 separator=false
 interval=1
 command=free -h | awk 'match($0, /^Mem/){print $3 "/" $2}' | tr -d " \t"
@@ -95,7 +98,7 @@ color=#9ee3e5
 # The script may be called with a optional argument to set the alert
 # (defaults to 10 for 10%).
 [disk]
-#label=df
+label=df
 #DIR=/mnt/data
 interval=1
 color=#9ee3e5
