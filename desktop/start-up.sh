@@ -18,10 +18,8 @@ echo "\n# xrandr"
 xrandr --output eDP1 --mode 1920x1080
 xrandr --output DP1 --auto --above   eDP1 --rotate normal
 xrandr --output DP2 --auto --right-of DP1 --rotate normal
-feh --bg-center $HOME/enx/log/enx-分類/DL/Art/Manabu_Ikeda_Rebirth.jpg
-#xrandr --output DP2 --mode 1600x1200 --above eDP1 # KRC Projector
-#feh --bg-center $HOME/enx/log/enx-分類/DL/Art/Animals1419.png
-#xsetroot -solid "#000000" # Desktop background
+xsetroot -solid "#000000" # Desktop background
+#feh --bg-center $HOME/enx/log/enx-分類/DL/Art/Manabu_Ikeda_Rebirth.jpg
 
 echo "\n# redshift, desktop background, kbd_backlight"
 redshift -O 4200
