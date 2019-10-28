@@ -5,6 +5,12 @@ xinput set-prop 'DELL07E6:00 06CB:76AF Touchpad' 'libinput Tapping Enabled' 1
 xinput set-prop 'DELL07E6:00 06CB:76AF Touchpad' 'libinput Tapping Drag Lock Enabled' 1
 xinput set-prop 'DELL07E6:00 06CB:76AF Touchpad' 'libinput Accel Speed' 1
 
+# HP ELITEBOOK
+#xinput set-prop 'ALP0018:00 044E:121B Touchpad' 'libinput Natural Scrolling Enabled' 1
+#xinput set-prop 'ALP0018:00 044E:121B Touchpad' 'libinput Tapping Enabled' 1
+#xinput set-prop 'ALP0018:00 044E:121B Touchpad' 'libinput Tapping Drag Lock Enabled' 1
+#xinput set-prop 'ALP0018:00 044E:121B Touchpad' 'libinput Accel Speed' 1
+
 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target # disable suspend
 #sudo systemctl unmask sleep.target suspend.target hibernate.target hybrid-sleep.target # re-enable suspend
 
