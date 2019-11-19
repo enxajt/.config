@@ -37,6 +37,8 @@ export PATH=$PATH:/usr/local/go/bin
 ########################################
 # shorten
 ########################################
+alias ga="libreoffice /home/enxajt/w2p_fo/doc/gantt.ods"
+alias nt="nvim /home/enxajt/notes/TODO.md"
 alias    sshdev="ssh -i /home/enxajt/.ssh/w2p-key.pem ubuntu@ec2-13-231-209-80.ap-northeast-1.compute.amazonaws.com"
 alias sshreview="ssh -i /home/enxajt/.ssh/w2p-key.pem ubuntu@13.112.194.191"
 alias sshstable="ssh -i /home/enxajt/.ssh/w2p-key.pem ubuntu@ec2-52-197-45-252.ap-northeast-1.compute.amazonaws.com"
