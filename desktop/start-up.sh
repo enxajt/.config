@@ -24,6 +24,7 @@ echo "\n# xrandr"
 xrandr --output eDP1 --mode 1920x1080
 xrandr --output DP1 --auto --above   eDP1 --rotate normal
 xrandr --output DP2 --auto --right-of DP1 --rotate normal
+#xrandr --output DP2 --auto --above eDP1 --rotate normal # Dell U4320Q
 xsetroot -solid "#000000" # Desktop background
 #feh --bg-center $HOME/enx/log/enx-分類/DL/Art/Manabu_Ikeda_Rebirth.jpg
 

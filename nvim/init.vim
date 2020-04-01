@@ -203,8 +203,6 @@ au BufRead,BufNewFile *.scss set filetype=scss.css
 let g:vim_markdown_folding_disabled = 1
 "let g:vim_markdown_folding_level = 6
 
-let g:markdown_fenced_languages = ['bash=sh', 'css', 'django', 'handlebars', 'javascript', 'js=javascript', 'json=javascript', 'perl', 'php', 'python', 'ruby', 'sass', 'xml', 'html']
-
 "---------------------------------------------------------------
 " file(ファイル名の大文字小文字)
 " ファイル名に大文字小文字の区別がないシステム用(例: DOS/Windows/MacOS)

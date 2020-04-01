@@ -37,17 +37,29 @@ export PATH=$PATH:/usr/local/go/bin
 ########################################
 # shorten
 ########################################
+
+alias da="drawio /home/enxajt/Dropbox/アプリ/drawio/all"
+alias ds="drawio /home/enxajt/Dropbox/アプリ/drawio/skill"
+alias dp="drawio /home/enxajt/Dropbox/アプリ/drawio/process"
+alias dr="drawio /home/enxajt/Dropbox/アプリ/drawio/Roadmap"
+
+alias gits="git status"
+alias gitd="git diff"
+alias gitp="git push"
+
+alias ca="firefox --new-window https://calendar.google.com/"
 alias ga="libreoffice /home/enxajt/w2p_fo/doc/gantt.ods"
 alias nt="nvim /home/enxajt/notes/TODO.md"
-alias    sshdev="ssh -i /home/enxajt/.ssh/w2p-key.pem ubuntu@ec2-13-231-209-80.ap-northeast-1.compute.amazonaws.com"
+alias    sshdev="ssh -i /home/enxajt/.ssh/w2p-key.pem ubuntu@18.176.191.191"
 alias sshreview="ssh -i /home/enxajt/.ssh/w2p-key.pem ubuntu@13.112.194.191"
-alias sshstable="ssh -i /home/enxajt/.ssh/w2p-key.pem ubuntu@ec2-52-197-45-252.ap-northeast-1.compute.amazonaws.com"
+alias sshstable="ssh -i /home/enxajt/.ssh/w2p-key.pem ubuntu@13.115.194.171"
 
 alias e='exit'
 alias shut='shutdown -h now'
 
 alias mute="$HOME/script/audio-mute.sh"
-alias bon="echo -e 'connect 00:87:63:11:19:1D \n quit' | bluetoothctl && sleep 2 && mute && $HOME/script/audio-raise-vol.sh 14"
+alias bon="echo -e 'connect 00:87:63:11:19:1D \n quit' | bluetoothctl && sleep 2 && mute && $HOME/script/audio-raise-vol.sh 12"
+alias au="bon && vlc --no-random /home/enxajt/Music/List/work/&"
 alias boff="echo -e 'disconnect 00:87:63:11:19:1D \n quit' | bluetoothctl && mute"
 
 alias clock='$HOME/script/clock.sh'
