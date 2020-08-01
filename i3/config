@@ -1,4 +1,4 @@
-set $HOME /home/enxajt
+set $HOME /home/kotani
 
 set $I3LOG $HOME/.config/i3/log
 exec ($HOME/.config/desktop/start-up.sh > $I3LOG) 2>&1 | tee -a $I3LOG
