@@ -612,8 +612,8 @@ endif
   	imap <buffer> <C-w> <Plug>(unite_delete_backward_path)
   
   	"ctrl+jで縦に分割して開く
-  	nmap <silent> <buffer> <expr> <C-j> unite#do_action('split')
-  	inoremap <silent> <buffer> <expr> <C-j> unite#do_action('split')
+  	nmap <silent> <buffer> <expr> <C-j> unite#do_action('hsplit')
+  	inoremap <silent> <buffer> <expr> <C-j> unite#do_action('hsplit')
   
   	"ctrl+lで横に分割して開く
   	nmap <silent> <buffer> <expr> <C-l> unite#do_action('vsplit')

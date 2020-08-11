@@ -50,6 +50,8 @@ alias gitp="git push"
 alias ca="firefox --new-window https://calendar.google.com/"
 alias ga="libreoffice /home/enxajt/w2p_fo/doc/gantt.ods"
 alias nt="nvim /home/enxajt/notes/TODO.md"
+alias nd="nvim /home/enxajt/dev-krc/w2p/Happitec/dev.md"
+alias nk="nvim /home/enxajt/notes/IT/K8S.md"
 alias    sshdev="ssh -i /home/enxajt/.ssh/w2p-key.pem ubuntu@18.176.191.191"
 alias sshreview="ssh -i /home/enxajt/.ssh/w2p-key.pem ubuntu@13.112.194.191"
 alias sshstable="ssh -i /home/enxajt/.ssh/w2p-key.pem ubuntu@13.115.194.171"
@@ -59,8 +61,12 @@ alias shut='shutdown -h now'
 
 alias mute="$HOME/script/audio-mute.sh"
 alias bon="echo -e 'connect 00:87:63:11:19:1D \n quit' | bluetoothctl && sleep 2 && mute && $HOME/script/audio-raise-vol.sh 12"
+alias con="echo -e 'connect 36:00:AB:CD:3B:48 \n quit' | bluetoothctl && sleep 2 && mute && $HOME/script/audio-raise-vol.sh 12"
+alias don="echo -e 'connect CB:20:06:00:A4:9D \n quit' | bluetoothctl && sleep 2 && mute && $HOME/script/audio-raise-vol.sh 12"
 alias au="bon && vlc --no-random /home/enxajt/Music/List/work/&"
 alias boff="echo -e 'disconnect 00:87:63:11:19:1D \n quit' | bluetoothctl && mute"
+alias coff="echo -e 'disconnect 36:00:AB:CD:3B:48 \n quit' | bluetoothctl && mute"
+alias doff="echo -e 'disconnect CB:20:06:00:A4:9D \n quit' | bluetoothctl && mute"
 
 alias clock='$HOME/script/clock.sh'
 
@@ -300,7 +306,7 @@ bindkey "\e[19~" xbacklight_inc
 # save path on cd
 function cd {
     builtin cd $@
-    pwd > ~/.last_dir
+    pwd >| ~/.last_dir
 }
 alias back='pushd'
 alias bfg='java -jar /usr/local/bin/BFG_git-repo-cleaner.jar'
@@ -308,6 +314,7 @@ alias c='clear'
 alias cp='cp -i'
 alias gcal='gcalcli'
 alias h='fc -lt '%F %T' 1' # historyに日付を表示
+set -o noclobber
 alias mv='mv -i'
 alias mvt='\mv --backup=numbered --target-directory=${HOME}/.local/share/Trash/files'
 alias tmux='tmux -2f "$XDG_CONFIG_HOME"/tmux/tmux.conf'
