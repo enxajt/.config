@@ -13,18 +13,18 @@ color=#c0c5ce
 
 [bandwidth]
 #instance=eth0
-instance=wlp5s0
+instance=wlp2s0
 interval=1
 color=#a3be8c
 
 [iface]
-instance=wlp5s0
+instance=wlp2s0
 interval=1
 color=#a3be8c
 separator=false
 
 [essid]
-command=iwconfig wlp5s0 2> /dev/null | grep ESSID | awk -F\" '{print $2}' | tr -d " \t"
+command=iwconfig wlp2s0 2> /dev/null | grep ESSID | awk -F\" '{print $2}' | tr -d " \t"
 interval=1
 color=#a3be8c
 separator=false
