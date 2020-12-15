@@ -193,7 +193,7 @@ command! -bang -complete=file -nargs=? WDos
 ".mdファイルもMarkdown記法として読み込む
 au BufRead,BufNewFile *.md,*.conf set filetype=markdown
 au BufRead,BufNewFile *.ejs set filetype=html
-au BufRead,BufNewFile *.coffee set filetype=javascript
+au BufRead,BufNewFile *.coffee,*.tsx set filetype=javascript
 au BufRead,BufNewFile *.scss set filetype=scss.css
 "au BufWritePost *.scss,*.sass sass @% @%.css
 

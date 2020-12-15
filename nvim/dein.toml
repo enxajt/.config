@@ -249,6 +249,9 @@ let g:markdown_fenced_languages = ['bash=sh', 'css', 'django', 'handlebars', 'ja
 repo = 'Yggdroot/indentLine'
 
 [[plugins]]
+repo = 'leafgarland/typescript-vim'
+
+[[plugins]]
 repo = 'pangloss/vim-javascript'
 
 [[plugins]]

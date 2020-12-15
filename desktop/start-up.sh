@@ -5,6 +5,10 @@ xinput set-prop 'DELL07E6:00 06CB:76AF Touchpad' 'libinput Tapping Enabled' 1
 xinput set-prop 'DELL07E6:00 06CB:76AF Touchpad' 'libinput Tapping Drag Lock Enabled' 1
 xinput set-prop 'DELL07E6:00 06CB:76AF Touchpad' 'libinput Accel Speed' 1
 
+xinput set-prop 'DELL07E6:00 06CB:76AF Touchpad' 'Coordinate Transformation Matrix' 1 0 0 0 1 0 0 0 1 #default
+xinput set-prop 'DELL07E6:00 06CB:76AF Touchpad' 'Coordinate Transformation Matrix' 9 0 0 0 9 0 0 0 9 
+#xinput set-prop 'DELL07E6:00 06CB:76AF Touchpad' 'Coordinate Transformation Matrix' 5 0 0 0 5 0 0 0 1.5 
+
 # HP ELITEBOOK
 #xinput set-prop 'ALP0018:00 044E:121B Touchpad' 'libinput Natural Scrolling Enabled' 1
 #xinput set-prop 'ALP0018:00 044E:121B Touchpad' 'libinput Tapping Enabled' 1
@@ -23,9 +27,8 @@ dropbox start
 echo "\n# xrandr"
 xrandr --output eDP1 --mode 1920x1080
 xrandr --output DP1 --auto --above eDP1 --rotate normal # Kuya-A, KRC40C
-xrandr --output DP2 --auto --left-of DP1 --rotate left # Kuya-A, KRC40C
-#xrandr --output DP1 --auto --above eDP1 --rotate normal # Kuya-B, KRC
-#xrandr --output DP2 --auto --left-of DP1 --rotate left # Kuya-B
+xrandr --output DP2 --auto --right-of DP1 --rotate right # KRC 24*2
+#xrandr --output DP2 --auto --left-of DP1 --rotate left # Kuya ?
 #xrandr --output DP2 --auto --right-of DP1 --rotate normal # KRC Princeton
 xsetroot -solid "#000000" # Desktop background
 #feh --bg-center $HOME/enx/log/enx-分類/DL/Art/Manabu_Ikeda_Rebirth.jpg

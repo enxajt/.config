@@ -43,10 +43,6 @@ alias ds="drawio /home/enxajt/Dropbox/アプリ/drawio/skill"
 alias dp="drawio /home/enxajt/Dropbox/アプリ/drawio/process"
 alias dr="drawio /home/enxajt/Dropbox/アプリ/drawio/Roadmap"
 
-alias gits="git status"
-alias gitd="git diff"
-alias gitp="git push"
-
 alias ca="firefox --new-window https://calendar.google.com/"
 alias ga="libreoffice /home/enxajt/w2p_fo/doc/gantt.ods"
 alias nt="nvim /home/enxajt/notes/TODO.md"
@@ -121,20 +117,6 @@ setopt print_eight_bit
 ########################################
 # prompt
 ########################################
-# git
-
-# git after commit before push が、green... yellowにしたい
-# #RPROMPT="%{${fg[blue]}%}[%~]%{${reset_color}%}"
-# autoload -Uz vcs_info
-# setopt prompt_subst
-# zstyle ':vcs_info:git:*' check-for-changes true
-# zstyle ':vcs_info:git:*' stagedstr "%F{yellow}!"
-# zstyle ':vcs_info:git:*' unstagedstr "%F{red}+"
-# zstyle ':vcs_info:*' formats "%F{green}%c%u[%b]%f"
-# zstyle ':vcs_info:*' actionformats '[%b|%a]'
-# precmd () { vcs_info }
-# #RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
-
 source $HOME/.config/zsh-git-prompt/zshrc.sh
 # $(git_super_status) はシングルコーテーションで囲む
 # PROMPT='%B%m%~%b$(git_super_status) %# '
@@ -170,6 +152,9 @@ PROMPT=$PROMPT"
 PROMPT2="%{$fg[green]%}%_> %{$reset_color%}"
 # コマンド打ち間違いなどで表示される「もしかして」
 SPROMPT="%{$fg[red]%}correct: %R -> %r [nyae]? %{$reset_color%}"
+
+source $HOME/kube-ps1/kube-ps1.sh
+PROMPT='$(kube_ps1)'$PROMPT
 
 ########################################
 # 単語区切り
@@ -384,10 +369,10 @@ fi
 # nvim
 alias nvim='NVIM_TUI_ENABLE_TRUE_COLOR=1 nvim'
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '~/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '~/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/home/enxajt/.cache/google-cloud-sdk/path.zsh.inc' ]; then . '/home/enxajt/.cache/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '~/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '~/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+if [ -f '/home/enxajt/.cache/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/enxajt/.cache/google-cloud-sdk/completion.zsh.inc'; fi

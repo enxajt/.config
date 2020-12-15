@@ -2,13 +2,13 @@
 video/mp4=vlc.desktop;mpv.desktop;chromium-browser.desktop;org.gnome.Totem.desktop;
 audio/mpeg=vlc.desktop;org.gnome.Totem.desktop;chromium-browser.desktop;
 application/x-7z-compressed=userapp-7z-TIC1DZ.desktop;
-image/jpeg=eog.desktop;gimp.desktop;krita_jpeg.desktop;nomacs.desktop;org.gnome.gThumb.desktop;shutter.desktop;firefox.desktop;
-image/png=eog.desktop;gimp.desktop;krita_png.desktop;firefox.desktop;feh.desktop;
-application/pdf=zathura-pdf-poppler.desktop;gimp.desktop;krita_pdf.desktop;libreoffice-draw.desktop;okularApplication_pdf.desktop;YACReader.desktop;firefox.desktop;mupdf.desktop;calibre-ebook-viewer.desktop;AdobeReader.desktop;pdfarranger.desktop;evince.desktop;calibre-gui.desktop;
-text/plain=drawio.desktop;code.desktop;libreoffice-calc.desktop;nvim.desktop;firefox.desktop;wine-extension-txt.desktop;zathura-cb.desktop;libreoffice-writer.desktop;vim.desktop;vlc.desktop;gedit.desktop;remmina.desktop;
+image/jpeg=eog.desktop;gimp.desktop;org.inkscape.Inkscape.desktop;org.gnome.gThumb.Import.desktop;krita_jpeg.desktop;nomacs.desktop;org.gnome.gThumb.desktop;shutter.desktop;firefox.desktop;
+image/png=eog.desktop;shutter.desktop;krita_png.desktop;gimp.desktop;firefox.desktop;feh.desktop;
+application/pdf=zathura-pdf-poppler.desktop;AdobeReader.desktop;krita_pdf.desktop;mupdf.desktop;gimp.desktop;libreoffice-draw.desktop;okularApplication_pdf.desktop;YACReader.desktop;firefox.desktop;calibre-ebook-viewer.desktop;pdfarranger.desktop;evince.desktop;calibre-gui.desktop;
+text/plain=code.desktop;wine-extension-txt.desktop;drawio.desktop;libreoffice-calc.desktop;nvim.desktop;firefox.desktop;zathura-cb.desktop;libreoffice-writer.desktop;vim.desktop;vlc.desktop;gedit.desktop;remmina.desktop;
 application/x-freeplane=freeplane.desktop;
 application/x-rar=YACReader.desktop;org.gnome.FileRoller.desktop;userapp-7z-TIC1DZ.desktop;
-application/zip=YACReader.desktop;org.gnome.FileRoller.desktop;libreoffice-impress.desktop;mount-archive.desktop;userapp-7z-TIC1DZ.desktop;
+application/zip=org.gnome.FileRoller.desktop;YACReader.desktop;libreoffice-impress.desktop;mount-archive.desktop;userapp-7z-TIC1DZ.desktop;
 video/x-msvideo=vlc.desktop;org.gnome.Totem.desktop;
 application/epub+zip=calibre-gui.desktop;wine-extension-epub.desktop;
 application/x-mobipocket-ebook=calibre-ebook-viewer.desktop;wine-extension-azw.desktop;
@@ -80,6 +80,7 @@ image/x-xcf=gimp.desktop;krita_xcf.desktop;
 application/vnd.jgraph.mxfile=drawio.desktop;
 image/x-panasonic-rw=vlc.desktop;krita_raw.desktop;
 audio/aac=vlc.desktop;
+image/x-eps=okularApplication_ghostview.desktop;
 
 [Default Applications]
 application/x-7z-compressed=userapp-7z-TIC1DZ.desktop
@@ -99,3 +100,4 @@ text/markdown=vim.desktop
 text/plain=drawio.desktop
 x-scheme-handler/msteams=teams.desktop
 image/x-xcf=gimp.desktop
+x-scheme-handler/mailto=thunderbird.desktop
