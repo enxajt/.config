@@ -4,8 +4,8 @@ audio/mpeg=vlc.desktop;org.gnome.Totem.desktop;chromium-browser.desktop;
 application/x-7z-compressed=userapp-7z-TIC1DZ.desktop;
 image/jpeg=eog.desktop;gimp.desktop;org.inkscape.Inkscape.desktop;org.gnome.gThumb.Import.desktop;krita_jpeg.desktop;nomacs.desktop;org.gnome.gThumb.desktop;shutter.desktop;firefox.desktop;
 image/png=eog.desktop;shutter.desktop;krita_png.desktop;gimp.desktop;firefox.desktop;feh.desktop;
-application/pdf=zathura-pdf-poppler.desktop;AdobeReader.desktop;krita_pdf.desktop;mupdf.desktop;gimp.desktop;libreoffice-draw.desktop;okularApplication_pdf.desktop;YACReader.desktop;firefox.desktop;calibre-ebook-viewer.desktop;pdfarranger.desktop;evince.desktop;calibre-gui.desktop;
-text/plain=code.desktop;wine-extension-txt.desktop;drawio.desktop;libreoffice-calc.desktop;nvim.desktop;firefox.desktop;zathura-cb.desktop;libreoffice-writer.desktop;vim.desktop;vlc.desktop;gedit.desktop;remmina.desktop;
+application/pdf=zathura-pdf-poppler.desktop;AdobeReader.desktop;pdfarranger.desktop;krita_pdf.desktop;gimp.desktop;mupdf.desktop;libreoffice-draw.desktop;okularApplication_pdf.desktop;YACReader.desktop;firefox.desktop;calibre-ebook-viewer.desktop;evince.desktop;calibre-gui.desktop;
+text/plain=drawio.desktop;nvim.desktop;wine-extension-txt.desktop;code.desktop;libreoffice-calc.desktop;firefox.desktop;zathura-cb.desktop;libreoffice-writer.desktop;vim.desktop;vlc.desktop;gedit.desktop;remmina.desktop;
 application/x-freeplane=freeplane.desktop;
 application/x-rar=YACReader.desktop;org.gnome.FileRoller.desktop;userapp-7z-TIC1DZ.desktop;
 application/zip=org.gnome.FileRoller.desktop;YACReader.desktop;libreoffice-impress.desktop;mount-archive.desktop;userapp-7z-TIC1DZ.desktop;
@@ -81,6 +81,7 @@ application/vnd.jgraph.mxfile=drawio.desktop;
 image/x-panasonic-rw=vlc.desktop;krita_raw.desktop;
 audio/aac=vlc.desktop;
 image/x-eps=okularApplication_ghostview.desktop;
+font/ttf=fontforge.desktop;org.gnome.FontViewer.desktop;org.gnome.FontManager.desktop;
 
 [Default Applications]
 application/x-7z-compressed=userapp-7z-TIC1DZ.desktop
